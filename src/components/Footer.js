@@ -7,24 +7,24 @@ import { MdOutlineMail } from 'react-icons/md'
 
 export default function Footer() {
 	return (
-		<div className='footer'>
-			<div className='footer__socialmedia-items'>
+		<div className='wrapper footer'>
+			<div className='wrapper footer__socialmedia-items'>
 				<div className='footer__socialmedia-item'>
 					<a href='https://www.linkedin.com/in/krzysztof-kl%C4%99ka-a75729225/'>
 						<FaLinkedin />
 					</a>
 				</div>
-				<div className='footer__socialmedia-item'>
+				<div className='wrapper footer__socialmedia-item'>
 					<a href='https://github.com/Kry765'>
 						<AiFillGithub />
 					</a>
 				</div>
-				<div className='footer__socialmedia-item'>
+				<div className='wrapper footer__socialmedia-item'>
 					<MdOutlineMail onClick={() => (window.location = 'mailto:krzysztofkleka91@gmail.com')} />
 				</div>
 			</div>
 			<div>
-				<nav className='footer__bottom-menu-items'>
+				<nav className='wrapper footer__bottom-menu-items'>
 					<a href='#' className='footer__bottom-menu-item'>
 						Home
 					</a>
@@ -42,7 +42,7 @@ export default function Footer() {
 					</Link>
 				</nav>
 			</div>
-			<div>
+			<div className='footer__copywrite'>
 				<p>Kry765 | &copy; All right reserved 2023</p>
 			</div>
 		</div>

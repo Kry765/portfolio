@@ -12,10 +12,10 @@ import { SiBem } from 'react-icons/si'
 
 export default function Skills() {
 	return (
-		<div className='skills' id='Skills'>
+		<div className='wrapper skills' id='Skills'>
 			<h1>Skills</h1>
-			<div className='skills__cards'>
-				<div className='skills__card'>
+			<div className='wrapper skills__cards'>
+				<div className='wrapper skills__card'>
 					<div>
 						<DiPostgresql className='skills__icon' />
 					</div>
@@ -24,7 +24,7 @@ export default function Skills() {
 					</div>
 					<p>PostgreSQL</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<SiReact className='skills__icon' />
 					</div>
@@ -33,7 +33,7 @@ export default function Skills() {
 					</div>
 					<p>React</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<DiJavascript className='skills__icon' />
 					</div>
@@ -42,7 +42,7 @@ export default function Skills() {
 					</div>
 					<p>JavaScript</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<IoLogoCss3 className='skills__icon' />
 					</div>
@@ -51,7 +51,7 @@ export default function Skills() {
 					</div>
 					<p>CSS</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<FaSass className='skills__icon' />
 					</div>
@@ -60,16 +60,16 @@ export default function Skills() {
 					</div>
 					<p>SCSS</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<AiFillHtml5 className='skills__icon' />
 					</div>
-					<div className='skills__progress-bar'>
+					<div className='wrapper skills__progress-bar'>
 						<div className='skills__progress-bar--html'></div>
 					</div>
 					<p>HTML</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<AiFillGithub className='skills__icon' />
 					</div>
@@ -78,7 +78,7 @@ export default function Skills() {
 					</div>
 					<p>GitHub</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<FaNodeJs className='skills__icon' />
 					</div>
@@ -87,7 +87,7 @@ export default function Skills() {
 					</div>
 					<p>Nodejs</p>
 				</div>
-				<div className='skills__card'>
+				<div className='wrapper skills__card'>
 					<div>
 						<SiBem className='skills__icon' />
 					</div>

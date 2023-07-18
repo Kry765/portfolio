@@ -3,24 +3,17 @@
 @use './animation' as *;
 
 .skills {
-	display: flex;
 	flex-direction: column;
-	align-items: center;
 	max-width: 100%;
 	color: #fff;
 	&__cards {
-		display: flex;
-		justify-content: center;
 		flex-wrap: wrap;
 		padding: 10px;
 	}
 
 	&__card {
 		overflow: hidden;
-		display: flex;
-		align-items: center;
 		flex-direction: column;
-		justify-content: center;
 		height: 400px;
 		width: 300px;
 		margin: 2em;
@@ -39,8 +32,8 @@
 		color: #fff;
 	}
 	&__progress-bar {
-		overflow: hidden;
 		position: relative;
+		overflow: hidden;
 		margin: 1em 0;
 		width: 80%;
 		height: 10px;

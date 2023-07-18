@@ -6,10 +6,10 @@ import {HiLightningBolt} from 'react-icons/hi';
 
 export default function Aboutme() {
 	return (
-		<div className='about-me' id='Aboutme'>
+		<div className='wrapper about-me' id='Aboutme'>
 			<h1>About me</h1>
-			<div className='about-me__card'>
-				<div className='about-me__foto-wrapper'>
+			<div className='wrapper about-me__card'>
+				<div className='wrapper'>
 					<img src={picture} className='about-me__foto' />
 				</div>
 				<div className='about-me__text'>

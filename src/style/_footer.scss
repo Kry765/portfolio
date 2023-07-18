@@ -1,5 +1,7 @@
 .footer {
 	background-color: black;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	color: #fff;
 	text-align: center;
 	width: 100%;
@@ -9,6 +11,8 @@
 	&__socialmedia-items {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+		min-width: 10%;
 	}
 	&__socialmedia-item {
 		font-size: 2rem;
@@ -20,11 +24,26 @@
 	}
 
 	&__bottom-menu-items {
-		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		min-width: 80%;
 	}
 	&__bottom-menu-item {
 		color: #fff;
 		margin: 2em 1em;
+	}
+	&__copywrite {
+		min-width: 100%;
+		padding: 2em 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		flex-direction: column;
+		&__socialmedia-items,
+		&__bottom-menu-items {
+			flex-direction: row;
+			// min-width: 50%;
+		}
 	}
 }

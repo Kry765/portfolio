@@ -3,7 +3,7 @@ import '../style/_header.scss'
 import photo from '../img/logo.png'
 export default function Hedaer() {
 	return (
-		<div className='header'>
+		<div className='wrapper header'>
 			<h1 className='header__title'>
 				<span className='header__letter1'>H</span>
 				<span className='header__letter2'>i</span>

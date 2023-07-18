@@ -23,12 +23,12 @@ function App() {
 				<section>
 					<Skills id='Skills' />
 				</section>
-				<section>
+				{/* <section>
 					<Certyfication id='Certyfication' />
-				</section>
-				{/* <section> */}
-				{/* <Contact id='Contact' /> */}
-				{/* </section> */}
+				</section> */}
+				{/* <section>
+					<Contact id='Contact' />
+				</section> */}
 			</main>
 			<footer>
 				<Footer />
