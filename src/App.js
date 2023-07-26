@@ -10,29 +10,29 @@ import Footer from './components/Footer'
 function App() {
 	return (
 		<div className='App'>
+			<nav>
+				<Menu id='Menu' />
+			</nav>
 			<header>
-				<nav>
-					<Menu id='Menu' />
-				</nav>
 				<Header id='Header' />
 			</header>
-			<main>
-				<section>
-					<Aboutme id='Aboutme' />
-				</section>
-				<section>
-					<Skills id='Skills' />
-				</section>
-				{/* <section>
-					<Certyfication id='Certyfication' />
-				</section> */}
-				{/* <section>
-					<Contact id='Contact' />
-				</section> */}
-			</main>
-			<footer>
-				<Footer />
-			</footer>
+			{/* <main> */}
+			{/* <section> */}
+			{/* <Aboutme id='Aboutme' /> */}
+			{/* </section> */}
+			<section>
+				<Skills id='Skills' />
+			</section>
+			{/* <section> */}
+			{/* <Certyfication id='Certyfication' /> */}
+			{/* </section> */}
+			{/* <section> */}
+			{/* <Contact id='Contact' /> */}
+			{/* </section> */}
+			{/* </main> */}
+			{/* <footer> */}
+			{/* <Footer /> */}
+			{/* </footer> */}
 		</div>
 	)
 }

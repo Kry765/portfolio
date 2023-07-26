@@ -3,18 +3,23 @@
 @use './mixins' as *;
 
 .header {
-	margin-top: 100px;
+	background-image: url('../img/header_hd.jpg');
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	margin-top: 0;
 	flex-direction: column;
 	text-align: center;
 	max-width: 100%;
-	min-height: 100vh;
-	padding: 1.5em;
 	color: $secondly-color;
 
 	&__title {
+		// position: relative;
 		font-size: 2rem;
-		position: relative;
-		z-index: -2;
+		// position: relative;
+		z-index: 4;
 		padding: 0.5em;
 	}
 	&__letter1 {
@@ -164,18 +169,14 @@
 		}
 	}
 
-	&__primary-photo {
-		position: relative;
-		display: none;
-		width: 400px;
-		height: 400px;
-		padding: 20px;
-		transition: padding 0.5s;
+	&__opacity-bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
 	}
 
-	&__primary-photo:hover {
-		padding: 5px;
-	}
 	&__header-wrapper {
 		display: flex;
 		justify-content: center;
@@ -185,12 +186,15 @@
 	}
 
 	&__text {
+		position: relative;
 		font-size: 1.2rem;
 		padding: 1.5em;
 		color: $white-color;
 	}
 	&__button {
-		background-color: $contrast-color;
+		position: relative;
+		background-color: none;
+		border: 2px solid $white-color;
 		width: 12em;
 		height: 4em;
 		margin: 1em;
@@ -203,17 +207,14 @@
 		cursor: pointer;
 	}
 	&__button:hover {
-		background-color: $main-color;
+		background-color: rgba(14, 246, 204, 0.7);
 	}
 }
 
-@media (min-width: 768px) {
-	.header {
-		position: relative;
-		top: 100px;
-		min-height: 80vh;
-		&__primary-photo {
-			display: block;
-		}
-	}
-}
+// @media (min-width: 768px) {
+// 	.header {
+// 		&__primary-photo {
+// 			display: block;
+// 		}
+// 	}
+// }

@@ -4,6 +4,7 @@ import photo from '../img/logo.png'
 export default function Hedaer() {
 	return (
 		<div className='wrapper header'>
+			<div className='header__opacity-bg'></div>
 			<h1 className='header__title'>
 				<span className='header__letter1'>H</span>
 				<span className='header__letter2'>i</span>
@@ -33,9 +34,6 @@ export default function Hedaer() {
 				<span className='header__cursor'>|</span>
 			</h1>
 			<div className='header__header-wrapper'>
-				<div>
-					<img src={photo} alt='two people work from content' className='header__primary-photo' />
-				</div>
 				<div>
 					<p className='header__text'>Thank you for being here, let me tell you something about myself.</p>
 					<button className='header__button'>Let's Go</button>
