@@ -1,34 +1,98 @@
 @use './mixins' as *;
 @use './colors' as *;
 @use './animation' as *;
+@use './reset.scss' as *;
 
 .about-me {
 	flex-direction: column;
 	max-width: 100%;
-	min-height: 100%;
-	padding: 2em 0.5em;
-	margin-top: 3em;
+	min-height: 120vh;
+	margin: 1em;
 	color: $white-color;
 	&__card {
 		flex-direction: column;
 		max-width: 100%;
 	}
+	&__social-foto {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid rgb(255, 255, 255);
+		border-radius: 25px;
+		max-width: 80%;
+	}
+
+	&__social-icons {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 0.5em;
+	}
+	&__social-icon {
+		font-size: 1.8rem;
+		margin: 0.5em;
+	}
+
 	&__foto {
+		height: 100%;
+		width: 100%;
+		border-radius: 25px;
+		padding: 1em;
 		text-align: center;
-		width: 50%;
 		margin: 2em 0.5em;
 		transition: all 0.5s;
+	}
+	&__btn {
+		border: 2px solid $white-color;
+		width: 12em;
+		height: 4em;
+		margin: 1em;
+		padding: 1em;
+		border-radius: 20px;
+		color: $white-color;
+		font-weight: bold;
+		transition: all 0.4s;
+		text-transform: uppercase;
+	}
+	&__camera {
+		position: relative;
+		margin-top: 1em;
+		width: 75px;
+		height: 30px;
+		border: 1px solid $white-color;
+		border-radius: 20px;
+	}
+
+	&__light-lamp {
+		position: absolute;
+		top: 6px;
+		right: 5px;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: $white-color;
 	}
 
 	&__foto:hover {
 		transform: scale(1.1);
 	}
 	&__text {
+		position: relative;
 		padding: 1em;
 		font-size: 1.2rem;
 		line-height: 2em;
 		color: $white-color;
-		min-width: 40%;
+	}
+	&__circle {
+		background-color: #000;
+		filter: blur(15px);
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		top: 0px;
+		border-radius: 50%;
+		z-index: -5;
+		opacity: 0.5;
 	}
 	&__list-style {
 		color: $contrast-color;

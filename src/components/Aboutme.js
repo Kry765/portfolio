@@ -2,23 +2,58 @@ import React from 'react'
 import picture from '../img/zdj_portfolio_2.jpg'
 import '../style/_aboutme.scss'
 import '../style/reset.scss'
-import {HiLightningBolt} from 'react-icons/hi';
+import { FaLinkedin } from 'react-icons/fa'
+import { AiFillGithub } from 'react-icons/ai'
+import { MdOutlineMail } from 'react-icons/md'
+import { HiLightningBolt } from 'react-icons/hi'
 
 export default function Aboutme() {
 	return (
-		<div className='wrapper about-me' id='Aboutme'>
-			<h1>About me</h1>
+		<div className='wrapper about-me'>
+			<h1 id='Aboutme'>About me</h1>
 			<div className='wrapper about-me__card'>
-				<div className='wrapper'>
+				<div className='about-me__social-foto'>
+					<div className='about-me__camera'>
+						<div className='about-me__light-lamp'></div>
+					</div>
 					<img src={picture} className='about-me__foto' />
+					<div className='about-me__social-icons'>
+						<div className='about-me__social-icon'>
+							<AiFillGithub />
+						</div>
+						<div className='about-me__social-icon'>
+							<MdOutlineMail />
+						</div>
+						<div className='about-me__social-icon'>
+							<FaLinkedin />
+						</div>
+					</div>
+					<div>
+						<button className='about-me__btn'>Send Me</button>
+					</div>
 				</div>
 				<div className='about-me__text'>
-					<div><HiLightningBolt className='about-me__list-style'/>My name is Christopher</div>
-					<div><HiLightningBolt className='about-me__list-style'/>I'm 23 years old</div>
-					<div><HiLightningBolt className='about-me__list-style'/>I studying computer science
-					<div><HiLightningBolt className='about-me__list-style'/> Now i am on the 3 years learn</div>
-					WebDeveloper.</div>
-					<div><HiLightningBolt className='about-me__list-style'/>My dream is work as professional Web-Developer</div>
+					<div>
+						<HiLightningBolt className='about-me__list-style' />
+						<p>My name is Christopher</p>
+					</div>
+					<div>
+						<HiLightningBolt className='about-me__list-style' />
+						<p>I'm 23 years old</p>
+					</div>
+					<div>
+						<HiLightningBolt className='about-me__list-style' />
+						<p>I studying computer science</p>
+					</div>
+					<div>
+						<HiLightningBolt className='about-me__list-style' />
+						<p>Now i am on the 3 years learn WebDeveloper.</p>
+					</div>
+					<div>
+						<HiLightningBolt className='about-me__list-style' />
+						<p>My dream is work as professional Web-Developer</p>
+					</div>
+					<div className='about-me__circle'></div>
 				</div>
 			</div>
 		</div>
