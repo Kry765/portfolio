@@ -3,24 +3,33 @@
 @use './animation' as *;
 @use './reset.scss' as *;
 
+section {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 .about-me {
+	margin-top: 5em;
 	flex-direction: column;
 	max-width: 100%;
-	min-height: 120vh;
-	margin: 1em;
+	min-height: 100%;
 	color: $white-color;
 	&__card {
 		flex-direction: column;
 		max-width: 100%;
 	}
 	&__social-foto {
+		margin: 3em 0;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-		border: 1px solid rgb(255, 255, 255);
-		border-radius: 25px;
 		max-width: 80%;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 25px;
+		overflow: hidden;
+		padding: 1em;
 	}
 
 	&__social-icons {
@@ -31,9 +40,11 @@
 	&__social-icon {
 		font-size: 1.8rem;
 		margin: 0.5em;
+		transition: color 0.8s;
 	}
 
 	&__foto {
+		border: 1px solid rgba(255, 255, 255, 0.5);
 		height: 100%;
 		width: 100%;
 		border-radius: 25px;
@@ -53,13 +64,26 @@
 		font-weight: bold;
 		transition: all 0.4s;
 		text-transform: uppercase;
+		transition: background-color 0.4s;
 	}
+	&__btn:hover,
+	&__social-icon:hover {
+		cursor: pointer;
+	}
+	&__btn:hover {
+		background-color: rgba(14, 246, 204, 0.7);
+	}
+
+	&__social-icon:hover {
+		color: $contrast-color;
+	}
+
 	&__camera {
 		position: relative;
 		margin-top: 1em;
 		width: 75px;
 		height: 30px;
-		border: 1px solid $white-color;
+		border: 1px solid rgba(255, 255, 255, 0.5);
 		border-radius: 20px;
 	}
 
@@ -73,30 +97,48 @@
 		background-color: $white-color;
 	}
 
-	&__foto:hover {
-		transform: scale(1.1);
-	}
 	&__text {
 		position: relative;
 		padding: 1em;
 		font-size: 1.2rem;
 		line-height: 2em;
 		color: $white-color;
+		margin: 2em;
 	}
-	&__circle {
-		background-color: #000;
-		filter: blur(15px);
-		width: 300px;
-		height: 300px;
+	&__square1 {
 		position: absolute;
-		top: 0px;
-		border-radius: 50%;
-		z-index: -5;
-		opacity: 0.5;
+		top: -1000px;
+		left: 400px;
 	}
+	&__square2 {
+		position: absolute;
+		top: -1000px;
+		left: 500px;
+	}
+	&__square3 {
+		position: absolute;
+		top: -1000px;
+		left: 600px;
+	}
+	&__square1,
+	&__square2,
+	&__square3 {
+		background-color: $contrast-color;
+		height: 2000px;
+		width: 50px;
+		opacity: 0.3;
+		z-index: -5;
+		transform: rotate(45deg);
+	}
+
 	&__list-style {
+		width: 5vw;
 		color: $contrast-color;
-		margin: 0 0.5em;
+	}
+	&__text-paragraph {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
 	}
 }
 
@@ -106,12 +148,11 @@
 			display: flex;
 			justify-content: center;
 			flex-direction: row;
-			&__text {
-				max-width: 100%;
-			}
-			&__foto {
-				max-width: 100%;
-			}
+			margin: 1em;
+		}
+		&__social-foto {
+			max-width: 30%;
+			margin: 4em 3em;
 		}
 	}
 }

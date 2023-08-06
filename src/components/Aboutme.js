@@ -33,27 +33,29 @@ export default function Aboutme() {
 					</div>
 				</div>
 				<div className='about-me__text'>
-					<div>
+					<div className='about-me__text-paragraph'>
 						<HiLightningBolt className='about-me__list-style' />
 						<p>My name is Christopher</p>
 					</div>
-					<div>
+					<div className='about-me__text-paragraph'>
 						<HiLightningBolt className='about-me__list-style' />
 						<p>I'm 23 years old</p>
 					</div>
-					<div>
+					<div className='about-me__text-paragraph'>
 						<HiLightningBolt className='about-me__list-style' />
 						<p>I studying computer science</p>
 					</div>
-					<div>
+					<div className='about-me__text-paragraph'>
 						<HiLightningBolt className='about-me__list-style' />
 						<p>Now i am on the 3 years learn WebDeveloper.</p>
 					</div>
-					<div>
+					<div className='about-me__text-paragraph'>
 						<HiLightningBolt className='about-me__list-style' />
 						<p>My dream is work as professional Web-Developer</p>
 					</div>
-					<div className='about-me__circle'></div>
+					<div className='about-me__square1'></div>
+					<div className='about-me__square2'></div>
+					<div className='about-me__square3'></div>
 				</div>
 			</div>
 		</div>
