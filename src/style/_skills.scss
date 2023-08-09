@@ -21,10 +21,25 @@
 		text-align: center;
 		border-radius: 25px;
 		transition: all 1s;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+		position: relative;
+		perspective: 1000px;
 	}
+
 	&__card:hover {
 		cursor: pointer;
-		transform: scale(1.2);
+		transform: rotateY(180deg);
+	}
+
+	&__front-card {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		backface-visibility: hidden;
+	}
+	&__back-card {
+		background-color: #fff;
 	}
 
 	&__icon {
