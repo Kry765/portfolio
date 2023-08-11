@@ -15,7 +15,7 @@ export default function Skills() {
 		<div className='wrapper skills' id='Skills'>
 			<h1>Skills</h1>
 			<div className='wrapper skills__cards'>
-				<div className='wrapper skills__card'>
+				<div className='skills__card'>
 					<div className='skills__front-card'>
 						<div>
 							<DiPostgresql className='skills__icon' />
@@ -25,7 +25,7 @@ export default function Skills() {
 						</div>
 						<p>PostgreSQL</p>
 					</div>
-					<div className='skills__back-card'>kkkkk</div>
+					<div className='skills__back-card'>test</div>
 				</div>
 				<div className='wrapper skills__card'>
 					<div>
