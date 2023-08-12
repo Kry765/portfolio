@@ -12,19 +12,40 @@
 	}
 
 	&__card {
+		perspective: 1000px;
 		overflow: hidden;
 		flex-direction: column;
 		height: 400px;
 		width: 300px;
 		margin: 2em;
-		border: 2px double #fff;
-		text-align: center;
-		border-radius: 25px;
-		transition: all 1s;
+		transition: transform 1s;
+		perspective: 1000px;
 	}
-	&__card:hover {
-		cursor: pointer;
-		transform: scale(1.2);
+
+	&__card:hover &__content-card {
+		transform: rotateY(180deg);
+		transition: transform 0.5s;
+	}
+
+	&__content-card {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transition: transform 1s;
+		transform-style: preserve-3d;
+	}
+
+	&__front-card,
+	&__back-card {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+	&__back-card {
+		border: 2px double #fff;
+		border-radius: 25px;
+		transform: rotateY(180deg);
 	}
 
 	&__icon {
@@ -32,7 +53,6 @@
 		color: #fff;
 	}
 	&__progress-bar {
-		position: relative;
 		overflow: hidden;
 		margin: 1em 0;
 		width: 80%;
@@ -104,9 +124,6 @@
 			height: 10px;
 		}
 		&--postgres {
-			position: absolute;
-			top: 0;
-			left: 0;
 			background-color: $contrast-color;
 			width: 30%;
 			height: 10px;
