@@ -1,23 +1,14 @@
+@use './reset.scss' as *;
+
 .certyfication {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 100vh;
-	&__diplomas {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		text-align: center;
-		margin: 2em;
-	}
-	&__diploma {
-		display: flex;
-		justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	&__content {
+		flex-direction: column;
+		align-items: center;
 	}
 	&__img-diploma {
-		width: 400px;
+		max-width: 10%;
 		margin: 2em 5em;
 		transition: all 1s;
 	}
@@ -25,4 +16,5 @@
 		cursor: pointer;
 		transform: scale(1.2);
 	}
+
 }
