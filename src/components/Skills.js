@@ -16,6 +16,18 @@ export default function Skills() {
 			<h1>Skills</h1>
 			<div className='wrapper skills__cards'>
 				<div className='skills__card'>
+					<div className='skills__content-card'>
+						<div className='skills__front-card'>
+							<div>
+								<DiPostgresql className='skills__icon' />
+							</div>
+							<div className='skills__progress-bar'>
+								<div className='skills__progress-bar--postgres'></div>
+							</div>
+							<p>PostgreSQL</p>
+						</div>
+						<div className='skills__back-card'>test</div>
+					</div>
 					<div className='skills__front-card'>
 						<div>
 							<DiPostgresql className='skills__icon' />
