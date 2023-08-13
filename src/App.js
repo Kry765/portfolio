@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Aboutme from './components/Aboutme'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import Certyfication from './components/Certyfication'
+// import Certyfication from './components/Certyfication'
 import Footer from './components/Footer'
 
 function App() {
@@ -16,23 +16,23 @@ function App() {
 			<header>
 				<Header id='Header' />
 			</header>
-			{/* <main> */}
-			<section>
-				<Aboutme id='Aboutme' />
-			</section>
-			<section>
-				<Skills id='Skills' />
-			</section>
-			<section>
+			<main>
+				<section>
+					<Aboutme id='Aboutme' />
+				</section>
+				<section>
+					<Skills id='Skills' />
+				</section>
+				{/* <section>
 				<Certyfication id='Certyfication' />
-			</section>
-			{/* <section> */}
-			{/* <Contact id='Contact' /> */}
-			{/* </section> */}
-			{/* </main> */}
-			{/* <footer> */}
-			{/* <Footer /> */}
-			{/* </footer> */}
+			</section> */}
+				<section>
+					<Contact id='Contact' />
+				</section>
+			</main>
+			<footer>
+				<Footer />
+			</footer>
 		</div>
 	)
 }

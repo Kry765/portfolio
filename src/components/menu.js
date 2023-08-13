@@ -39,9 +39,9 @@ export default function Menu() {
 				<Link to='Skills' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
 					Skills
 				</Link>
-				<Link to='Certyfication' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
+				{/* <Link to='Certyfication' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
 					Certyfication
-				</Link>
+				</Link> */}
 				<Link to='Contact' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
 					Concact me
 				</Link>
@@ -54,16 +54,19 @@ export default function Menu() {
 							toggleNav()
 							bottomLine()
 							hideTopBurgerbar()
-						}}>
+						}}
+					>
 						<div className={inTopMenu ? 'nav__burger-top-line--close-top-line' : 'nav__burger-top-line'}></div>
 						<div className={inTopMenu ? 'nav__burger-center-line--close-center-line' : 'nav__burger-center-line'}></div>
 						<div
-							className={inTopMenu ? 'nav__burger-support-line--close-support-line' : 'nav__burger-support-line'}></div>
+							className={inTopMenu ? 'nav__burger-support-line--close-support-line' : 'nav__burger-support-line'}
+						></div>
 					</div>
 				</button>
 			</div>
 			<div
-				className={`nav__mobile-items ${navOpen ? 'nav__mobile-items--close-nav' : 'nav__mobile-items--active-nav'}`}>
+				className={`nav__mobile-items ${navOpen ? 'nav__mobile-items--close-nav' : 'nav__mobile-items--active-nav'}`}
+			>
 				<div className='nav__mobile-item'>
 					<Link to='Home' smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
 						Home
