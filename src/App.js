@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Aboutme from './components/Aboutme'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-// import Certyfication from './components/Certyfication'
+import Project from './components/Project'
 import Footer from './components/Footer'
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
 				<section>
 					<Skills id='Skills' />
 				</section>
-				{/* <section>
-				<Certyfication id='Certyfication' />
-			</section> */}
+				<section>
+					<Project id='Project' />
+				</section>
 				<section>
 					<Contact id='Contact' />
 				</section>
