@@ -2,7 +2,7 @@ import '../style/_contact.scss'
 
 function Contact() {
 	return (
-		<div className='wrapper contact'>
+		<div className='wrapper contact' id='Contact'>
 			<div>
 				<h1>Contact me</h1>
 			</div>

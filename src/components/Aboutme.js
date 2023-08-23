@@ -1,6 +1,7 @@
 import React from 'react'
 import picture from '../img/zdj_portfolio_2.jpg'
 import '../style/_aboutme.scss'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import '../style/reset.scss'
 import { FaLinkedin } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
@@ -18,18 +19,30 @@ export default function Aboutme() {
 					</div>
 					<img src={picture} className='about-me__foto' />
 					<div className='about-me__social-icons'>
-						<div className='about-me__social-icon'>
-							<AiFillGithub />
+						<div>
+							<a href='https://github.com/Kry765' target='_blank' className='about-me__social-icon'>
+								<AiFillGithub />
+							</a>
 						</div>
-						<div className='about-me__social-icon'>
-							<MdOutlineMail />
+						<div>
+							<a href='mailto: krzysztofkleka91@gmail.com' className='about-me__social-icon'>
+								<MdOutlineMail />
+							</a>
 						</div>
-						<div className='about-me__social-icon'>
-							<FaLinkedin />
+						<div>
+							<a
+								href='https://www.linkedin.com/in/krzysztof-klęka-a75729225/'
+								target='_blank'
+								className='about-me__social-icon'
+							>
+								<FaLinkedin />
+							</a>
 						</div>
 					</div>
 					<div>
-						<button className='about-me__btn'>Send Me</button>
+						<Link to='Contact' smooth={true} offset={-70} duration={500}>
+							<button className='about-me__btn'>Send Me</button>
+						</Link>
 					</div>
 				</div>
 				<div className='about-me__text'>

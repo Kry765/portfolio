@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import '../style/_header.scss'
 export default function Hedaer() {
 	return (
@@ -35,7 +36,10 @@ export default function Hedaer() {
 			<div className='header__header-wrapper'>
 				<div>
 					<p className='header__text'>Thank you for being here, let me tell you something about myself.</p>
-					<button className='header__button'>Let's Go</button>
+
+					<Link to='Aboutme' smooth={true} offset={-70} duration={500}>
+						<button className='header__button'>Let's Go</button>
+					</Link>
 				</div>
 			</div>
 		</div>
