@@ -6,12 +6,14 @@ function Project() {
 	return (
 		<div className='project wrapper'>
 			<h1>Projekty</h1>
-			<div className='project__card'>
-				<img src={Projectdb} className='project__img' />
-				<div className='project__description'>
-					<p>W trakcie pracy</p>
+			<a href='https://github.com/Kry765/LearnPG.git' target='_blank'>
+				<div className='project__card'>
+					<img src={Projectdb} className='project__img' />
+					<div className='project__description'>
+						<p>currently I'm working</p>
+					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 	)
 }

@@ -15,7 +15,7 @@ export default function Skills() {
 		<div className='wrapper skills' id='Skills'>
 			<h1>Skills</h1>
 			<div className='wrapper skills__cards'>
-				<div className='skills__card'>
+				{/* <div className='skills__card'>
 					<div className='skills__content-card'>
 						<div className='skills__front-card'>
 							<div>
@@ -28,9 +28,10 @@ export default function Skills() {
 							</div>
 							<p>PostgreSQL</p>
 						</div>
-						<div className='skills__back-card'></div>
+						<div className='skills__back-card'>
+						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className='wrapper skills__card'>
 					<div className='skills__content-card'>
 						<div className='skills__front-card'>
@@ -91,7 +92,8 @@ export default function Skills() {
 							</div>
 							<p>SCSS</p>
 						</div>
-						<div className='skills__back-card'></div>
+						<div className='skills__back-card'>
+						</div>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
@@ -107,7 +109,8 @@ export default function Skills() {
 							</div>
 							<p>HTML</p>
 						</div>
-						<div className='skills__back-card'></div>
+						<div className='skills__back-card'>
+						</div>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
@@ -123,7 +126,8 @@ export default function Skills() {
 							</div>
 							<p>GitHub</p>
 						</div>
-						<div className='skills__back-card'></div>
+						<div className='skills__back-card'>
+						</div>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>

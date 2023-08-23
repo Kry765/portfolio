@@ -21,6 +21,9 @@
 		transition: transform 1s;
 		margin: 1em;
 	}
+	&__card:hover {
+		transform: scale(1.1);
+	}
 
 	&__content-card {
 		position: absolute;
@@ -40,15 +43,15 @@
 		border: 2px solid #fff;
 		border-radius: 25px;
 	}
-	&__back-card {
-		border-radius: 25px;
-		transform: rotateY(180deg);
-	}
+	// &__back-card {
+	// 	border-radius: 25px;
+	// 	transform: rotateY(180deg);
+	// }
 
-	&__card:hover &__content-card {
-		transform: rotateY(180deg);
-		transition: transform 0.5s;
-	}
+	// &__card:hover &__content-card {
+	// 	transform: rotateY(180deg);
+	// 	transition: transform 0.5s;
+	// }
 
 	&__icon {
 		padding-top: 0.2em;
