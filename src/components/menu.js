@@ -28,7 +28,7 @@ export default function Menu() {
 
 	return (
 		<div className='nav' id='Menu'>
-			<IconBrandCodepen className='nav__logo' onClick={scrollToTop} />
+			<span className='nav__logo' onClick={scrollToTop}>Kry765</span>
 			<div className='nav__desktop-items'>
 				<Link to='#' smooth={true} offset={-70} duration={500} className='nav__desktop-item' onClick={scrollToTop}>
 					Home
@@ -39,9 +39,6 @@ export default function Menu() {
 				<Link to='Skills' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
 					Skills
 				</Link>
-				{/* <Link to='Certyfication' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
-					Certyfication
-				</Link> */}
 				<Link to='Contact' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
 					Concact me
 				</Link>
