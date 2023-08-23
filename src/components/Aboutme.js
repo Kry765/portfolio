@@ -39,11 +39,11 @@ export default function Aboutme() {
 							</a>
 						</div>
 					</div>
-					<div>
+					{/* <div>
 						<Link to='Contact' smooth={true} offset={-70} duration={500}>
 							<button className='about-me__btn'>Send Me</button>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 				<div className='about-me__text'>
 					<div className='about-me__text-paragraph'>

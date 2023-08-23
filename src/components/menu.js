@@ -28,7 +28,9 @@ export default function Menu() {
 
 	return (
 		<div className='nav' id='Menu'>
-			<span className='nav__logo' onClick={scrollToTop}>Kry765</span>
+			<span className='nav__logo' onClick={scrollToTop}>
+				Kry765
+			</span>
 			<div className='nav__desktop-items'>
 				<Link to='#' smooth={true} offset={-70} duration={500} className='nav__desktop-item' onClick={scrollToTop}>
 					Home
@@ -39,8 +41,8 @@ export default function Menu() {
 				<Link to='Skills' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
 					Skills
 				</Link>
-				<Link to='Contact' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
-					Concact me
+				<Link to='Project' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
+					Project
 				</Link>
 			</div>
 			<div>
@@ -67,33 +69,33 @@ export default function Menu() {
 				<div className='nav__mobile-item'>
 					<Link to='Home' smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
 						Home
+						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 					</Link>
-					<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 				</div>
 				<div className='nav__mobile-item'>
 					<Link to='Aboutme' smooth={true} offset={-70} duration={500}>
 						About Me
+						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 					</Link>
-					<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 				</div>
 				<div className='nav__mobile-item'>
 					<Link to='Skills' smooth={true} offset={-70} duration={500}>
 						Skills
+						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 					</Link>
-					<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 				</div>
 				<div className='nav__mobile-item'>
-					<Link to='Certyfication' smooth={true} offset={-70} duration={500}>
-						Certyfication
+					<Link to='Project' smooth={true} offset={-70} duration={500}>
+						Project
+						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 					</Link>
-					<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
 				</div>
-				<div className='nav__mobile-item'>
+				{/* <div className='nav__mobile-item'>
 					<Link to='Contact' smooth={true} offset={-70} duration={500}>
 						Concact me
 					</Link>
 					<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	)

@@ -1,3 +1,6 @@
+@use './colors' as *;
+@use './reset.scss' as *;
+
 .footer {
 	background-color: black;
 	flex-wrap: wrap;
@@ -18,9 +21,11 @@
 		font-size: 2rem;
 		padding: 0.5em;
 		margin: 0 1em;
+		transition: color 2s;
 	}
 	&__socialmedia-item:hover {
 		cursor: pointer;
+		color: $contrast-color;
 	}
 
 	&__bottom-menu-items {
@@ -43,7 +48,6 @@
 		&__socialmedia-items,
 		&__bottom-menu-items {
 			flex-direction: row;
-			// min-width: 50%;
 		}
 	}
 }
