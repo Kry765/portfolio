@@ -4,7 +4,7 @@
 
 .header {
 	padding: 2em 0;
-	background-image: url('../img/header_hd.jpg');
+	background-image: url('../img//iceland-413702_1920.jpg');
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -209,10 +209,8 @@
 	}
 }
 
-// @media (min-width: 768px) {
-// 	.header {
-// 		&__primary-photo {
-// 			display: block;
-// 		}
-// 	}
-// }
+@media (min-width: 768px) {
+	.header {
+		background-image: url('../img/iceland-413702_640.jpg');
+	}
+}

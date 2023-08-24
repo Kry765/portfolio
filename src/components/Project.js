@@ -5,7 +5,7 @@ import '../style/reset.scss'
 function Project() {
 	return (
 		<div className='project wrapper' id='Project'>
-			<h1>Projekty</h1>
+			<h1>Project</h1>
 			<a href='https://github.com/Kry765/LearnPG.git' target='_blank'>
 				<div className='project__card'>
 					<img src={Projectdb} className='project__img' />
