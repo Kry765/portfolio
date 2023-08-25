@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e180d490.css",
+    "main.js": "/Portfolio/static/js/main.0c3e39e7.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/zdj_portfolio_2.jpg": "/Portfolio/static/media/zdj_portfolio_2.8dba6bd2bfcd826c8965.jpg",
+    "static/media/iceland-413702_1920.jpg": "/Portfolio/static/media/iceland-413702_1920.fddbb1cf22f8774208e4.jpg",
+    "static/media/iceland-413702_640.jpg": "/Portfolio/static/media/iceland-413702_640.63ff990ba6ddbd285115.jpg",
+    "static/media/project.jpeg": "/Portfolio/static/media/project.6f6c229beb8540bfe8d8.jpeg",
+    "index.html": "/Portfolio/index.html",
+    "main.e180d490.css.map": "/Portfolio/static/css/main.e180d490.css.map",
+    "main.0c3e39e7.js.map": "/Portfolio/static/js/main.0c3e39e7.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e180d490.css",
+    "static/js/main.0c3e39e7.js"
+  ]
+}
