@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b67bc8fb.css",
-    "main.js": "/portfolio/static/js/main.b065a8a6.js",
+    "main.css": "/portfolio/static/css/main.0847412b.css",
+    "main.js": "/portfolio/static/js/main.c0f086bd.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/zdj_portfolio_2.jpg": "/portfolio/static/media/zdj_portfolio_2.8dba6bd2bfcd826c8965.jpg",
     "static/media/iceland-413702_1920.jpg": "/portfolio/static/media/iceland-413702_1920.fddbb1cf22f8774208e4.jpg",
     "static/media/iceland-413702_640.jpg": "/portfolio/static/media/iceland-413702_640.63ff990ba6ddbd285115.jpg",
     "static/media/project.jpeg": "/portfolio/static/media/project.6f6c229beb8540bfe8d8.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.b67bc8fb.css.map": "/portfolio/static/css/main.b67bc8fb.css.map",
-    "main.b065a8a6.js.map": "/portfolio/static/js/main.b065a8a6.js.map",
+    "main.0847412b.css.map": "/portfolio/static/css/main.0847412b.css.map",
+    "main.c0f086bd.js.map": "/portfolio/static/js/main.c0f086bd.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b67bc8fb.css",
-    "static/js/main.b065a8a6.js"
+    "static/css/main.0847412b.css",
+    "static/js/main.c0f086bd.js"
   ]
 }
