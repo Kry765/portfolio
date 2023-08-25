@@ -14,8 +14,8 @@
 	}
 
 	&__card {
-		height: 400px;
-		width: 300px;
+		height: 200px;
+		width: 150px;
 		flex-direction: column;
 		perspective: 1200px;
 		transition: transform 1s;
@@ -26,89 +26,41 @@
 	}
 
 	&__content-card {
-		position: absolute;
 		width: 100%;
 		height: 100%;
+		flex-direction: column;
 		transition: transform 1s;
 		transform-style: preserve-3d;
-	}
-
-	&__front-card,
-	&__back-card {
-		position: absolute;
-		text-align: center;
-		width: 100%;
-		height: 100%;
-		backface-visibility: hidden;
 		border: 2px solid #fff;
+		text-align: center;
 		border-radius: 25px;
+		padding: 1em;
+		position: relative;
+		overflow: hidden;
 	}
-	// &__back-card {
-	// 	border-radius: 25px;
-	// 	transform: rotateY(180deg);
-	// }
 
-	// &__card:hover &__content-card {
-	// 	transform: rotateY(180deg);
-	// 	transition: transform 0.5s;
-	// }
+	@keyframes runText {
+		from {
+			transform: translateX(140px);
+		}
+		to {
+			transform: translateX(0px);
+		}
+	}
+
+	&__description {
+		position: absolute;
+		transform: translateX(140px);
+		transition: translate 2s;
+		z-index: 10;
+	}
+	&__description:hover {
+		animation: runText 2s forwards;
+	}
 
 	&__icon {
-		padding-top: 0.2em;
-		font-size: 15rem;
+		font-size: 6rem;
 		color: #fff;
-	}
-	&__progress-bar {
-		overflow: hidden;
-		margin: 1em 0;
-		width: 80%;
-		height: 10px;
-		border-radius: 25px;
-		border: 1px solid $contrast-color;
-		&--bem {
-			background-color: $contrast-color;
-			width: 50%;
-			height: 10px;
-		}
-		&--node {
-			background-color: $contrast-color;
-			width: 25%;
-			height: 10px;
-		}
-		&--github {
-			background-color: $contrast-color;
-			width: 60%;
-			height: 10px;
-		}
-		&--html {
-			background-color: $contrast-color;
-			width: 90%;
-			height: 10px;
-		}
-		&--scss {
-			background-color: $contrast-color;
-			width: 80%;
-			height: 10px;
-		}
-		&--css {
-			background-color: $contrast-color;
-			width: 80%;
-			height: 10px;
-		}
-		&--js {
-			background-color: $contrast-color;
-			width: 60%;
-			height: 10px;
-		}
-		&--react {
-			background-color: $contrast-color;
-			width: 40%;
-			height: 10px;
-		}
-		&--postgres {
-			background-color: $contrast-color;
-			width: 30%;
-			height: 10px;
-		}
+		margin-bottom: 0.3em;
 	}
 }

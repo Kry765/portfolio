@@ -15,151 +15,60 @@ export default function Skills() {
 		<div className='wrapper skills' id='Skills'>
 			<h1>Skills</h1>
 			<div className='wrapper skills__cards'>
-				{/* <div className='skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<DiPostgresql className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--postgres'></div>
-								</div>
-							</div>
-							<p>PostgreSQL</p>
-						</div>
-						<div className='skills__back-card'>
-						</div>
-					</div>
-				</div> */}
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<SiReact className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--react'></div>
-								</div>
-							</div>
-							<p>React</p>
-						</div>
-						<div className='skills__back-card'></div>
+				<div className='skills__card'>
+					<div className='skills__content-card  wrapper'>
+						<DiPostgresql className='skills__icon' />
+						<p className='skills__description'>PostgreSQL</p>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<DiJavascript className='skills__icon' />
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--js'></div>
-								</div>
-							</div>
-
-							<p>JavaScript</p>
-						</div>
-						<div className='skills__back-card'></div>
+					<div className='skills__content-card wrapper'>
+						<SiReact className='skills__icon' />
+						<p className='skills__description'>React</p>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<IoLogoCss3 className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--css'></div>
-								</div>
-							</div>
-							<p>CSS</p>
-						</div>
-						<div className='skills__back-card'></div>
+					<div className='skills__content-card wrapper'>
+						<DiJavascript className='skills__icon' />
+						<p className='skills__description'>JavaScript</p>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<FaSass className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--scss'></div>
-								</div>
-							</div>
-							<p>SCSS</p>
-						</div>
-						<div className='skills__back-card'>
+					<div className='skills__content-card  wrapper'>
+						<IoLogoCss3 className='skills__icon' />
+						<p className='skills__description'>CSS</p>
+					</div>
+				</div>
+				<div className='wrapper skills__card'>
+					<div className='skills__content-card  wrapper'>
+						<div>
+							<FaSass className='skills__icon' />
+							<p className='skills__description'>SCSS</p>
 						</div>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<AiFillHtml5 className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--html'></div>
-								</div>
-							</div>
-							<p>HTML</p>
-						</div>
-						<div className='skills__back-card'>
-						</div>
+					<div className='skills__content-card  wrapper'>
+						<AiFillHtml5 className='skills__icon' />
+						<p className='skills__description'>HTML</p>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<AiFillGithub className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--github'></div>
-								</div>
-							</div>
-							<p>GitHub</p>
-						</div>
-						<div className='skills__back-card'>
-						</div>
+					<div className='skills__content-card  wrapper'>
+						<AiFillGithub className='skills__icon' />
+						<p className='skills__description'>GitHub</p>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<FaNodeJs className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--node'></div>
-								</div>
-							</div>
-							<p>Nodejs</p>
-						</div>
-						<div className='skills__back-card'></div>
+					<div className='skills__content-card  wrapper'>
+						<FaNodeJs className='skills__icon' />
+						<p className='skills__description'>Nodejs</p>
 					</div>
 				</div>
 				<div className='wrapper skills__card'>
-					<div className='skills__content-card'>
-						<div className='skills__front-card'>
-							<div>
-								<SiBem className='skills__icon' />
-							</div>
-							<div className='wrapper'>
-								<div className='skills__progress-bar'>
-									<div className='skills__progress-bar--bem'></div>
-								</div>
-							</div>
-							<p>BEM</p>
-						</div>
-						<div className='skills__back-card'></div>
+					<div className='skills__content-card wrapper'>
+						<SiBem className='skills__icon' />
+						<p className='skills__description'>BEM</p>
 					</div>
 				</div>
 			</div>
