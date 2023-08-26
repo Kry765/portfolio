@@ -6,9 +6,9 @@ function Project() {
 	return (
 		<div className='project wrapper' id='Project'>
 			<h1>Project</h1>
-			<a href='https://github.com/Kry765/LearnPG.git' target='_blank'>
+			<a href='https://github.com/Kry765/LearnPG.git'>
 				<div className='project__card'>
-					<img src={Projectdb} className='project__img' />
+					<img src={Projectdb} className='project__img' alt="Project GitHub"/>
 					<div className='project__description'>
 						<p>currently I'm working</p>
 					</div>

@@ -4,23 +4,13 @@
 .footer {
 	background-color: black;
 	flex-wrap: wrap;
-	justify-content: space-around;
 	color: #fff;
 	text-align: center;
 	width: 100%;
-	min-height: 10%;
-	padding: 1.5em;
 
-	&__socialmedia-items {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		min-width: 10%;
-	}
 	&__socialmedia-item {
 		font-size: 2rem;
-		padding: 0.5em;
-		margin: 0 1em;
+		margin: 1em;
 		transition: color 2s;
 	}
 	&__socialmedia-item:hover {
@@ -28,17 +18,9 @@
 		color: $contrast-color;
 	}
 
-	&__bottom-menu-items {
-		flex-direction: column;
-		min-width: 80%;
-	}
-	&__bottom-menu-item {
-		color: #fff;
-		margin: 2em 1em;
-	}
 	&__copywrite {
 		min-width: 100%;
-		padding: 2em 0;
+		padding: 1em 0;
 	}
 }
 

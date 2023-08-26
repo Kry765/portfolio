@@ -1,4 +1,3 @@
-import { IconBrandCodepen } from '@tabler/icons-react'
 import '../style/reset.scss'
 import '../style/_menu.scss'
 import '../style/_mixins.scss'
@@ -66,36 +65,30 @@ export default function Menu() {
 			<div
 				className={`nav__mobile-items ${navOpen ? 'nav__mobile-items--close-nav' : 'nav__mobile-items--active-nav'}`}
 			>
-				<div className='nav__mobile-item'>
-					<Link to='Home' smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
+				<Link to='Home' smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
+					<div className='nav__mobile-item'>
 						Home
 						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</Link>
-				</div>
-				<div className='nav__mobile-item'>
-					<Link to='Aboutme' smooth={true} offset={-70} duration={500}>
+					</div>
+				</Link>
+				<Link to='Aboutme' smooth={true} offset={-70} duration={500}>
+					<div className='nav__mobile-item'>
 						About Me
 						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</Link>
-				</div>
-				<div className='nav__mobile-item'>
-					<Link to='Skills' smooth={true} offset={-70} duration={500}>
+					</div>
+				</Link>
+				<Link to='Skills' smooth={true} offset={-70} duration={500}>
+					<div className='nav__mobile-item'>
 						Skills
 						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</Link>
-				</div>
-				<div className='nav__mobile-item'>
-					<Link to='Project' smooth={true} offset={-70} duration={500}>
+					</div>
+				</Link>
+				<Link to='Project' smooth={true} offset={-70} duration={500}>
+					<div className='nav__mobile-item'>
 						Project
 						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</Link>
-				</div>
-				{/* <div className='nav__mobile-item'>
-					<Link to='Contact' smooth={true} offset={-70} duration={500}>
-						Concact me
-					</Link>
-					<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-				</div> */}
+					</div>
+				</Link>
 			</div>
 		</div>
 	)
