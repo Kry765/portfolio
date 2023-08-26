@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0847412b.css",
-    "main.js": "/portfolio/static/js/main.c0f086bd.js",
+    "main.css": "/portfolio/static/css/main.d4e3645d.css",
+    "main.js": "/portfolio/static/js/main.d14d8391.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/zdj_portfolio_2.jpg": "/portfolio/static/media/zdj_portfolio_2.8dba6bd2bfcd826c8965.jpg",
-    "static/media/iceland-413702_1920.jpg": "/portfolio/static/media/iceland-413702_1920.fddbb1cf22f8774208e4.jpg",
-    "static/media/iceland-413702_640.jpg": "/portfolio/static/media/iceland-413702_640.63ff990ba6ddbd285115.jpg",
-    "static/media/project.jpeg": "/portfolio/static/media/project.6f6c229beb8540bfe8d8.jpeg",
+    "static/media/zdj_portfolio_2.jpg": "/portfolio/static/media/zdj_portfolio_2.a7fa603ed85d3e843e57.jpg",
+    "static/media/iceland-413702_1920.jpg": "/portfolio/static/media/iceland-413702_1920.29c2993b2a4ff569615a.jpg",
+    "static/media/project.jpeg": "/portfolio/static/media/project.cad6b9cfc71bf9dec276.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.0847412b.css.map": "/portfolio/static/css/main.0847412b.css.map",
-    "main.c0f086bd.js.map": "/portfolio/static/js/main.c0f086bd.js.map",
+    "main.d4e3645d.css.map": "/portfolio/static/css/main.d4e3645d.css.map",
+    "main.d14d8391.js.map": "/portfolio/static/js/main.d14d8391.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0847412b.css",
-    "static/js/main.c0f086bd.js"
+    "static/css/main.d4e3645d.css",
+    "static/js/main.d14d8391.js"
   ]
 }
