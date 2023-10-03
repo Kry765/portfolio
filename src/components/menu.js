@@ -1,95 +1,40 @@
+import React, { useState } from 'react'
 import '../style/reset.scss'
 import '../style/_menu.scss'
-import '../style/_mixins.scss'
-import { useState } from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { AiOutlineClose } from 'react-icons/ai'
+import { VscMenu } from 'react-icons/vsc'
 
 export default function Menu() {
-	const [navOpen, setOpenNav] = useState(false)
-	const toggleNav = () => {
-		setOpenNav(!navOpen)
-	}
-
-	const [inBorder, setInBorder] = useState(false)
-	const bottomLine = () => {
-		setInBorder(!inBorder)
-	}
-
-	const [inTopMenu, setInTopMenu] = useState(false)
-
-	const hideTopBurgerbar = () => {
-		setInTopMenu(!inTopMenu)
-	}
-
-	const scrollToTop = () => {
-		scroll.scrollToTop()
+	const [openNav, setOpenNav] = useState('')
+	const handleMobileNav = () => {
+		setOpenNav(!openNav)
 	}
 
 	return (
-		<div className='nav' id='Menu'>
-			<span className='nav__logo' onClick={scrollToTop}>
-				Kry765
-			</span>
-			<div className='nav__desktop-items'>
-				<Link to='#' smooth={true} offset={-70} duration={500} className='nav__desktop-item' onClick={scrollToTop}>
-					Home
-				</Link>
-				<Link to='Aboutme' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
-					About Me
-				</Link>
-				<Link to='Skills' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
-					Skills
-				</Link>
-				<Link to='Project' smooth={true} offset={-70} duration={500} className='nav__desktop-item'>
-					Project
-				</Link>
+		<React.Fragment>
+			<div className='nav' id='Menu'>
+				<div className='nav__desktop-items-list'>
+					<div className='nav__desktop-item-list'>Strona Główna</div>
+					<div className='nav__desktop-item-list'>O mnie</div>
+					<div className='nav__desktop-item-list'>Oferta</div>
+					<div className='nav__desktop-item-list'>Umiejętności</div>
+					<div className='nav__desktop-item-list'>Projekty</div>
+				</div>
 			</div>
-			<div>
-				<button>
-					<div
-						className='nav__burger-icon'
-						onClick={() => {
-							toggleNav()
-							bottomLine()
-							hideTopBurgerbar()
-						}}
-					>
-						<div className={inTopMenu ? 'nav__burger-top-line--close-top-line' : 'nav__burger-top-line'}></div>
-						<div className={inTopMenu ? 'nav__burger-center-line--close-center-line' : 'nav__burger-center-line'}></div>
-						<div
-							className={inTopMenu ? 'nav__burger-support-line--close-support-line' : 'nav__burger-support-line'}
-						></div>
-					</div>
-				</button>
+			<div className={openNav ? 'mobile-nav--open-nav' : 'mobile-nav'}>
+				<div className='nav__mobile-item-list'>Strona Główna</div>
+				<div className='nav__mobile-item-list'>O mnie</div>
+				<div className='nav__mobile-item-list'>Oferta</div>
+				<div className='nav__mobile-item-list'>Umiejętności</div>
+				<div className='nav__mobile-item-list'>Projekty</div>
 			</div>
-			<div
-				className={`nav__mobile-items ${navOpen ? 'nav__mobile-items--close-nav' : 'nav__mobile-items--active-nav'}`}
-			>
-				<Link to='Home' smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
-					<div className='nav__mobile-item'>
-						Home
-						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</div>
-				</Link>
-				<Link to='Aboutme' smooth={true} offset={-70} duration={500}>
-					<div className='nav__mobile-item'>
-						About Me
-						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</div>
-				</Link>
-				<Link to='Skills' smooth={true} offset={-70} duration={500}>
-					<div className='nav__mobile-item'>
-						Skills
-						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</div>
-				</Link>
-				<Link to='Project' smooth={true} offset={-70} duration={500}>
-					<div className='nav__mobile-item'>
-						Project
-						<div className={inBorder ? 'nav__bottom-line--draw' : 'nav__bottom-line'}></div>
-					</div>
-				</Link>
+			<div className='burger-icon' onClick={handleMobileNav}>
+				{openNav ? <VscMenu /> : <AiOutlineClose />}
 			</div>
-		</div>
+		</React.Fragment>
 	)
+}
+
+{
+	/* }*/
 }

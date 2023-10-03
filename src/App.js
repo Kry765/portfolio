@@ -12,10 +12,10 @@ function App() {
 			<nav>
 				<Menu id='Menu' />
 			</nav>
-			<header>
+			{/* <header>
 				<Header id='Header' />
-			</header>
-			<main>
+			</header> */}
+			{/* <main>
 				<section>
 					<Aboutme id='Aboutme' />
 				</section>
@@ -25,10 +25,10 @@ function App() {
 				<section>
 					<Project id='Project' />
 				</section>
-			</main>
-			<footer>
+			</main> */}
+			{/* <footer>
 				<Footer />
-			</footer>
+			</footer> */}
 		</div>
 	)
 }

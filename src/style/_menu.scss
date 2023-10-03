@@ -1,139 +1,97 @@
-@use './mixins' as *;
 @use './colors' as *;
-@use './animation' as *;
 
 .nav {
 	position: fixed;
 	top: 0;
+	left: 10%;
 	z-index: 1000;
-	background-color: #000;
+	background-color: #176b87;
+	border-radius: 5px 5px 25px 25px;
 	opacity: 0.8;
-	width: 100%;
-	min-height: 60px;
-
-	&__logo {
-		display: none;
-		position: fixed;
-		top: 0;
-		color: $white-color;
-		z-index: 100;
-		padding: 1em;
-		transition: color 1s;
-	}
-	&__logo:hover {
-		cursor: pointer;
-		color: $contrast-color;
-	}
-
-	&__burger-icon {
-		position: fixed;
-		right: 0;
-		top: 0;
-		margin: 0.3em;
-		z-index: 100;
-		transition: color 1s;
-	}
-
-	&__burger-top-line {
-		@include burgerIcon;
-		&--close-top-line {
-			@include closeBurger;
-			animation: open-close-left 1s both;
-			transform: rotate(45deg);
-			margin: 30px 10px;
-		}
-	}
-	&__burger-center-line {
-		@include burgerIcon;
-		&--close-top-line {
-			opacity: 1;
-		}
-	}
-	&__burger-support-line {
-		@include burgerIcon;
-		&--close-support-line {
-			@include closeBurger;
-			animation: open-close-right 1s both;
-			position: absolute;
-			top: 0;
-			margin: 30px 10px;
-			transform: rotate(135deg);
-		}
-	}
-
-	&__mobile-items {
-		transform: translateX(0%);
-		&--active-nav {
-			animation: CloseNav 1s both;
-			@include nav;
-		}
-		&--close-nav {
-			animation: OpenNav 1s both;
-			@include nav;
-		}
-	}
-
-	&__mobile-item {
-		font-size: 0.8rem;
-		padding: 1em;
-		text-transform: uppercase;
-		font-weight: bold;
-		color: $white-color;
-		margin-top: 2.6em;
-	}
-	&__mobile-item:hover {
-		a {
-			color: $contrast-color;
-		}
-	}
-	&__bottom-line {
-		animation: back-move-line 0.7s both;
-		width: 10px;
-		height: 2px;
-		margin: 2em 0;
-		background-color: $white-color;
-	}
-	&__bottom-line--draw {
-		animation: move-line 1.2s both;
-		height: 2px;
-		margin: 2em 0;
-		background-color: $white-color;
-	}
-
-	&__desktop-items {
-		position: fixed;
-		top: 0;
-		right: 0;
-		display: none;
-		margin: 1em;
+	width: 80%;
+	min-height: 5%;
+	&__desktop-items-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		color: #fff;
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 0.9rem;
 	}
-	&__desktop-item {
-		position: relative;
+	&__desktop-item-list {
 		padding: 1.4em;
+		margin: 0 0.6em;
 		z-index: 1000;
 		transition: color 0.5s;
 		color: $white-color;
 	}
-	&__desktop-item:hover,
-	&__burger-icon:hover,
-	&__mobile-item:hover {
+	&__desktop-item-list:hover {
 		cursor: pointer;
-		color: $contrast-color;
+		color: $active-btn;
+	}
+	&__mobile-item-list {
+		display: none;
 	}
 }
+.burger-icon {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+	font-size: 2.8rem;
+	transition: color 0.5s;
+}
+.close-icon {
+	transition: color 0.5s;
+	z-index: 1000;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+	font-size: 2.8rem;
+}
 
-@media (min-width: 768px) {
+.burger-icon:hover {
+	cursor: pointer;
+	color: $active-btn;
+}
+.close-icon:hover {
+	cursor: pointer;
+	color: $active-btn;
+}
+
+@media (max-width: 992px) {
 	.nav {
-		&__burger-icon,
-		&__mobile-items {
+		display: none;
+		&__desktop-items-list {
 			display: none;
 		}
-		&__desktop-items,
-		&__logo {
+		&__mobile-item-list {
+			margin: 3em 1em;
 			display: block;
 		}
+	}
+
+	.mobile-nav {
+		position: fixed;
+		top: 0;
+		background-color: #176b87;
+		width: 75%;
+		height: 100%;
+		transform: translateX(0px);
+		&--open-nav {
+			transform: translateX(-110%);
+			background-color: #176b87;
+			width: 75%;
+			height: 100%;
+		}
+	}
+	.burger-icon {
+		display: block;
+		color: #fff;
 	}
 }
