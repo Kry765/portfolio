@@ -12,6 +12,13 @@ export default function Menu() {
 
 	return (
 		<React.Fragment>
+			<div className={openNav ? 'mobile-nav' : 'mobile-nav--open-nav'}>
+				<div className='nav__mobile-item-list'>Strona Główna</div>
+				<div className='nav__mobile-item-list'>O mnie</div>
+				<div className='nav__mobile-item-list'>Oferta</div>
+				<div className='nav__mobile-item-list'>Umiejętności</div>
+				<div className='nav__mobile-item-list'>Projekty</div>
+			</div>
 			<div className='nav' id='Menu'>
 				<div className='nav__desktop-items-list'>
 					<div className='nav__desktop-item-list'>Strona Główna</div>
@@ -21,15 +28,9 @@ export default function Menu() {
 					<div className='nav__desktop-item-list'>Projekty</div>
 				</div>
 			</div>
-			<div className={openNav ? 'mobile-nav--open-nav' : 'mobile-nav'}>
-				<div className='nav__mobile-item-list'>Strona Główna</div>
-				<div className='nav__mobile-item-list'>O mnie</div>
-				<div className='nav__mobile-item-list'>Oferta</div>
-				<div className='nav__mobile-item-list'>Umiejętności</div>
-				<div className='nav__mobile-item-list'>Projekty</div>
-			</div>
+
 			<div className='burger-icon' onClick={handleMobileNav}>
-				{openNav ? <VscMenu /> : <AiOutlineClose />}
+				{openNav ? <AiOutlineClose /> : <VscMenu />}
 			</div>
 		</React.Fragment>
 	)

@@ -1,213 +1,96 @@
 @use 'colors.scss' as *;
+@use './reset.scss' as *;
+
 .header {
-	padding: 2em 0;
-	background-image: url('../img//iceland-413702_1920.jpg');
-	position: relative;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 100vh;
-	flex-direction: column;
-	text-align: center;
-	max-width: 100%;
-	color: $secondly-color;
-
-	&__title {
-		font-size: 2rem;
-		z-index: 4;
-		padding: 0.5em;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: $white-color;
+	&__box-right {
+		width: 50vw;
+		height: 100vh;
+		background-image: url('../img/hands-820272_640.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
 	}
-	&__letter1 {
-		animation: letter both;
-		animation-delay: 0.1s;
-		visibility: hidden;
+	&__box-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50vw;
+		height: 100vh;
+		padding: 10em;
 	}
-	&__letter2 {
-		animation: letter both;
-		animation-delay: 0.2s;
-		visibility: hidden;
-	}
-	&__letter3 {
-		animation: letter both;
-		animation-delay: 0.4s;
-		visibility: hidden;
-	}
-	&__letter4 {
-		animation: letter both;
-		animation-delay: 0.6s;
-		visibility: hidden;
-	}
-	&__letter5 {
-		animation: letter both;
-		animation-delay: 0.8s;
-		visibility: hidden;
-	}
-	&__letter6 {
-		animation: letter both;
-		animation-delay: 1s;
-		visibility: hidden;
-	}
-	&__letter7 {
-		animation: letter both;
-		animation-delay: 1.2s;
-		visibility: hidden;
-	}
-	&__letter8 {
-		animation: letter both;
-		animation-delay: 1.4s;
-		visibility: hidden;
-	}
-	&__letter9 {
-		animation: letter both;
-		animation-delay: 1.6s;
-		visibility: hidden;
-	}
-	&__letter10 {
-		animation: letter both;
-		animation-delay: 1.8s;
-		visibility: hidden;
-	}
-	&__letter11 {
-		animation: letter both;
-		animation-delay: 2s;
-		visibility: hidden;
-	}
-	&__letter12 {
-		animation: letter both;
-		animation-delay: 2.2s;
-		visibility: hidden;
-	}
-	&__letter13 {
-		animation: letter both;
-		animation-delay: 2.4s;
-		visibility: hidden;
-	}
-	&__letter14 {
-		animation: letter both;
-		animation-delay: 2.6s;
-		visibility: hidden;
-	}
-	&__letter15 {
-		animation: letter both;
-		animation-delay: 2.8s;
-		visibility: hidden;
-	}
-	&__letter16 {
-		animation: letter both;
-		animation-delay: 3s;
-		visibility: hidden;
-	}
-	&__letter17 {
-		animation: letter both;
-		animation-delay: 3.2s;
-		visibility: hidden;
-	}
-	&__letter18 {
-		animation: letter both;
-		animation-delay: 3.4s;
-		visibility: hidden;
-	}
-	&__letter19 {
-		animation: letter forwards;
-		animation-delay: 3.6s;
-		visibility: hidden;
-	}
-	&__letter20 {
-		animation: letter forwards;
-		animation-delay: 3.8s;
-		visibility: hidden;
-	}
-	&__letter21 {
-		animation: letter forwards;
-		animation-delay: 4s;
-		visibility: hidden;
-	}
-	&__letter22 {
-		animation: letter forwards;
-		animation-delay: 4.2s;
-		visibility: hidden;
-	}
-	&__letter23 {
-		animation: letter forwards;
-		animation-delay: 4.4s;
-		visibility: hidden;
-	}
-	&__letter24 {
-		animation: letter forwards;
-		animation-delay: 4.6s;
-		visibility: hidden;
-	}
-	&__letter25 {
-		animation: letter forwards;
-		animation-delay: 4.8s;
-		visibility: hidden;
-	}
-
-	@keyframes letter {
-		from {
-			visibility: hidden;
-		}
-		to {
-			visibility: visible;
-		}
-	}
-
-	&__cursor {
-		animation: blink-cursor 1s infinite;
-	}
-	@keyframes blink-cursor {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-
 	&__opacity-bg {
 		position: absolute;
-		top: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(100, 204, 197, 0.5);
 	}
-
-	&__header-wrapper {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
+	&__name {
+		color: $menu;
 	}
-
-	&__text {
-		position: relative;
-		font-size: 1.2rem;
-		padding: 1.5em;
-		color: $white-color;
-	}
-	&__button {
-		position: relative;
-		background-color: none;
-		border: 2px solid $white-color;
-		width: 12em;
-		height: 4em;
-		margin: 1em;
-		padding: 1em;
-		border-radius: 20px;
-		color: $white-color;
-		font-weight: bold;
-		transition: background-color 0.4s;
+	&__protection-name {
+		color: $text;
 		text-transform: uppercase;
+		margin: 1em 0;
+	}
+	&__circle-green {
+		position: absolute;
+		top: 650px;
+		left: 500px;
+		width: 300px;
+		height: 250px;
+		border-radius: 50%;
+		background-color: $active-menu;
+		z-index: 0;
+	}
+	&__circle-grey {
+		position: absolute;
+		top: -50px;
+		left: -80px;
+		width: 300px;
+		height: 250px;
+		border-radius: 50%;
+		background-color: $grey-circle;
+		z-index: 0;
+	}
+	&__btn {
+		background-color: $active;
+		color: $white-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		width: 16em;
+		height: 4em;
+		border-radius: 15px;
+		transition: background-color 0.6s;
+	}
+	&__btn:hover {
+		background-color: $menu;
 		cursor: pointer;
 	}
-	&__button:hover {
-		background-color: rgba(14, 246, 204, 0.7);
-	}
 }
-
-@media (min-width: 768px) {
+@media (max-width: 992px) {
 	.header {
-		background-image: url('../img/iceland-413702_1920.jpg');
+		&__opacity-bg {
+			display: none;
+		}
+		&__box-right {
+			display: none;
+		}
+		&__box-left {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			min-width: 100%;
+		}
+		&__circle-grey {
+			display: none;
+		}
+		&__circle-green {
+			display: none;
+		}
 	}
 }
