@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
 import '../style/_header.scss'
 export default function Hedaer() {
 	return (
