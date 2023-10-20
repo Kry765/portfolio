@@ -1,0 +1,28 @@
+.aboutme {
+	display: flex;
+	flex-direction: row;
+	&__box-left {
+		height: 100vh;
+		width: 50vw;
+		display: flex;
+		justify-content: center;
+	}
+	&__box-right {
+		padding: 1em;
+		max-height: 50vh;
+		width: 50vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 1em;
+	}
+	&__photo {
+		width: 400px;
+		height: 500px;
+		margin: 2em;
+	}
+	&__title {
+		text-align: center;
+	}
+}

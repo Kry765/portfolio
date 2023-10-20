@@ -1,5 +1,7 @@
 import React from 'react'
 import '../style/_header.scss'
+import { AiOutlineArrowDown } from 'react-icons/ai'
+
 export default function Hedaer() {
 	return (
 		<React.Fragment>
@@ -19,6 +21,9 @@ export default function Hedaer() {
 				<div className='header__circle-green'></div>
 				<div className='header__box-right'>
 					<div className='header__opacity-bg'></div>
+				</div>
+				<div className='header__arrow-down'>
+					<AiOutlineArrowDown />
 				</div>
 			</div>
 		</React.Fragment>
