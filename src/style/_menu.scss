@@ -65,7 +65,8 @@
 
 @media (max-width: 992px) {
 	.nav {
-		background-color: #fff;
+		background-color: rgba(0, 0, 0, 0);
+		opacity: 1;
 		&__desktop-items-list {
 			display: none;
 		}
