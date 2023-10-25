@@ -34,7 +34,3 @@ export default function Menu() {
 		</React.Fragment>
 	)
 }
-
-{
-	/* }*/
-}

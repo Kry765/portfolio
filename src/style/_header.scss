@@ -69,6 +69,14 @@
 		border-radius: 15px;
 		transition: background-color 0.6s;
 	}
+	&__arrow-down {
+		color: #000;
+		font-size: 1.4rem;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		font-size: 2.4rem;
+	}
 	&__btn:hover {
 		background-color: $menu;
 		cursor: pointer;

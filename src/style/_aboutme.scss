@@ -1,0 +1,63 @@
+@use './colors' as *;
+
+.aboutme {
+	display: flex;
+	flex-direction: row;
+	&__description {
+		font-size: 1.4rem;
+	}
+	&__flex-position {
+		display: flex;
+		flex-direction: row;
+	}
+	&__box-left {
+		position: relative;
+		height: 100vh;
+		width: 50vw;
+		display: flex;
+		justify-content: center;
+	}
+	&__contrast-text {
+		color: $active;
+		font-weight: bold;
+	}
+	&__box-right {
+		padding: 1em;
+		max-height: 50vh;
+		width: 50vw;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		margin: 1em;
+	}
+	&__photo {
+		width: 400px;
+		height: 500px;
+		margin: 2em;
+	}
+	&__description-icon {
+		font-size: 4rem;
+		margin: 0 0.5em;
+	}
+	&__title {
+		margin: 2em;
+		text-align: center;
+		&--contrast {
+			color: $active;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.aboutme {
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__box-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
