@@ -13,10 +13,11 @@
 	}
 	&__box-left {
 		position: relative;
-		height: 100vh;
-		width: 50vw;
+		min-height: 100vh;
+		max-width: 50vw;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	&__contrast-text {
 		color: $active;
@@ -24,8 +25,8 @@
 	}
 	&__box-right {
 		padding: 1em;
-		max-height: 50vh;
-		width: 50vw;
+		min-height: 100vh;
+		max-width: 50vw;
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
@@ -35,7 +36,7 @@
 	&__photo {
 		width: 400px;
 		height: 500px;
-		margin: 2em;
+		margin: 5em;
 	}
 	&__description-icon {
 		font-size: 4rem;
