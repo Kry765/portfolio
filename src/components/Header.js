@@ -6,7 +6,7 @@ export default function Hedaer() {
 	return (
 		<React.Fragment>
 			<div className='header'>
-				<div className='header__circle-grey'></div>
+				{/* <div className='header__circle-grey'></div> */}
 				<div className='header__box-left'>
 					<h1>
 						Cześć, mam na imie <span className='header__name'>Krzysztof</span>
@@ -18,7 +18,7 @@ export default function Hedaer() {
 						</button>
 					</div>
 				</div>
-				<div className='header__circle-green'></div>
+				{/* <div className='header__circle-green'></div> */}
 				<div className='header__box-right'>
 					<div className='header__opacity-bg'></div>
 				</div>

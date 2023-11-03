@@ -12,64 +12,26 @@ import { SiBem } from 'react-icons/si'
 
 export default function Skills() {
 	return (
-		<div className='wrapper skills' id='Skills'>
-			<h1>Skills</h1>
-			<div className='wrapper skills__cards'>
-				<div className='skills__card'>
-					<div className='skills__content-card  wrapper'>
-						<DiPostgresql className='skills__icon' />
-						<p className='skills__description'>PostgreSQL</p>
+		<div className='skills' id='Skills'>
+			<h1>Umiejętności</h1>
+			<div className='skills__flex'>
+				<div className='skills__description'>
+					<div>Na co dzień pracuje z technologiami Front-Endowymi takimi jak React oraz JavaScript.</div>
+					<div>
+						Obecnie jestem w trakcie nauki Docker’a oraz dodatkowego języka relacyjnych baz danych PostgreSQL, za pomocą
+						którego będę mógł tworzyć w przyszłości profesjonalne sklepy internetowe.
 					</div>
 				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card wrapper'>
-						<SiReact className='skills__icon' />
-						<p className='skills__description'>React</p>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card wrapper'>
-						<DiJavascript className='skills__icon' />
-						<p className='skills__description'>JavaScript</p>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card  wrapper'>
-						<IoLogoCss3 className='skills__icon' />
-						<p className='skills__description'>CSS</p>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card  wrapper'>
-						<div>
-							<FaSass className='skills__icon' />
-							<p className='skills__description'>SCSS</p>
-						</div>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card  wrapper'>
-						<AiFillHtml5 className='skills__icon' />
-						<p className='skills__description'>HTML</p>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card  wrapper'>
-						<AiFillGithub className='skills__icon' />
-						<p className='skills__description'>GitHub</p>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card  wrapper'>
-						<FaNodeJs className='skills__icon' />
-						<p className='skills__description'>Nodejs</p>
-					</div>
-				</div>
-				<div className='wrapper skills__card'>
-					<div className='skills__content-card wrapper'>
-						<SiBem className='skills__icon' />
-						<p className='skills__description'>BEM</p>
-					</div>
+				<div className='skills__icon-skills'>
+					<DiPostgresql className='skills__icon-skill' />
+					<AiFillHtml5 className='skills_icon-skill' />
+					<FaSass className='skills__icon-skill' />
+					<IoLogoCss3 />
+					<DiJavascript />
+					<SiReact />
+					<FaNodeJs />
+					<AiFillGithub />
+					<SiBem />
 				</div>
 			</div>
 		</div>

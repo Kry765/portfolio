@@ -1,6 +1,7 @@
 @use './colors' as *;
 
 .aboutme {
+	// background-color: $white-color;
 	display: flex;
 	flex-direction: row;
 	&__description {

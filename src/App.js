@@ -2,7 +2,7 @@ import React from 'react'
 import Menu from './components/Menu'
 import Header from './components/Header'
 import Aboutme from './components/Aboutme'
-// import Skills from './components/Skills'
+import Skills from './components/Skills'
 // import Project from './components/Project'
 // import Footer from './components/Footer'
 
@@ -20,11 +20,11 @@ function App() {
 				<section>
 					<Aboutme id='Aboutme' />
 				</section>
-				{/* <section>
+				<section>
 					<Skills id='Skills' />
 				</section>
-				<section>
-					<Project id='Project' /> */}
+				{/* <section> */}
+				{/* <Project id='Project' /> */}
 				{/* </section> */}
 			</main>
 			{/* <footer>
