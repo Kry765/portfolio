@@ -4,12 +4,11 @@
 	// background-color: $white-color;
 	display: flex;
 	flex-direction: row;
-	&__description {
-		font-size: 1.4rem;
-	}
+
 	&__flex-position {
 		display: flex;
 		flex-direction: row;
+		font-size: 1.4rem;
 	}
 	&__box-left {
 		position: relative;
@@ -38,13 +37,13 @@
 		height: 500px;
 		margin: 5em;
 	}
-	&__description-icon {
-		font-size: 4rem;
-		margin: 0 0.5em;
-	}
 	&__title {
 		margin: 2em;
-		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 50vw;
+
 		&--contrast {
 			color: $active;
 		}

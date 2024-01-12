@@ -34,3 +34,25 @@ a {
 	flex-direction: row;
 	margin: 1em;
 }
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-description-position {
+	margin: 1em 0;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.4rem;
+}
+
+.flex-icon-description {
+	font-size: 2.4rem;
+	margin: 0 0.5em;
+}
+
+.contrast {
+	color: $active;
+	font-weight: bold;
+}

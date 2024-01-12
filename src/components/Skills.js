@@ -18,20 +18,25 @@ export default function Skills() {
 				<div className='skills__description'>
 					<h1 className='skills__title'>Umiejętności</h1>
 					<div className='skills__icon-position'>
-						<div className='flex-row'>
+						<div className='flex-description-position'>
 							<div>
-								<IoMdDoneAll className='skills__icon-description' />
+								<IoMdDoneAll className='flex-icon-description' />
 							</div>
 							<p>
-								Obecnie jestem w trakcie nauki Docker’a oraz dodatkowego języka relacyjnych baz danych PostgreSQL, za
-								pomocą którego będę mógł tworzyć w przyszłości profesjonalne sklepy internetowe.
+								Obecnie jestem w trakcie nauki <span className='contrast'>Docker’a</span> oraz dodatkowego języka
+								relacyjnych baz danych <span className='contrast'>PostgreSQL</span>, za pomocą którego będę mógł tworzyć
+								w przyszłości profesjonalne sklepy internetowe.
 							</p>
 						</div>
-						<div className='flex-row'>
+						<div className='flex-description-position'>
 							<div>
-								<IoMdDoneAll className='skills__icon-description' />
+								<IoMdDoneAll className='flex-icon-description' />
 							</div>
-							<p>Na co dzień pracuje z technologiami Front-Endowymi takimi jak React oraz JavaScript.</p>
+							<p>
+								Na co dzień pracuje z technologiami Front-Endowymi takimi jak <span className='contrast'>React </span>
+								oraz
+								<span className='contrast'> JavaScript.</span>
+							</p>
 						</div>
 					</div>
 				</div>

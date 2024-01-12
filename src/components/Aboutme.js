@@ -7,34 +7,33 @@ import { IoMdDoneAll } from 'react-icons/io'
 export default function Aboutme() {
 	return (
 		<div>
-			<h1 className='aboutme__title'>
-				O <span className='aboutme__title--contrast'>mnie</span>
-			</h1>
 			<div className='aboutme'>
 				<div className='aboutme__box-left'>
 					<img src={myphoto} alt='myphoto' className='aboutme__photo' />
 				</div>
 				<div className='aboutme__box-right'>
-					<div className='aboutme__flex-position'>
-						<IoMdDoneAll className='aboutme__description-icon' />
+					<div>
+						<h1 className='aboutme__title'>
+							O<span className='aboutme__title--contrast'>&nbsp;mnie</span>
+						</h1>
+					</div>
+
+					<div className='flex-description-position'>
+						<IoMdDoneAll className='flex-icon-description' />
 						<div>
-							<p className='aboutme__description'>
+							<p>
 								Jestem obecnie na III roku studiów w Wyższe Szkole Informatyki i Zarządzania na kierunku
 								<span className='aboutme__contrast-text'> Web-Developer</span>.
 							</p>
 						</div>
 					</div>
-					<div className='aboutme__flex-position'>
-						<IoMdDoneAll className='aboutme__description-icon' />
-						<p className='aboutme__description'>
-							Przyswojona wiedza pozwala mi tworzyć strony internetowe które stają się wizytówką każdej firmy.
-						</p>
+					<div className='flex-description-position'>
+						<IoMdDoneAll className='flex-icon-description' />
+						<p>Przyswojona wiedza pozwala mi tworzyć strony internetowe które stają się wizytówką każdej firmy.</p>
 					</div>
-					<div className='aboutme__flex-position'>
-						<IoMdDoneAll className='aboutme__description-icon' />
-						<p className='aboutme__description'>
-							Jestem otwarty na naukę najnowszych technologii dzięki której mogę rozwinąć moją pasje.
-						</p>
+					<div className='flex-description-position'>
+						<IoMdDoneAll className='flex-icon-description' />
+						<p>Jestem otwarty na naukę najnowszych technologii dzięki której mogę rozwinąć moją pasje.</p>
 					</div>
 				</div>
 			</div>
