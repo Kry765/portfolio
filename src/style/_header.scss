@@ -1,0 +1,16 @@
+@use './color' as *;
+
+.header-image,
+.header-title {
+	min-height: 100%;
+	min-width: 50vw;
+}
+
+.header-image {
+	background-image: url('../img/hands-820272_1920.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+

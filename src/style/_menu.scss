@@ -4,8 +4,9 @@
 	position: fixed;
 	top: 0;
 	min-height: 80px;
-	min-width: 100%;
+	min-width: 80%;
 	background-color: $gray;
+	border-radius: 0 0 25px 25px;
 	&__desktop-item {
 		transition: color 0.7s;
 		margin: 0 1em;
@@ -23,6 +24,8 @@
 
 @media (max-width: 992px) {
 	.nav {
+		min-width: 100%;
+		border-radius: 0;
 		&__burger-icon {
 			display: block;
 			position: fixed;

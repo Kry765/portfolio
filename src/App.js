@@ -1,14 +1,21 @@
 import React from 'react'
-import Menu from './components/Menu'
+import Navigation from './components/Navigation'
+import Header from './components/Header'
 import './style/_reset.scss'
 import './style/_color.scss'
 import './style/_menu.scss'
+import './style/_header.scss'
 
 function App() {
 	return (
-		<nav>
-			<Menu />
-		</nav>
+		<div>
+			<nav>
+				<Navigation />
+			</nav>
+			<header>
+				<Header />
+			</header>
+		</div>
 	)
 }
 
