@@ -15,8 +15,22 @@ body {
 	justify-content: center;
 }
 
+.flex-column {
+	flex-direction: column;
+}
+
 .align-center {
 	align-items: center;
+}
+
+.radius {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	// top: -500px;
+	// left: 200px;
+	// border-radius: 50px;
+	background-color: $gray;
 }
 
 .box-reset {

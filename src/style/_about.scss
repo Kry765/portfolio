@@ -1,0 +1,38 @@
+@use './color' as *;
+
+.about {
+	&__author-photo {
+		max-width: 50%;
+		max-height: 100%;
+	}
+	&__description {
+		margin: 3em 0;
+		padding: 0 1em;
+	}
+	&__text {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		margin: 2em 1em;
+		padding: 1em;
+	}
+	&__about-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	&__icon-description {
+		margin: 0 1em;
+	}
+}
+
+@media (max-width: 992px) {
+	.about {
+		&__author-photo {
+			flex-wrap: wrap;
+		}
+		&__about-box {
+			flex-direction: column-reverse;
+		}
+	}
+}
