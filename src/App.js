@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import About from './components/About'
+import Skills from './components/Skills'
 import './style/_reset.scss'
 import './style/_color.scss'
 import './style/_menu.scss'
@@ -19,6 +20,7 @@ function App() {
 			</header>
 			<main>
 				<About />
+				<Skills />
 			</main>
 		</div>
 	)
