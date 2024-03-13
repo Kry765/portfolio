@@ -9,31 +9,37 @@ export default function About() {
 					<img src={Myphoto} alt='author photo' className='about__author-photo' />
 				</div>
 				<div className='flex flex-column align-center about__description'>
-					<div>About me</div>
+					<h2 className='title-center'>About me</h2>
 					<div>
-						<div className='about__text'>
-							<span className='about__icon-description'>
-								<BsFillLightningChargeFill />
+						<div className='space-icon-description'>
+							<span>
+								<BsFillLightningChargeFill className='icon-text' />
 							</span>
 							<div>
-								I am currently in my third year of studies at the University of Information Technology and Management,
-								majoring in Web-Developer.
+								<p>
+									I am currently in my third year of studies at the University of Information Technology and Management,
+									majoring in Web-Developer.
+								</p>
 							</div>
 						</div>
-						<p className='about__text'>
-							<span className='about__icon-description'>
-								<BsFillLightningChargeFill />
+						<p className='space-icon-description'>
+							<span>
+								<BsFillLightningChargeFill className='icon-text' />
 							</span>
 							<div>
-								The knowledge I have acquired allows me to create websites which become a business card of every
-								company.
+								<p>
+									The knowledge I have acquired allows me to create websites which become a business card of every
+									company.
+								</p>
 							</div>
 						</p>
-						<p className='about__text'>
-							<span className='about__icon-description'>
-								<BsFillLightningChargeFill />
+						<p className='space-icon-description'>
+							<span className='icon-description'>
+								<BsFillLightningChargeFill className='icon-text' />
 							</span>
-							<div>I am open to learning the latest technologies so that I can develop my passion</div>
+							<div>
+								<p>I am open to learning the latest technologies so that I can develop my passion</p>
+							</div>
 						</p>
 					</div>
 				</div>

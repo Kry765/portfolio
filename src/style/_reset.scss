@@ -19,8 +19,27 @@ body {
 	flex-direction: column;
 }
 
+.flex-row {
+	flex-direction: row;
+}
+
 .align-center {
 	align-items: center;
+}
+
+.space-icon-description {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 2em 0em;
+}
+
+.title-center {
+	text-align: center;
+}
+
+.icon-text {
+	margin: 0.5em 1em;
 }
 
 .radius {
@@ -35,5 +54,5 @@ body {
 
 .box-reset {
 	min-width: 100%;
-	min-height: 100vh;
+	max-height: 100vh;
 }

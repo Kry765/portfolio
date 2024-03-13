@@ -8,6 +8,7 @@ import './style/_color.scss'
 import './style/_menu.scss'
 import './style/_header.scss'
 import './style/_about.scss'
+import './style/_skills.scss'
 
 function App() {
 	return (
