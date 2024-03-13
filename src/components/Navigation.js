@@ -13,12 +13,14 @@ function Navigation() {
 					<div className='nav__desktop-item'>Umiejętności</div>
 					<div className='nav__desktop-item'>Oferta</div>
 					<div className='nav__desktop-item'>Projekty</div>
+					<div className='nav__desktop-item'>Kontakt</div>
 				</div>
 				<div className='nav__mobile-items flex'>
 					<div className='nav__mobile-item'>O mnie</div>
 					<div className='nav__mobile-item'>Umiejętności</div>
 					<div className='nav__mobile-item'>Oferta</div>
 					<div className='nav__mobile-item'>Projekty</div>
+					<div className='nav__mobile-item'>Kontakt</div>
 				</div>
 			</div>
 		</div>

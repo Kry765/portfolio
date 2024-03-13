@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
+import Project from './components/Project'
 import './style/_reset.scss'
 import './style/_color.scss'
 import './style/_menu.scss'
@@ -22,6 +23,7 @@ function App() {
 			<main>
 				<About />
 				<Skills />
+				<Project />
 			</main>
 		</div>
 	)

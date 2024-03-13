@@ -12,6 +12,7 @@ import {
 	SiSequelize,
 	FaNode,
 	FaPhp,
+	FaGithub,
 } from '../components/Icon'
 
 export default function Skills() {
@@ -51,67 +52,85 @@ export default function Skills() {
 					<div>
 						<FaHtml5 className='skills__skill-img' />
 					</div>
-					<div>HTML</div>
+					<p>HTML</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<FaCss3Alt className='skills__skill-img' />
 					</div>
-					<div>CSS</div>
+					<p>CSS</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<FaSass className='skills__skill-img' />
 					</div>
-					<div>SCSS</div>
+					<p>SCSS</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<SiJavascript className='skills__skill-img' />
 					</div>
-					<div>JavaScript</div>
+					<p>JavaScript</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<FaReact className='skills__skill-img' />
 					</div>
-					<div>React</div>
+					<p>React</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<SiMysql className='skills__skill-img' />
 					</div>
-					<div>MySQL</div>
+					<p>MySQL</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<SiBem className='skills__skill-img' />
 					</div>
-					<div>BEM</div>
+					<p>BEM</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<FaDocker className='skills__skill-img' />
 					</div>
-					<div>Docker</div>
+					<p>Docker</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<SiSequelize className='skills__skill-img' />
 					</div>
-					<div>Sequelize</div>
+					<p>Sequelize</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<FaNode className='skills__skill-img' />
 					</div>
-					<div>Node.js</div>
+					<p>Node.js</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 				<div className='skills__skill-card'>
 					<div>
 						<FaPhp className='skills__skill-img' />
 					</div>
-					<div>PHP</div>
+					<p>PHP</p>
+					<div className='skills__progress-bar'></div>
+				</div>
+				<div className='skills__skill-card'>
+					<div>
+						<FaGithub className='skills__skill-img' />
+					</div>
+					<p>GitHub</p>
+					<div className='skills__progress-bar'></div>
 				</div>
 			</div>
 		</div>

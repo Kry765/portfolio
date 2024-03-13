@@ -11,6 +11,7 @@ import { FaDocker } from 'react-icons/fa'
 import { SiSequelize } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa6'
 import { FaPhp } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 export { HiMenuAlt3 }
 export { BsFillLightningChargeFill }
@@ -25,3 +26,4 @@ export { FaDocker }
 export { SiSequelize }
 export { FaNode }
 export { FaPhp }
+export { FaGithub }
