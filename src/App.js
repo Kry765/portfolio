@@ -13,7 +13,7 @@ import './style/_skills.scss'
 
 function App() {
 	return (
-		<div>
+		<>
 			<nav>
 				<Navigation />
 			</nav>
@@ -25,7 +25,7 @@ function App() {
 				<Skills />
 				<Project />
 			</main>
-		</div>
+		</>
 	)
 }
 
