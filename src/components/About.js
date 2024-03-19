@@ -6,7 +6,7 @@ function About() {
 	const descriptions = [
 		"I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web-Developer.",
 		"The knowledge I have acquired allows me to create websites which become a business card of every company.",
-		"I am open to learning the latest technologies so that I can develop my passion"
+		"I am open tooooooooooooooooooooooooooooooooooooo learning the latest technologies so that I can develop my passion"
 	];
 
 
@@ -32,7 +32,10 @@ const renderAboutDescriptions = () => {
 				</div>
 				<div className='flex flex-column align-center about__description'>
 					<h2 className='title-center'>About me</h2>
+					<div>
 					{renderAboutDescriptions()}
+					</div>
+					
 				</div>
 			</div>
 		</div>

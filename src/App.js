@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from './components/Navigation'
+import Navigation from './components/NavigationComponents/Navigation'
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
