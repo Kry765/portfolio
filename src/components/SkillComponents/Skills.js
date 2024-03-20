@@ -1,18 +1,6 @@
 import GitHubStatus from '../../img/github_status.png'
 import {
 	BsFillLightningChargeFill,
-	// FaHtml5,
-	// FaCss3Alt,
-	// FaSass,
-	// FaReact,
-	// SiJavascript,
-	// SiMysql,
-	// SiBem,
-	// FaDocker,
-	// SiSequelize,
-	// FaNode,
-	// FaPhp,
-	// FaGithub,
 } from '../Icon'
 import { SkillsCard } from './SkillsCard'
 
