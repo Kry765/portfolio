@@ -1,22 +1,31 @@
-import React from 'react'
-import { HiMenuAlt3 } from '../Icon'
+import React, { useState } from 'react'
 import { NavigationItemDesktop } from './NavigationDesktop'
 import {NavigationItemMobile} from './NavigationMobile'
-import { DesktopMenu, FlexCenter, MobileMenu, BurgerIcon, NavStyle } from './NavigationStyle'
+import {NavigationToggleMenuIcon} from './NavigationToggleMenuIcon'
+import { DesktopMenu, FlexCenter, MobileMenu, BurgerIcon, NavStyle, MobileText } from './NavigationStyle'
+
+
 
 function Navigation() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleToggleMobileItem = () => {
+        setIsOpen(!isOpen)
+    }
 
     return (
         <FlexCenter>
-            <NavStyle>
-                <BurgerIcon>
-                    <HiMenuAlt3 />
-                </BurgerIcon>
+            <BurgerIcon onClick={handleToggleMobileItem}>
+                <NavigationToggleMenuIcon isOpen={isOpen}/>
+            </BurgerIcon>
+            <NavStyle isOpen={isOpen}>
                 <DesktopMenu>
                     <NavigationItemDesktop />
                 </DesktopMenu>
                 <MobileMenu>
-					<NavigationItemMobile />
+                    <MobileText>
+                        <NavigationItemMobile />
+                    </MobileText>
 				</MobileMenu>
             </NavStyle>
         </FlexCenter>
