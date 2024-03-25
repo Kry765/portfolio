@@ -1,17 +1,14 @@
 import styled from "styled-components";
 // import '../../style/_color.scss'
 
-export const DesktopMenu = styled.div`
-        display: flex;
-        transition: color 0.7s;
-	margin: 0 1em;
-	padding: 1em;
-
-        @media (max-width: 992px){
-                display: none;
-        }
+export const Wrapper = styled.div`
+        box-size: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
 
 `
+
 
 export const BurgerIcon = styled.div`
         display: none;
@@ -60,18 +57,5 @@ export const FlexCenter = styled.div`
         justify-content: center;
 `
 
-export const MobileMenu = styled.div`
-        display: none;
-        @media (max-width: 992px){
-                display: block;
-                margin: 2em;
-        }
-
-`
 
 
-export const MobileText = styled.p`
-        margin: 1em;
-        padding: 1em;
-        color: #fff;
-`

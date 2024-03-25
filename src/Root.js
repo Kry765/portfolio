@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './components/NavigationComponents/Navigation'
-// import Header from './components/Header'
+import Header from './components/HeaderComponents/Header'
 // import About from './components/About'
 // import Skills from './components/SkillComponents/Skills'
 // import Project from './components/Project'
@@ -16,9 +16,9 @@ function Root() {
 			<nav>
 				<Navigation />
 			</nav>
-			{/* <header> */}
-				{/* <Header /> */}
-			{/* </header> */}
+			<header>
+				<Header />
+			</header>
 			{/* <main> */}
 				{/* <About /> */}
 				{/* <Skills /> */}
