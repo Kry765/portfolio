@@ -1,6 +1,19 @@
+import styled from "styled-components";
+
+const BtnAction = styled.button`
+        border-style: none;
+        background-color: #64CCC5;
+        color: #fff;
+        border-radius: 15px;
+        height: 50px;
+        width: 250px;
+        font-weight: bold;
+        text-transform: uppercase;
+`
+
 const HeaderBtn = () => {
     return(
-        <button>Let's Go</button>
+        <BtnAction>Let's Go</BtnAction>
     )
 }
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 // import '../../style/_color.scss'
 
 export const Wrapper = styled.div`
-        box-size: border-box;
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
@@ -39,7 +39,9 @@ export const NavStyle = styled.div`
 	top: 0;
 	min-height: 80px;
 	min-width: 80%;
-        background-color: #30303098;
+        background-color: #176B87;
+        color: #fff;
+        z-index: 5;
 	border-radius: 0 0 25px 25px;
         @media (max-width: 992px){
                 transform: ${({isOpen}) => isOpen ? 'translate(0)' : 'translate(100%)'};
