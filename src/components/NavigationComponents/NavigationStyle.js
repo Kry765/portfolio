@@ -19,8 +19,7 @@ export const BurgerIcon = styled.div`
         margin: 0.2em;
         color: $white;
         transition: color 0.7s;
-        z-index: 3;
-
+        z-index: 10;
         &:hover{
                 cursor: pointer;
         }

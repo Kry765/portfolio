@@ -12,6 +12,9 @@ const HeaderDescriptionStyle = styled.div`
     min-height: 100vh;
     padding: 4em;
     overflow: hidden;
+    @media(max-width: 992px){
+        min-width: 100%;
+    }
 `
 
 const MyNameStyle = styled.div`

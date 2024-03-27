@@ -1,8 +1,10 @@
 import React from 'react'
 import Navigation from './components/NavigationComponents/Navigation'
 import Header from './components/HeaderComponents/Header'
+import About from './components/AboutComponents/About'
 import { Wrapper } from './components/NavigationComponents/NavigationStyle'
 import { createGlobalStyle } from 'styled-components';
+import Skills from './components/SkillComponents/Skills'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -30,11 +32,11 @@ function Root() {
 			<header>
 				<Header />
 			</header>
-			{/* <main> */}
-				{/* <About /> */}
-				{/* <Skills /> */}
+			<main>
+				<About />
+				<Skills />
 				{/* <Project /> */}
-			{/* </main> */}
+			</main>
 		</Wrapper>
 	)
 }

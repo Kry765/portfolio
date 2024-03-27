@@ -9,6 +9,12 @@ const BtnAction = styled.button`
         width: 250px;
         font-weight: bold;
         text-transform: uppercase;
+        transition: background-color 0.7s;
+        &:hover{
+            background-color: #176B87;
+            cursor: pointer;
+        }
+
 `
 
 const HeaderBtn = () => {

@@ -4,6 +4,9 @@ import handsImage from '../../Assets/hands-820272_1920.jpg'
 const ImageContainer = styled.div`
     max-width: 50%;
     min-height: 100%;
+    @media(max-width: 992px){
+        display: none;
+    }
 `;
 
 const Image = styled.img`
@@ -11,6 +14,9 @@ const Image = styled.img`
     width: 100%; 
     min-height: 100%;
     z-index: 1;
+    @media(max-width: 992px){
+        display: none;
+    }
 `;
 
 const OpacityImage = styled.div`
@@ -21,6 +27,9 @@ const OpacityImage = styled.div`
     min-width: 50%;
     min-height: 100%;
     z-index: 1;
+    @media(max-width: 992px){
+        display: none;
+    }
 `
 
 export const HeaderImage = () => {
