@@ -79,6 +79,30 @@ const renderAboutDescriptions = () => {
 		))
 }
 
+const AboutmeStyle = styled.span`
+	font-size: 2.2rem;
+	color: #64CCC5;
+`
+
+const AboutStyleBlack = styled.span`
+	font-size: 2.2rem;
+	color: #000;
+`
+
+
+const FlexColumn = styled.h2`
+	display: flex;
+	flex-direction: column;
+`
+
+const AboutmeTitle = (props) => {
+	return(
+		<FlexColumn>
+			<AboutmeStyle>{props.About} <AboutStyleBlack>{props.Me}</AboutStyleBlack></AboutmeStyle>
+		</FlexColumn>
+		)
+}
+
 	return (
 		<div>
 			<FlexRow>
@@ -87,6 +111,7 @@ const renderAboutDescriptions = () => {
 					<MyPhoto src={Myphoto} alt="my photo"/>
 				</AboutmeMyPhoto>
 				<AboutmeDescription>
+						<AboutmeTitle About="About" Me="Me"/>
 						{renderAboutDescriptions()}
 				</AboutmeDescription>
 				<RadiusBottom />

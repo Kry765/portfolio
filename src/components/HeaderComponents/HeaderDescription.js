@@ -18,6 +18,7 @@ const HeaderDescriptionStyle = styled.div`
 `
 
 const MyNameStyle = styled.div`
+    z-index: 3;
     font-size: 3.2rem;
     color: #000;
     font-weight: bold;
