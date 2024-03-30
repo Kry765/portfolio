@@ -1,14 +1,22 @@
 import { description } from "./SkillsTitle"
 import { image } from "./SkillsImage"
 import {SkillsCardStyle} from './skillsCardStyle'
+import styled from "styled-components"
+
+const ImageWeight = styled.div`
+    // width: 50%;
+    // height: auto;
+    padding: 1.2em;
+`
+
 
 export const SkillsCard = () => {
 
     return description.map((descriptions, index) => (
         <SkillsCardStyle key={index}>
-                <div className='skills__skill-img'>
-                    {image[index] }
-                </div>
+                <ImageWeight>
+                    {image[index]}
+                </ImageWeight>
                 <p>{descriptions}</p>
         </SkillsCardStyle>
     ))

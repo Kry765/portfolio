@@ -5,6 +5,7 @@ import {
 } from '../Icon'
 import { SkillsCard } from './SkillsCard'
 
+
 const descriptionText = [
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod ipsum pharetra ante sodales faucibus.',
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod ipsum pharetra ante sodales faucibus.',
@@ -40,28 +41,46 @@ export const ImgGitHub = () => {
 	</div>)
 }
 
+const Headers = styled.h2`
+	font-size: 2.2rem;
+	color: #176B87;
+`
+
+
 const SkillsTitle = (props) => {
 	return(
-		<div>
-			<h2>{props.Skills}</h2>
-		</div>
+			<Headers>
+				{props.Skills}
+			</Headers>
+	
 	)
 }
 
+const FlexRow = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`
 
 const FlexColumn = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 `
 
 export default function Skills() {
 	return (
-		<FlexColumn>
-			<SkillsTitle Skills="Skills" />
-			<MapDescription />
-			<ImgGitHub />
-		</FlexColumn>
+		<>
+			<FlexColumn>
+				<SkillsTitle Skills="Skills" />
+				<MapDescription />
+				<ImgGitHub />
+				
+			</FlexColumn>
+			<FlexRow>
+				<SkillsCard />
+			</FlexRow>
+		</>
 		)
 }

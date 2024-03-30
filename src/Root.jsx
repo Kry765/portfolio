@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from './components/NavigationComponents/Navigation'
 import Header from './components/HeaderComponents/Header'
 import About from './components/AboutComponents/About'
+import Project from './components/ProjectComponents/Project'
 import { Wrapper } from './components/NavigationComponents/NavigationStyle'
 import { createGlobalStyle } from 'styled-components';
 import Skills from './components/SkillComponents/Skills'
@@ -35,7 +36,7 @@ function Root() {
 			<main>
 				<About />
 				<Skills />
-				{/* <Project /> */}
+				<Project />
 			</main>
 		</Wrapper>
 	)

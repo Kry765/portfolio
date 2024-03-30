@@ -10,6 +10,21 @@ function About() {
 		"I am open to learning the latest technologies so that I can develop my passion"
 	];
 
+const AboutmeStyle = styled.span`
+	font-size: 2.2rem;
+	color: #176B87;
+`
+
+const AboutStyleBlack = styled.span`
+	font-size: 2.2rem;
+	color: #000;
+`
+
+
+const FlexColumn = styled.h2`
+	display: flex;
+	flex-direction: column;
+`
 	
 const AboutmeDescription = styled.div`
 		max-width:50%;
@@ -79,21 +94,7 @@ const renderAboutDescriptions = () => {
 		))
 }
 
-const AboutmeStyle = styled.span`
-	font-size: 2.2rem;
-	color: #64CCC5;
-`
 
-const AboutStyleBlack = styled.span`
-	font-size: 2.2rem;
-	color: #000;
-`
-
-
-const FlexColumn = styled.h2`
-	display: flex;
-	flex-direction: column;
-`
 
 const AboutmeTitle = (props) => {
 	return(
