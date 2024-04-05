@@ -13,6 +13,7 @@ import { FaNode } from 'react-icons/fa6'
 import { FaPhp } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { VscClose } from "react-icons/vsc";
+import { LuExternalLink } from "react-icons/lu";
 
 
 export { HiMenuAlt3 }
@@ -30,3 +31,4 @@ export { FaNode }
 export { FaPhp }
 export { FaGithub }
 export {VscClose}
+export {LuExternalLink}
