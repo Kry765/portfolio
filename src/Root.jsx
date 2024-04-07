@@ -7,6 +7,7 @@ import { Wrapper } from './components/NavigationComponents/NavigationStyle'
 import { createGlobalStyle } from 'styled-components';
 import Skills from './components/SkillComponents/Skills'
 import styled from 'styled-components'
+import Footer from './components/FooterComponents/Footer'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -53,6 +54,9 @@ function Root() {
 					<Title Project="Project"/>
 				<Project />
 			</main>
+			<footer>
+				<Footer />
+			</footer>
 		</Wrapper>
 	)
 }
