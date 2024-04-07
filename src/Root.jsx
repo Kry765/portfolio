@@ -6,6 +6,7 @@ import Project from './components/ProjectComponents/Project'
 import { Wrapper } from './components/NavigationComponents/NavigationStyle'
 import { createGlobalStyle } from 'styled-components';
 import Skills from './components/SkillComponents/Skills'
+import styled from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -22,6 +23,19 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const TitleStyle = styled.h3`
+  font-size: 2rem;
+  padding: 0 2.6em;
+  width: 80%;
+  color: #176B87;
+`
+
+const Title = (props) => {
+	return(<TitleStyle>{props.Project}</TitleStyle>)
+}
+
+
+
 
 function Root() {
 	return (
@@ -36,6 +50,7 @@ function Root() {
 			<main>
 				<About />
 				<Skills />
+					<Title Project="Project"/>
 				<Project />
 			</main>
 		</Wrapper>
