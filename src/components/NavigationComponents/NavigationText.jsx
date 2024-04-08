@@ -1,9 +1,8 @@
 export const navigationText = [
-    "O mnie",
-    "Umiejętności",
-    "Oferta",
-    "Projekty",
-    "Kontakt"
+    "About me",
+    "Skills",
+    "Project",
+    "Contact"
 ]
 
 
