@@ -1,8 +1,8 @@
-import React from 'react'
-import Navigation from './components/NavigationComponents/Navigation'
-import '../src/index.css'
-// import Header from './components/HeaderComponents/Header'
-// import About from './components/AboutComponents/About'
+import React from "react";
+import Navigation from "./components/NavigationComponents/Navigation";
+import "../src/index.css";
+import Header from "./components/HeaderComponents/Header";
+import About from "./components/AboutComponents/About";
 // import Project from './components/ProjectComponents/Project'
 // import { createGlobalStyle } from 'styled-components';
 // import Skills from './components/SkillComponents/Skills'
@@ -17,32 +17,29 @@ import '../src/index.css'
 // `
 
 // const Title = (props) => {
-	// return(<TitleStyle>{props.Project}</TitleStyle>)
+// return(<TitleStyle>{props.Project}</TitleStyle>)
 // }
 
-
-
-
 function Root() {
-	return (
-		// <header>
-			// <Header />
-			// </header> 
-			// <main> 
-			// <About /> 
-			// <Skills /> 
-			// <Title Project="Project"/> 
-			// <Project /> 
-			// </main> 
-			// <footer> 
-			// <Footer /> 
-			// </footer> 
-			<nav>
-				<Navigation /> 
-			</nav>
-	)
+  return (
+    <>
+      <nav>
+        <Navigation />
+      </nav>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <About />
+        {/* <Skills />
+        <Title Project="Project" />
+        <Project />*/}
+      </main>
+      {/* <footer>
+        <Footer />
+      </footer>  */}
+    </>
+  );
 }
 
-export default Root
-
-			
+export default Root;

@@ -1,42 +1,25 @@
-import styled from 'styled-components';
-import handsImage from '../../Assets/hands-820272_1920.jpg'
+import handsImage from "../../Assets/hands-820272_640.jpg";
 
-const ImageContainer = styled.div`
-    max-width: 50%;
-    min-height: 100%;
-    @media(max-width: 992px){
-        display: none;
-    }
-`;
+const Image = () => {
+  return (
+    <img
+      src={handsImage}
+      className="relative w-[100%] h-[100vh] z-2 md:hidden"
+    />
+  );
+};
 
-const Image = styled.img`
-    postion: relative;
-    width: 100%; 
-    min-height: 100%;
-    z-index: 1;
-    @media(max-width: 992px){
-        display: none;
-    }
-`;
-
-const OpacityImage = styled.div`
-    position: absolute;
-    background-color: #176B87;
-    opacity: 0.3;
-    z-index: 2;
-    min-width: 50%;
-    min-height: 100%;
-    z-index: 1;
-    @media(max-width: 992px){
-        display: none;
-    }
-`
+const OpacityImage = () => {
+  return (
+    <div className="absolute bg-[#176b87] opacity-30 z-10 w-2/4 h-full md:hidden"></div>
+  );
+};
 
 export const HeaderImage = () => {
-    return (
-        <ImageContainer>
-                <OpacityImage />
-                <Image src={handsImage} alt="Hands" />
-        </ImageContainer>
-    );
+  return (
+    <div className="w-2/4 h-2/4 md:hidden">
+      <OpacityImage />
+      <Image />
+    </div>
+  );
 };

@@ -1,17 +1,11 @@
-import { HeaderDescription } from "./HeaderDescription"
-import {HeaderImage} from './HeaderImage'
-import styled from "styled-components"
-
-const FlexImg = styled.div`
-	display: flex;
-	flex-direction: row;
-`
+import { HeaderDescription } from "./HeaderDescription";
+import { HeaderImage } from "./HeaderImage";
 
 export default function Header() {
-	return (
-		<FlexImg>
-				<HeaderDescription />
-				<HeaderImage />	
-		</FlexImg>
-	)
+  return (
+    <div className="flex flex-row">
+      <HeaderDescription />
+      <HeaderImage />
+    </div>
+  );
 }
