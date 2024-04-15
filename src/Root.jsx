@@ -3,22 +3,9 @@ import Navigation from "./components/NavigationComponents/Navigation";
 import "../src/index.css";
 import Header from "./components/HeaderComponents/Header";
 import About from "./components/AboutComponents/About";
-// import Project from './components/ProjectComponents/Project'
-// import { createGlobalStyle } from 'styled-components';
-// import Skills from './components/SkillComponents/Skills'
-// import styled from 'styled-components'
-// import Footer from './components/FooterComponents/Footer'
-
-// const TitleStyle = styled.h3`
-//   font-size: 2rem;
-//   padding: 0 2.6em;
-//   width: 80%;
-//   color: #176B87;
-// `
-
-// const Title = (props) => {
-// return(<TitleStyle>{props.Project}</TitleStyle>)
-// }
+import Project from "./components/ProjectComponents/Project";
+import Skills from "./components/SkillComponents/Skills";
+import Footer from "./components/FooterComponents/Footer";
 
 function Root() {
   return (
@@ -31,13 +18,12 @@ function Root() {
       </header>
       <main>
         <About />
-        {/* <Skills />
-        <Title Project="Project" />
-        <Project />*/}
+        <Skills />
+        <Project />
       </main>
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer>  */}
+      </footer>
     </>
   );
 }
