@@ -1,37 +1,5 @@
-import styled from "styled-components";
 import LearnPgAppImage from "../../Assets/learnpg_project.jpg.png";
 import { FaGithub } from "../Icon";
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 80%;
-  background-color: #d9d9d9;
-  padding: 2em;
-  margin: 3em;
-  border-radius: 15px;
-
-  @media (max-width: 992px) {
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
-
-const FlexColumn = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const FlexRow = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-`;
 
 const projects = [
   {
@@ -44,53 +12,27 @@ const projects = [
   },
 ];
 
-const ProjectTitle = styled.h1`
-  font-size: 1.4rem;
-`;
-const ProjectDescriptionContent = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ProjectDescription = styled.p`
-  font-size: 1.2rem;
-`;
-
-const IconStyle = styled.div`
-  display: flex;
-  padding: 1em 0;
-`;
-
 const Icon = ({ github }) => {
-  return <IconStyle>View GitHub{github}</IconStyle>;
+  return <div className="flex py-4">View GitHub{github}</div>;
 };
-
-const ProjectStack = styled.div`
-  color: #000;
-  margin: 1em 0;
-`;
-
-const ProjectImage = styled.img`
-	max-width: 50%;
-	max-heigth: auto;
-	position: relative;
-	}
-`;
 
 export default function Project() {
   return projects.map((project, index) => (
-    <Wrapper key={index}>
-      <ProjectDescriptionContent>
-        <ProjectTitle style={{ margin: "10px 0" }}>
+    <div
+      className="flex justify-center items-center w-4/5 bg-[#d9d9d9] p-8 m-12 rounded-2xl md:flex-col-reverse md:flex-wrap"
+      key={index}
+    >
+      <div className="flex flex-col">
+        <h2 className="text-3xl" style={{ margin: "10px 0" }}>
           {project.title}
-        </ProjectTitle>
-        <ProjectStack>{project.stack}</ProjectStack>
-        <ProjectDescription>{project.description}</ProjectDescription>
+        </h2>
+        <div className="my-4">{project.stack}</div>
+        <p className="text-xl">{project.description}</p>
         <Icon github={project.github} />
-      </ProjectDescriptionContent>
-      <FlexColumn>
-        <ProjectImage src={project.image} />
-      </FlexColumn>
-    </Wrapper>
+      </div>
+      <div className="flex flex-col items-center justify-center">
+        <img className="w-1/2 h-auto relative" src={project.image} />
+      </div>
+    </div>
   ));
 }
