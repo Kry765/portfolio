@@ -22,7 +22,7 @@ const BottomRadius = () => {
 
 const TopRadius = () => {
   return (
-    <div className="rounded-full absolute bg-[#D9D9D9] top-[-10%] left-[-10%] w-96 h-96 md:hidden z-[-10]"></div>
+    <div className="rounded-full absolute bg-[#FFFFFF] top-[-10%] left-[-10%] w-96 h-96 md:hidden z-10"></div>
   );
 };
 
@@ -39,7 +39,7 @@ export const HeaderDescription = () => {
   const specialization = "Web-Developer";
 
   return (
-    <div className="relative flex justify-center flex-col items-start w-6/12 h-[100vh] p-10 truncate md:w-[100%] md:items-center">
+    <div className="relative flex justify-center bg-[#d9d9d9] -z-30 flex-col items-start w-6/12 h-[100vh] p-10 truncate md:w-[100%] md:items-center">
       <TopRadius />
       <MyNameTitle name={name} />
       <SpecializationText specialization={specialization} />

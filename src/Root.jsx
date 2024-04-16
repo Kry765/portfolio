@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./components/NavigationComponents/Navigation";
 import "../src/index.css";
+import "../src/Assets/scss/_colors.scss";
 import Header from "./components/HeaderComponents/Header";
 import About from "./components/AboutComponents/About";
 import Project from "./components/ProjectComponents/Project";

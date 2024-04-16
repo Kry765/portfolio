@@ -1,5 +1,5 @@
-import GitHubStatus from "../../Assets/github_status.png";
 import { BsFillLightningChargeFill } from "../Icon";
+import GitHubStatus from "../../Assets/github_status.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -54,17 +54,19 @@ const image = [
 
 const SkillsTitle = (props) => {
   return (
-    <h2 className="text-[#176b87] text-4xl font-bold mt-8">{props.Skills}</h2>
+    <h2 className="text-[#176b87] text-4xl font-bold mx-8 my-8">
+      {props.Skills}
+    </h2>
   );
 };
 
-// const ImgGitHub = () => {
-//   return (
-//     <div>
-//       <img src={GitHubStatus} alt="github" />
-//     </div>
-//   );
-// };
+const ImgGitHub = () => {
+  return (
+    <div>
+      <img src={GitHubStatus} alt="progress github" className="m-10" />
+    </div>
+  );
+};
 
 const SkillsDescription = () => {
   return descriptionText.map((descriptions, index) => (
@@ -80,10 +82,10 @@ const SkillsDescription = () => {
 const SkillsCard = () => {
   return description.map((descriptions, index) => (
     <div
-      className="flex justify-center items-center flex-col rounded-3xl m-12 p-7 border-solid border-black border"
+      className="flex items-center flex-col flex-wrap rounded-3xl m-1 border-solid border-black border h-32 w-32"
       key={index}
     >
-      <div className="flex p-5">{image[index]}</div>
+      <div className="p-5">{image[index]}</div>
       <p>{descriptions}</p>
     </div>
   ));
@@ -91,18 +93,14 @@ const SkillsCard = () => {
 
 export default function Skills() {
   return (
-    <>
-      <div className="flex justify-center items-center flex-col">
+    <div className="flex bg-[#d9d9d9]">
+      <div className="flex flex-col min-w-[50%]">
         <SkillsTitle Skills="Skills" />
         <SkillsDescription />
       </div>
-      <div className="flex justify-center items-center flex-row flex-wrap">
+      <div className="flex justify-center items-center max-w-[50%] flex-wrap">
         <SkillsCard />
       </div>
-
-      {/* <div className="flex flex-wrap justify-center"> */}
-      {/* <ImgGitHub /> */}
-      {/* </div> */}
-    </>
+    </div>
   );
 }

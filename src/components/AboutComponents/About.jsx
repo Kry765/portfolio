@@ -25,19 +25,19 @@ function About() {
 
   const RadiusTop = () => {
     return (
-      <div className="absolute top-0 right-0 w-96 h-96 -z-10 bg-[#d9d9d9] rounded-full md:hidden"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#d9d9d9] rounded-full md:hidden"></div>
     );
   };
 
   const RadiusBottom = () => {
     return (
-      <div className="absolute rounded-full bg-[#176b87] bottom-[-25%] left-[5%] -z-10 w-96 h-96 md:hidden"></div>
+      <div className="absolute rounded-full bg-[#176b87] bottom-[-25%] left-[5%] z-10 w-96 h-96 md:hidden"></div>
     );
   };
 
   const AboutMePhoto = () => {
     return (
-      <div className="flex justify-center w-1/2 h-full m-[5rem] md:md:hidden">
+      <div className="flex justify-center w-1/2 h-full m-[5rem] md:md:hidden z-20">
         <img src={Myphoto} alt="my photo" className="w-[55%]" />
       </div>
     );
@@ -45,7 +45,7 @@ function About() {
 
   const AboutMeDescription = (props) => {
     return (
-      <div className="flex flex-col md:w-3/4">
+      <div className="flex flex-col z-20 md:w-3/4">
         <h2 className="text-[#176b87] text-4xl font-bold md:text-center">
           {props.About} <span className="text-4xl text-black">{props.Me}</span>
         </h2>
@@ -55,7 +55,7 @@ function About() {
   };
 
   return (
-    <div className="relative overflow-hidden flex justify-center items-center flex-row">
+    <div className="relative overflow-hidden flex justify-center items-center flex-row bg-[#ffffff] -z-20">
       <RadiusTop />
       <AboutMePhoto />
       <AboutMeDescription About="About" Me="Me" />
