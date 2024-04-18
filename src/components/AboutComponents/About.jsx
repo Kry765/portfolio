@@ -3,7 +3,7 @@ import { BsFillLightningChargeFill } from "../Icon";
 
 function About() {
   const descriptions = [
-    "I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web-Developer.",
+    "I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web Developer.",
     "The knowledge I have acquired allows me to create websites which become a business card of every company.",
     "I am open to learning the latest technologies so that I can develop my passion",
   ];
@@ -12,7 +12,7 @@ function About() {
     return (
       <ul>
         {descriptions.map((description, index) => (
-          <li key={index} className="flex flex-row my-[24px]">
+          <li key={index} className="flex flex-row my-[24px] text-xl">
             <span className="my-2 mx-2">
               <BsFillLightningChargeFill />
             </span>

@@ -1,6 +1,6 @@
 import LearnPgAppImage from "../../Assets/learnpg_project.jpg.png";
 import { FaGithub } from "../Icon";
-import "../../Assets/scss/_colors.scss";
+
 const projects = [
   {
     title: "LearnPgApp",
