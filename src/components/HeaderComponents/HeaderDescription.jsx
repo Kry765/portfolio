@@ -32,7 +32,7 @@ const TopRadius = () => {
 
 const HeaderBtn = () => {
   return (
-    <button className="p-2 z-10 md:z-0 animate-fade-right hover:cursor-pointer hover:bg-[#176B87] border-none bg-[#64ccc5] text-white rounded-2xl	h-[50px] w-[250px] font-bold uppercase transition duration-300">
+    <button className="p-2 z-10 md:z-10 animate-fade-right hover:cursor-pointer hover:bg-[#176B87] border-none bg-[#64ccc5] text-white rounded-2xl	h-[50px] w-[250px] font-bold uppercase transition duration-300">
       Let's Go
     </button>
   );

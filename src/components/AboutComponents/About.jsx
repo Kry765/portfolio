@@ -2,30 +2,44 @@ import Myphoto from "../../Assets/myphoto.jpg";
 import { BsFillLightningChargeFill } from "../Icon";
 
 function About() {
-  const descriptions = [
-    "I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web Developer.",
-    "The knowledge I have acquired allows me to create websites which become a business card of every company.",
-    "I am open to learning the latest technologies so that I can develop my passion",
-  ];
-
-  const renderAboutDescriptions = () => {
+  const RenderAboutDescriptions = () => {
     return (
-      <ul>
-        {descriptions.map((description, index) => (
-          <li key={index} className="flex flex-row my-[24px] text-xl">
-            <span className="my-2 mx-2">
-              <BsFillLightningChargeFill />
-            </span>
-            <p>{description}</p>
-          </li>
-        ))}
-      </ul>
+      <div className="flex flex-col my-[24px] text-xl">
+        <div className="flex my-6">
+          <span>
+            <BsFillLightningChargeFill className="m-4" />
+          </span>
+          <p>
+            I am currently in my third year of studies at the University of
+            Information Technology and Management, majoring in
+            <span className="font-bold text-[#176B87]"> Web Developer.</span>
+          </p>
+        </div>
+        <div className="flex my-6">
+          <span>
+            <BsFillLightningChargeFill className="m-4" />
+          </span>
+          <p>
+            The knowledge I have acquired allows me to create websites which
+            become a business card of every company.
+          </p>
+        </div>
+        <div className="flex my-6">
+          <span>
+            <BsFillLightningChargeFill className="m-4" />
+          </span>
+          <p>
+            I am open to learning the latest technologies so that I can develop
+            my passion.
+          </p>
+        </div>
+      </div>
     );
   };
 
   const RadiusTop = () => {
     return (
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#d9d9d9] rounded-full md:hidden"></div>
+      <div className="absolute -top-40 right-0 -z-10 w-96 h-96 bg-[#d9d9d9] rounded-full md:h-76 md:w-76 md:hidden"></div>
     );
   };
 
@@ -45,11 +59,10 @@ function About() {
 
   const AboutMeDescription = (props) => {
     return (
-      <div className="flex flex-col z-20 md:w-3/4">
-        <h2 className="text-[#176b87] text-4xl font-bold md:text-center">
+      <div className="flex flex-col mt-5 md:h-[100v] md:items-center md:text-center">
+        <h2 className="text-[#176b87] text-4xl font-bold w-full">
           {props.About} <span className="text-4xl text-black">{props.Me}</span>
         </h2>
-        <div>{renderAboutDescriptions()}</div>
       </div>
     );
   };
@@ -58,7 +71,11 @@ function About() {
     <div className="relative overflow-hidden flex justify-center items-center flex-row bg-[#ffffff] -z-20">
       <RadiusTop />
       <AboutMePhoto />
-      <AboutMeDescription About="About" Me="Me" />
+      <div>
+        <AboutMeDescription About="About" Me="Me" />
+        <RenderAboutDescriptions />
+      </div>
+
       <RadiusBottom />
     </div>
   );
