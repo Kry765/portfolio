@@ -51,13 +51,20 @@ const image = [
   <SiTailwindcss size={30} />,
 ];
 
+const TitleSkillContent = (props) => {
+  return (
+    <div className="flex w-3/4 md:w-full flex-col my-5 md:h-[100v] md:items-center md:text-center">
+      <h2 className="text-[#176b87] w-3/4 text-4xl mx-auto font-bold">
+        {props.My} <span className="text-4xl text-black">{props.Skills}</span>
+      </h2>
+    </div>
+  );
+};
+
 const SkillContent = () => {
   return (
-    <div className="flex flex-row justify-center items-center w-full h-[100%] md:flex-col">
-      <div className="flex flex-col my-[24px] text-xl w-1/4">
-        <h2 className="text-4xl font-bold mx-8">
-          My <span className="text-[#176b87]">Skills</span>
-        </h2>
+    <div className="flex flex-col justify-center my-[24px] items-center md:flex-col">
+      <div className="flex flex-col text-xl w-3/4">
         <div className="flex my-6">
           <span>
             <BsFillLightningChargeFill className="m-4" />
@@ -94,26 +101,35 @@ const SkillContent = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center flex-row w-1/4 flex-wrap m-4 p-4">
-        {description.map((descriptions, index) => (
-          <div
-            className="flex items-center flex-col flex-wrap rounded-3xl m-1 border-solid border-black border h-32 w-32"
-            key={index}
-          >
-            <div className="p-5">{image[index]}</div>
-            <p>{descriptions}</p>
-          </div>
-        ))}
-      </div>
+    </div>
+  );
+};
+
+const SkillCards = () => {
+  return (
+    <div className="flex justify-center items-center flex-row flex-wrap py-10">
+      {description.map((descriptions, index) => (
+        <div
+          className="flex items-center flex-col flex-wrap rounded-3xl m-1 border-solid border-black border h-32 w-32"
+          key={index}
+        >
+          <div className="p-5">{image[index]}</div>
+          <p>{descriptions}</p>
+        </div>
+      ))}
     </div>
   );
 };
 
 export default function Skills() {
   return (
-    <div className="flex flex-row bg-[#d9d9d9] h-[100%] md:flex-wrap md:justify-center">
-      <div className="flex flex-col min-w-[50%] md:w-full">
+    <div className="flex flex-row bg-[#d9d9d9] h-[100%] pt-8 md:flex-wrap md:justify-center">
+      <div>
+        <TitleSkillContent My="My" Skills="Skills" />
         <SkillContent />
+      </div>
+      <div className="w-1/2 md:w-full">
+        <SkillCards />
       </div>
     </div>
   );

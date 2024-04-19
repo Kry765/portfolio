@@ -75,7 +75,6 @@ function About() {
         <AboutMeDescription About="About" Me="Me" />
         <RenderAboutDescriptions />
       </div>
-
       <RadiusBottom />
     </div>
   );

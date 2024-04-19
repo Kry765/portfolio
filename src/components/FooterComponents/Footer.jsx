@@ -6,79 +6,104 @@ import {
   MdEmail,
   FaPhone,
   FaLocationDot,
+  FaDiscord,
 } from "../Icon";
 
-const Icon = [<FaFacebook />, <FaInstagram />, <FaLinkedin />, <FaGithub />];
-const BottomMenu = ["About Me", "Skills", "Project", "Contact"];
-const ContactIcon = [
-  {
-    icon: <MdEmail />,
-    descriptionIcon: "krzysztofkleka91@gmail.com",
-  },
-  {
-    icon: <FaPhone />,
-    descriptionIcon: "573 226 219",
-  },
-  {
-    icon: <FaLocationDot />,
-    descriptionIcon: "Żywiec, Poland",
-  },
-];
-
-const FooterContent = () => {
+const FooterContactMe = () => {
   return (
-    <div className="flex w-full">
-      <div className="w-1/2">
-        <p className="font-bold text-xl">Kry765</p>
-        <p className="mt-3">
-          Interested in working together? You can find me below
-        </p>
-        <div className="flex flex-wrap">
-          {Icon.map((icon, index) => (
-            <div key={index} className="m-5 p-2">
-              <p className="my-3">{icon}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="w-1/2">
-        <p className="font-bold text-xl flex-wrap">Menu</p>
-        {BottomMenu.map((menuItem, index) => (
-          <div key={index}>
-            <p className="mt-3">{menuItem}</p>
+    <div>
+      <div>
+        <h3 className="flex flex-row text-xl mx-4 font-bold md:justify-center md:mt-8">
+          Contact Me
+        </h3>
+        <div className="flex md:justify-center">
+          <div className="mx-4 my-2 ">
+            <MdEmail />
           </div>
-        ))}
+          <div className="my-1 md:justify-center">
+            krzysztofkleka91@gmail.com
+          </div>
+        </div>
+        <div className="flex md:justify-center">
+          <div className="mx-4 my-2 ">
+            <FaPhone />
+          </div>
+          <div className="my-1">573 226 219</div>
+        </div>
+        <div className="flex md:justify-center">
+          <div className="mx-4 my-2">
+            <FaLocationDot />
+          </div>
+          <div className="my-1">Żywiec, Poland"</div>
+        </div>
       </div>
     </div>
   );
 };
 
-const FooterContactMe = () => {
+const FooterSocialMediaContent = () => {
   return (
-    <div>
-      <h3 className="text-xl mx-4 font-bold">Contact Me</h3>
-      {ContactIcon.map((contact, index) => (
-        <div key={index} className="flex">
-          <div className="mx-4 my-2">{contact.icon}</div>
-          <div className="my-1">{contact.descriptionIcon}</div>
+    <div className="flex justify-start flex-col md:text-center">
+      <h3 className="font-bold text-xl">Kry765</h3>
+      <p className="mt-3">
+        Interested in working together? You can find me below
+      </p>
+      <div>
+        <div className="flex flex-row md:justify-center">
+          <span className="m-2">
+            <FaInstagram />
+          </span>
+          <span className="m-2">
+            <FaGithub />
+          </span>
+          <span className="m-2">
+            <FaLinkedin />
+          </span>
+          <span className="m-2">
+            <FaFacebook />
+          </span>
+          <span className="m-2">
+            <FaDiscord />
+          </span>
         </div>
-      ))}
+      </div>
     </div>
+  );
+};
+
+const FooterBottomMenu = () => {
+  return (
+    <div className="md:text-center">
+      <p className="font-bold text-xl md:mt-8">Menu</p>
+      <div>
+        <p className="mt-3">About Me</p>
+        <p className="mt-3">Skills</p>
+        <p className="mt-3">Project</p>
+        <p className="mt-3">Contact</p>
+      </div>
+    </div>
+  );
+};
+
+const RightReserved = () => {
+  return (
+    <p className="text-right md:text-center p-6 md:mt-8">
+      Kry765 | 2024 &copy;All right reserved
+    </p>
   );
 };
 
 export default function Footer() {
   return (
-    <div className="flex flex-col bg-[#176b87] text-white">
-      <div className="flex flex-row justify-center pt-12 w-full h-1/2 ">
-        <div className="flex w-3/4">
-          <FooterContent />
-          <FooterContactMe />
-        </div>
+    <div className="bg-[#176b87] text-white w-full">
+      <div className="flex flex-row justify-around items mx-24 pt-12 md:flex-col">
+        <FooterSocialMediaContent />
+        <FooterBottomMenu />
+        <FooterContactMe />
       </div>
-      <p className="text-right my-3 mx-5">
-        Kry765 | 2024 &copy;All right reserved
-      </p>
+      <div>
+        <RightReserved />
+      </div>
     </div>
   );
 }

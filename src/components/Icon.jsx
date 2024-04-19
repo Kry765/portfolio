@@ -21,6 +21,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { SiTailwindcss } from "react-icons/si";
+import { FaDiscord } from "react-icons/fa";
 
 export { HiMenuAlt3 };
 export { BsFillLightningChargeFill };
@@ -45,3 +46,4 @@ export { FaLocationDot };
 export { MdEmail };
 export { FaPhone };
 export { SiTailwindcss };
+export { FaDiscord };
