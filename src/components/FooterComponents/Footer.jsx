@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import {
   FaFacebook,
   FaInstagram,
@@ -50,21 +51,15 @@ const FooterSocialMediaContent = () => {
       </p>
       <div>
         <div className="flex flex-row md:justify-center">
-          <span className="m-2">
-            <FaInstagram />
-          </span>
-          <span className="m-2">
+          <a href="https://github.com/Kry765" className="m-2">
             <FaGithub />
-          </span>
-          <span className="m-2">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/krzysztof-kl%C4%99ka-a75729225/"
+            className="m-2"
+          >
             <FaLinkedin />
-          </span>
-          <span className="m-2">
-            <FaFacebook />
-          </span>
-          <span className="m-2">
-            <FaDiscord />
-          </span>
+          </a>
         </div>
       </div>
     </div>
