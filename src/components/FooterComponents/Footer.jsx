@@ -1,14 +1,5 @@
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-  MdEmail,
-  FaPhone,
-  FaLocationDot,
-  FaDiscord,
-} from "../Icon";
+import { FaLinkedin, FaGithub, MdEmail, FaPhone, FaLocationDot } from "../Icon";
+import { Link } from "react-scroll";
 
 const FooterContactMe = () => {
   return (
@@ -35,7 +26,7 @@ const FooterContactMe = () => {
           <div className="mx-4 my-2">
             <FaLocationDot />
           </div>
-          <div className="my-1">Żywiec, Poland"</div>
+          <div className="my-1">Żywiec, Poland</div>
         </div>
       </div>
     </div>
@@ -71,10 +62,46 @@ const FooterBottomMenu = () => {
     <div className="md:text-center">
       <p className="font-bold text-xl md:mt-8">Menu</p>
       <div>
-        <p className="mt-3">About Me</p>
-        <p className="mt-3">Skills</p>
-        <p className="mt-3">Project</p>
-        <p className="mt-3">Contact</p>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="hover:cursor-pointer hover:text-[#64ccc5]"
+        >
+          <p className="mt-3 transition-colors duration-700">Home</p>
+        </Link>
+        <Link
+          to="aboutme"
+          smooth={true}
+          duration={500}
+          className="hover:cursor-pointer hover:text-[#64ccc5]"
+        >
+          <p className="mt-3 transition-colors duration-700">About Me</p>
+        </Link>
+        <Link
+          to="skills"
+          smooth={true}
+          duration={500}
+          className="hover:cursor-pointer hover:text-[#64ccc5]"
+        >
+          <p className="mt-3 transition-colors duration-700">Skills</p>
+        </Link>
+        <Link
+          to="project"
+          smooth={true}
+          duration={500}
+          className="hover:cursor-pointer hover:text-[#64ccc5]"
+        >
+          <p className="mt-3 transition-colors duration-700">Project</p>
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          className="hover:cursor-pointer hover:text-[#64ccc5]"
+        >
+          <p className="mt-3 transition-colors duration-700">Contact</p>
+        </Link>
       </div>
     </div>
   );
@@ -90,7 +117,7 @@ const RightReserved = () => {
 
 export default function Footer() {
   return (
-    <div className="bg-[#176b87] text-white w-full">
+    <div className="bg-[#176b87] text-white w-full" id="contact">
       <div className="flex flex-row justify-around items mx-24 pt-12 md:flex-col">
         <FooterSocialMediaContent />
         <FooterBottomMenu />

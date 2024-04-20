@@ -68,7 +68,10 @@ function About() {
   };
 
   return (
-    <div className="relative overflow-hidden flex justify-center items-center flex-row bg-[#ffffff] -z-20">
+    <div
+      className="relative overflow-hidden flex justify-center items-center flex-row bg-[#ffffff] -z-20"
+      id="aboutme"
+    >
       <RadiusTop />
       <AboutMePhoto />
       <div>

@@ -14,13 +14,6 @@ import {
   SiTailwindcss,
 } from "../Icon";
 
-const descriptionText = [
-  "I have experience with frontend technologies like HTML, CSS, JS.",
-  "At the moment I work with React technologies, as well as tailwind, so I create web applications and websites.",
-  "In the meantime, I am developing my expertise with backend languages such as sequelize and MySQL.",
-  "He applies the produced applications via a Docker on the server, making them accessible to most users.",
-];
-
 const description = [
   "HTML",
   "CSS",
@@ -53,7 +46,10 @@ const image = [
 
 const TitleSkillContent = (props) => {
   return (
-    <div className="flex w-3/4 md:w-full flex-col my-5 md:h-[100v] md:items-center md:text-center">
+    <div
+      id="skills"
+      className="flex w-3/4 md:w-full flex-col my-5 md:h-[100v] md:items-center md:text-center"
+    >
       <h2 className="text-[#176b87] w-3/4 text-4xl mx-auto font-bold">
         {props.My} <span className="text-4xl text-black">{props.Skills}</span>
       </h2>
