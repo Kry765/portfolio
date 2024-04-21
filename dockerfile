@@ -1,6 +1,7 @@
-FROM node:18-alpine
-WORKDIR /react-docker/
-COPY package.json ./
+FROM node:20-alpine AS build
+WORKDIR /app
+COPY package.json .
 RUN npm install
-CMD ["npm", "start"]
-EXPOSE 80
+COPY . .
+EXPOSE 3000
+CMD ["npm","start"]

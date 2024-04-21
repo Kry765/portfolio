@@ -52,7 +52,11 @@ function About() {
   const AboutMePhoto = () => {
     return (
       <div className="flex justify-center w-1/2 h-full m-[5rem] md:md:hidden z-20">
-        <img src={Myphoto} alt="my photo" className="w-[55%]" />
+        <img
+          src={Myphoto}
+          alt={"This is photo of myself"}
+          className="w-[55%]"
+        />
       </div>
     );
   };
