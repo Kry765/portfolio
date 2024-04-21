@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://kry765portfolio.pl",
+  "homepage": "https://kry765.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@tabler/icons-react": "^2.12.0",
