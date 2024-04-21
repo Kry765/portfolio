@@ -33,9 +33,9 @@ const NavigationToggleMenuIcon = ({ isOpen }) => {
   return (
     <>
       {isOpen ? (
-        <VscClose className="text-black p-2 size-14 hover:cursor-pointer hover:text-white" />
+        <VscClose className="text-white p-2 size-14 hover:cursor-pointer hover:text-white" />
       ) : (
-        <HiMenuAlt3 className="text-black p-2 size-14" />
+        <HiMenuAlt3 className="text-black p-2 size-14 hover:cursor-pointer hover:text-black" />
       )}
     </>
   );
@@ -77,7 +77,7 @@ const NavigationItemDesktop = () => {
 const NavigationItem = ({ isOpen }) => {
   return (
     <div
-      className={`fixed top-0 flex justify-center items-center z-20 h-20 w-[70%] bg-[#176B87] text-cyan-100 rounded-b-[25px] md:w-full md:h-full md:rounded-none md:block md:transition-transform md:duration-500 md:ease-in-out ${
+      className={`fixed top-0 flex justify-center items-center z-20 h-20 w-[70%] bg-[#176B87] opacity-95 text-cyan-100 rounded-b-[25px] md:w-full md:h-full md:rounded-none md:block md:transition-transform md:duration-500 md:ease-in-out ${
         isOpen ? "md:translate-x-0 md:z-30" : "md:translate-x-full md:z-30"
       }`}
     >
