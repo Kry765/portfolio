@@ -12,7 +12,7 @@ const projects = [
   },
 ];
 
-const Icon = ({}) => {
+const Icon = () => {
   return (
     <div className="flex py-4">
       <a
@@ -59,7 +59,11 @@ export default function Project() {
             <Icon github={project.GitHubLink} />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <img className="w-1/2 h-auto relative" src={project.image} />
+            <img
+              className="w-1/2 h-auto relative"
+              alt="appearance learnpgapp"
+              src={project.image}
+            />
           </div>
         </div>
       ))}

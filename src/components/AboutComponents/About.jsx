@@ -1,4 +1,3 @@
-import Myphoto from "../../Assets/myphoto.jpg";
 import { BsFillLightningChargeFill } from "../Icon";
 
 function About() {
@@ -53,8 +52,8 @@ function About() {
     return (
       <div className="flex justify-center w-1/2 h-full m-[5rem] md:md:hidden z-20">
         <img
-          src={Myphoto}
-          alt={"This is photo of myself"}
+          src="../../Assets/myphoto.jpg"
+          alt="This is myself"
           className="w-[55%]"
         />
       </div>

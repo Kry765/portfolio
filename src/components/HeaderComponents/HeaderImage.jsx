@@ -1,9 +1,10 @@
-import handsImage from "../../Assets/hands-820272_640.jpg";
+import headerPhoto from "../../Assets/hands-820272_640.jpg";
 
 const Image = () => {
   return (
     <img
-      src={handsImage}
+      src={headerPhoto}
+      alt=""
       className="relative w-[100%] h-[100vh] z-2 md:hidden"
     />
   );
