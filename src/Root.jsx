@@ -13,9 +13,7 @@ function Root() {
       <nav>
         <Navigation />
       </nav>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <About />
         <Skills />

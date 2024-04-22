@@ -1,20 +1,4 @@
-import headerPhoto from "../../Assets/hands-820272_640.jpg";
-
-const Image = () => {
-  return (
-    <img
-      src={headerPhoto}
-      alt=""
-      className="relative w-[100%] h-[100vh] z-2 md:hidden"
-    />
-  );
-};
-
-const OpacityImage = () => {
-  return (
-    <div className="absolute bg-[#176b87] opacity-30 z-10 w-2/4 h-full md:hidden"></div>
-  );
-};
+import { OpacityImage, Image } from "./HeaderImageComponents";
 
 export const HeaderImage = () => {
   return (
