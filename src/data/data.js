@@ -10,9 +10,12 @@ import {
   SiSequelize,
   FaNode,
   FaGithub,
+  MdEmail,
   SiTailwindcss,
+  FaPhone,
+  FaLocationDot,
 } from "../components/Icon";
-import LearnPgAppImage from "../Assets/learnpg_project.jpg.png";
+import { Link } from "react-scroll";
 
 export const AboutDescriptionsText = [
   "I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web Developer.",
@@ -57,15 +60,59 @@ export const SkillCardIcons = [
   <SiTailwindcss size={30} />,
 ];
 
-export const projects = [
-  {
-    title: "LearnPgApp",
-    stack: "React, Express.js, Docker, Sequelize",
-    description:
-      "Projects for WSIZ as part of engineering work. The web application includes basic topics in SQL databases, which the student can later test through a quiz. ",
-    image: LearnPgAppImage,
-    GitHubLink: "https://github.com/Kry765/portfolio",
-  },
+export const FooterIconContactMe = [
+  <MdEmail />,
+  <FaPhone />,
+  <FaLocationDot />,
+];
+
+export const FooterTextContactMe = [
+  "krzysztofkleka91@gmail.com",
+  "573-226-219",
+  "Żywiec, Poland",
+];
+
+export const FooterMenuBottomData = [
+  <Link
+    to="home"
+    smooth={true}
+    duration={500}
+    className="hover:cursor-pointer hover:text-[#64ccc5]"
+  >
+    <p className="mt-3 transition-colors duration-700">Home</p>
+  </Link>,
+  <Link
+    to="aboutme"
+    smooth={true}
+    duration={500}
+    className="hover:cursor-pointer hover:text-[#64ccc5]"
+  >
+    <p className="mt-3 transition-colors duration-700">About Me</p>
+  </Link>,
+  <Link
+    to="skills"
+    smooth={true}
+    duration={500}
+    className="hover:cursor-pointer hover:text-[#64ccc5]"
+  >
+    <p className="mt-3 transition-colors duration-700">Skills</p>
+  </Link>,
+  <Link
+    to="project"
+    smooth={true}
+    duration={500}
+    className="hover:cursor-pointer hover:text-[#64ccc5]"
+  >
+    <p className="mt-3 transition-colors duration-700">Project</p>
+  </Link>,
+  <Link
+    to="contact"
+    smooth={true}
+    duration={500}
+    className="hover:cursor-pointer hover:text-[#64ccc5]"
+  >
+    <p className="mt-3 transition-colors duration-700">Contact</p>
+  </Link>,
 ];
 
 export default SkillContentText;
