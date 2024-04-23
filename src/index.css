@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import "tailwindcss/keyframes"; */
 
 .nav-menu-animation {
   animation: nav-menu infinite 3s;
