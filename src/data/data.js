@@ -12,7 +12,7 @@ import {
   FaGithub,
   SiTailwindcss,
 } from "../components/Icon";
-import React from "react";
+import LearnPgAppImage from "../Assets/learnpg_project.jpg.png";
 
 export const AboutDescriptionsText = [
   "I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web Developer.",
@@ -55,6 +55,17 @@ export const SkillCardIcons = [
   <FaNode size={30} />,
   <FaGithub size={30} />,
   <SiTailwindcss size={30} />,
+];
+
+export const projects = [
+  {
+    title: "LearnPgApp",
+    stack: "React, Express.js, Docker, Sequelize",
+    description:
+      "Projects for WSIZ as part of engineering work. The web application includes basic topics in SQL databases, which the student can later test through a quiz. ",
+    image: LearnPgAppImage,
+    GitHubLink: "https://github.com/Kry765/portfolio",
+  },
 ];
 
 export default SkillContentText;
