@@ -15,5 +15,3 @@ export const SkillCards = () => {
     </div>
   );
 };
-
-export default SkillCards;

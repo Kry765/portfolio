@@ -1,12 +1,16 @@
+import Skills from "./Skills.module.scss";
+
 export const TitleSkillContent = (props) => {
   return (
     <h2
-      className="text-[#176b87] my-5 w-3/4 text-4xl mx-auto font-bold md:text-center"
+      className={`${Skills.SkillsFont} text-[#176b87] my-5 text-4xl font-bold md:text-center"
+       `}
       id="skills"
     >
-      {props.My} <span className="text-4xl text-black">{props.Skills}</span>
+      {props.My}{" "}
+      <span className={`${Skills.SkillsFont}text-4xl text-black`}>
+        {props.Skills}
+      </span>
     </h2>
   );
 };
-
-export default TitleSkillContent;

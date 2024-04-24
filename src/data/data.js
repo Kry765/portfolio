@@ -72,7 +72,7 @@ export const FooterTextContactMe = [
   "Żywiec, Poland",
 ];
 
-export const FooterMenuBottomData = [
+export const FooterBottomMenuData = [
   <Link
     to="home"
     smooth={true}
@@ -114,5 +114,3 @@ export const FooterMenuBottomData = [
     <p className="mt-3 transition-colors duration-700">Contact</p>
   </Link>,
 ];
-
-export default SkillContentText;

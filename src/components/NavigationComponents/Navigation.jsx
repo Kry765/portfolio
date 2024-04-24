@@ -1,31 +1,23 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { HiMenuAlt3, VscClose } from "../Icon";
+import NavStyle from "./NavigationStyle.module.scss";
+
 export const navigationText = [
-  <Link to="home" smooth={true} duration={500}>
-    <div className=" p-4 text-white flex justify-start items-center hover:cursor-pointer hover:text-[#64ccc5]">
-      <p className="transition-color duration-500">Home</p>
-    </div>
+  <Link to="home" smooth={true}>
+    <p className={NavStyle.navSpace}>Home</p>
   </Link>,
-  <Link to="aboutme" smooth={true} duration={500}>
-    <div className=" p-4 text-white flex justify-start items-center hover:cursor-pointer hover:text-[#64ccc5]">
-      <p className="transition-color duration-500">About me</p>
-    </div>
+  <Link to="aboutme" smooth={true}>
+    <p className={NavStyle.navSpace}>About me</p>
   </Link>,
-  <Link to="skills" smooth={true} duration={500}>
-    <div className=" p-4 text-white flex justify-start items-center hover:cursor-pointer hover:text-[#64ccc5]">
-      <p className="transition-color duration-500">Skills</p>
-    </div>
+  <Link to="skills" smooth={true}>
+    <p className={`${NavStyle.navSpace}`}>Skills</p>
   </Link>,
-  <Link to="project" smooth={true} duration={500}>
-    <div className=" p-4 text-white flex justify-start items-center hover:cursor-pointer hover:text-[#64ccc5]">
-      <p className="transition-color duration-500">Project</p>
-    </div>
+  <Link to="project" smooth={true}>
+    <p className={NavStyle.navSpace}>Project</p>
   </Link>,
-  <Link to="contact" smooth={true} duration={500}>
-    <div className=" p-4 text-white flex justify-start items-center hover:cursor-pointer hover:text-[#64ccc5]">
-      <p className="transition-color duration-500">Contact</p>
-    </div>
+  <Link to="contact" smooth={true}>
+    <p className={NavStyle.navSpace}>Contact</p>
   </Link>,
 ];
 
@@ -89,7 +81,7 @@ const NavigationItem = ({ isOpen }) => {
   );
 };
 
-function Navigation() {
+export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggleMobileItem = () => {
     setIsOpen(!isOpen);
@@ -105,5 +97,3 @@ function Navigation() {
     </div>
   );
 }
-
-export default Navigation;

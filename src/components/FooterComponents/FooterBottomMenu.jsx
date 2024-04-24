@@ -1,14 +1,12 @@
-import FooterMenuBottomData from "../../data/data";
+import { FooterBottomMenuData } from "../../data/data";
 
 export const FooterBottomMenu = () => {
   return (
     <div className="md:text-center">
       <p className="font-bold text-xl md:mt-8">Menu</p>
-      {FooterMenuBottomData.map((FooterMenusBottomData, index) => (
-        <div key={index}>{FooterMenusBottomData}</div>
+      {FooterBottomMenuData.map((FooterMenusBottomDatas, index) => (
+        <div key={index}>{FooterMenusBottomDatas}</div>
       ))}
     </div>
   );
 };
-
-export default FooterBottomMenu;

@@ -1,13 +1,19 @@
-import DecorateHeaderRadius from "./HeaderDecorateRadius";
-import HeaderTileText from "./HeaderTitle";
-import HeaderBtn from "./HeaderBtn";
+import React, { Suspense } from "react";
+const DecorateHeaderRadius = React.lazy(() => import("./HeaderDecorateRadius"));
+const HeaderTileText = React.lazy(() => import("./HeaderTitle"));
+const HeaderBtn = React.lazy(() => import("./HeaderBtn"));
 
 export const HeaderDescription = () => {
   return (
-    <div className="relative flex justify-center bg-[#d9d9d9] flex-col items-start w-6/12 h-[100vh] p-10 truncate md:w-[100%] md:items-center">
-      <DecorateHeaderRadius />
-      <HeaderTileText Christopher="Christopher" WebDeveloper="Web-Developer" />
-      <HeaderBtn />
+    <div className="relative flex justify-center bg-[#d9d9d9] flex-col items-center h-[100vh] p-10 truncate">
+      <Suspense fallback={<div>Loading..</div>}>
+        <DecorateHeaderRadius />
+        <HeaderTileText
+          Christopher="Christopher"
+          WebDeveloper="Web-Developer"
+        />
+        <HeaderBtn />
+      </Suspense>
     </div>
   );
 };

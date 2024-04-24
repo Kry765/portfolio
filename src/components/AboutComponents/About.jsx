@@ -1,9 +1,9 @@
-import RenderAboutDescriptions from "./RenderAboutDescription";
-import AboutMePhoto from "./AboutMePhoto";
+import { RenderAboutDescriptions } from "./RenderAboutDescription";
+import { AboutMePhoto } from "./AboutMePhoto";
 import { DecorateAboutRadius } from "./DecorateRadius";
 import { AboutMeTitle } from "./AboutMeTitle";
 
-function About() {
+export default function About() {
   return (
     <section
       className="relative overflow-hidden flex items-center flex-row bg-[#ffffff] -z-20"
@@ -18,5 +18,3 @@ function About() {
     </section>
   );
 }
-
-export default About;
