@@ -5,7 +5,7 @@ const HeaderBtn = React.lazy(() => import("./HeaderBtn"));
 
 export const HeaderDescription = () => {
   return (
-    <div className="relative flex justify-center bg-[#d9d9d9] flex-col items-center h-[100vh] p-10 truncate">
+    <div className="relative flex justify-center flex-col items-center h-[100vh] p-10 truncate">
       <Suspense fallback={<div>Loading..</div>}>
         <DecorateHeaderRadius />
         <HeaderTileText

@@ -6,7 +6,7 @@ import { AboutMeTitle } from "./AboutMeTitle";
 export default function About() {
   return (
     <section
-      className="relative overflow-hidden flex items-center flex-row bg-[#ffffff] -z-20"
+      className="relative overflow-hidden flex items-center flex-row -z-20"
       id="aboutme"
     >
       <AboutMePhoto />

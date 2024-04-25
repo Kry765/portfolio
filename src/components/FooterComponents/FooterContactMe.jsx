@@ -4,12 +4,12 @@ export const FooterContactMe = () => {
   return (
     <div>
       <div>
-        <h3 className="flex flex-row text-xl mx-4 font-bold md:justify-center md:mt-8">
+        <h3 className="text-xl mx-4 font-bold md:mt-8 md:text-center">
           Contact Me
         </h3>
         {FooterTextContactMe.map((FooterTextContactMe, index) => (
-          <div key={index} className="flex">
-            <span>{FooterIconContactMe[index]}</span>
+          <div key={index} className="flex mt-4">
+            <span className="my-1 mx-4">{FooterIconContactMe[index]}</span>
             <p>{FooterTextContactMe}</p>
           </div>
         ))}
