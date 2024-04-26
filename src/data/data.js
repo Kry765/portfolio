@@ -73,44 +73,36 @@ export const FooterTextContactMe = [
 ];
 
 export const FooterBottomMenuData = [
-  <Link
-    to="home"
-    smooth={true}
-    duration={500}
-    className="hover:cursor-pointer hover:text-[#64ccc5]"
+  <a
+    href="home"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
   >
-    <p className="mt-3 transition-colors duration-700">Home</p>
-  </Link>,
-  <Link
-    to="aboutme"
-    smooth={true}
-    duration={500}
-    className="hover:cursor-pointer hover:text-[#64ccc5]"
+    Home
+  </a>,
+
+  <a
+    href="/#aboutme"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
   >
-    <p className="mt-3 transition-colors duration-700">About Me</p>
-  </Link>,
-  <Link
-    to="skills"
-    smooth={true}
-    duration={500}
-    className="hover:cursor-pointer hover:text-[#64ccc5]"
+    About Me
+  </a>,
+
+  <a
+    href="/#skills"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
   >
-    <p className="mt-3 transition-colors duration-700">Skills</p>
-  </Link>,
-  <Link
-    to="project"
-    smooth={true}
-    duration={500}
-    className="hover:cursor-pointer hover:text-[#64ccc5]"
+    Skills
+  </a>,
+  <a
+    href="/#project"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
   >
-    <p className="mt-3 transition-colors duration-700">Project</p>
-  </Link>,
-  <Link
-    to="contact"
-    smooth={true}
-    duration={500}
-    className="hover:cursor-pointer hover:text-[#64ccc5]"
+    Project
+  </a>,
+  <a
+    href="/#contact"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
   >
-    <p className="mt-3 transition-colors duration-700">Contact</p>
-  </Link>,
+    Contact
+  </a>,
 ];

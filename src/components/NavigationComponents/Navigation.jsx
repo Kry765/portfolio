@@ -1,25 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 
 import { BurgerIcon } from "./NavigationBurgerIcon";
 import NavStyle from "./NavigationStyle.module.scss";
 
 export const navigationText = [
-  <Link to="home" smooth={true}>
-    <p className={NavStyle.navSpace}>Home</p>
-  </Link>,
-  <Link to="aboutme" smooth={true}>
-    <p className={NavStyle.navSpace}>About me</p>
-  </Link>,
-  <Link to="skills" smooth={true}>
-    <p className={`${NavStyle.navSpace}`}>Skills</p>
-  </Link>,
-  <Link to="project" smooth={true}>
-    <p className={NavStyle.navSpace}>Project</p>
-  </Link>,
-  <Link to="contact" smooth={true}>
-    <p className={NavStyle.navSpace}>Contact</p>
-  </Link>,
+  <a href="/#home" className={NavStyle.navSpace}>
+    Home
+  </a>,
+  <a href="/#aboutme" className={NavStyle.navSpace}>
+    About me
+  </a>,
+  <a href="/#skills" className={`${NavStyle.navSpace}`}>
+    Skills
+  </a>,
+  <a href="/#project" className={NavStyle.navSpace}>
+    Project
+  </a>,
+  <a href="/#contact" className={NavStyle.navSpace}>
+    Contact
+  </a>,
 ];
 
 const NavigationItemMobile = () => {
@@ -36,7 +35,7 @@ const NavigationItemMobile = () => {
 const NavigationItemDesktop = () => {
   return navigationText.map((navigationTexts, index) => (
     <div className="p-7 hover:cursor-pointer md:hidden " key={index}>
-      <p>{navigationTexts}</p>
+      {navigationTexts}
     </div>
   ));
 };
