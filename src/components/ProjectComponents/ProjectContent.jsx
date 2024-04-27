@@ -1,4 +1,4 @@
-import LearnPgAppImage from "../../Assets/learnpg_project.jpg.png";
+import LearnPgAppImage from "../../Assets/learnpg_project.jpg";
 import Icon from "./ProjectIcon";
 
 export const projects = [
