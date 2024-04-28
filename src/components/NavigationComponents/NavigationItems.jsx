@@ -1,4 +1,4 @@
-export const NavigationItem = ({ navigationText }) => {
+const NavigationItem = ({ navigationText }) => {
   return (
     <div className="flex flex-row md:flex-col md:m-8">
       {navigationText.map((text, index) => (
