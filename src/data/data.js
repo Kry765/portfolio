@@ -15,7 +15,25 @@ import {
   FaPhone,
   FaLocationDot,
 } from "../components/Icon";
-import { Link } from "react-scroll";
+import NavStyle from "../components/NavigationComponents/NavigationStyle.module.scss";
+
+export const navigationText = [
+  <a href="/#home" className={NavStyle.navSpace}>
+    Home
+  </a>,
+  <a href="/#aboutme" className={NavStyle.navSpace}>
+    About me
+  </a>,
+  <a href="/#skills" className={`${NavStyle.navSpace}`}>
+    Skills
+  </a>,
+  <a href="/#project" className={NavStyle.navSpace}>
+    Project
+  </a>,
+  <a href="/#contact" className={NavStyle.navSpace}>
+    Contact
+  </a>,
+];
 
 export const AboutDescriptionsText = [
   "I am currently in my third year of studies at the University of Information Technology and Management, majoring in Web Developer.",

@@ -1,5 +1,5 @@
-import LearnPgAppImage from "../../Assets/learnpg_project.jpg";
-import Icon from "./ProjectIcon";
+import LearnPgAppImage from "../../Assets/learnpg_project.webp";
+import { Icon } from "./ProjectIcon";
 
 export const projects = [
   {
@@ -15,7 +15,7 @@ export const projects = [
 export const ProjectContent = () => {
   return projects.map((project, index) => (
     <div
-      className="flex justify-center mx-auto my-10 w-4/5 bg-[#d9d9d9] p-8 rounded-2xl md:flex-col-reverse md:flex-wrap"
+      className="flex mx-auto my-8 w-4/5 bg-[#d9d9d9] p-8 rounded-2xl md:flex-col-reverse md:flex-wrap"
       key={index}
     >
       <div className="flex flex-col">
@@ -26,7 +26,7 @@ export const ProjectContent = () => {
         <p className="text-xl">{project.description}</p>
         <Icon github={project.GitHubLink} />
       </div>
-      <img className="w-1/2" alt="appearance learnpgapp" src={project.image} />
+      <img className="h-60" alt="appearance learnpgapp" src={project.image} />
     </div>
   ));
 };

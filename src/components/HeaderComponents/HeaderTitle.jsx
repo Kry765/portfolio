@@ -10,7 +10,7 @@ export const HeaderTileText = (props) => {
         <span className="text-[#176B87]"> {props.Christopher}</span>
       </h1>
       <h2
-        className={`${HeaderClass.headerTitle} text-[#666666] text-4xl p-2 mt-4 mb-4 md:z-0`}
+        className={`${HeaderClass.headerTitle} text-[#666666] text-4xl my-4 md:z-0`}
       >
         {props.WebDeveloper}
       </h2>

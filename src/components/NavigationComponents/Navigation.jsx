@@ -1,59 +1,7 @@
 import React, { useState } from "react";
-
+import { navigationText } from "../../data/data";
 import { BurgerIcon } from "./NavigationBurgerIcon";
-import NavStyle from "./NavigationStyle.module.scss";
-
-export const navigationText = [
-  <a href="/#home" className={NavStyle.navSpace}>
-    Home
-  </a>,
-  <a href="/#aboutme" className={NavStyle.navSpace}>
-    About me
-  </a>,
-  <a href="/#skills" className={`${NavStyle.navSpace}`}>
-    Skills
-  </a>,
-  <a href="/#project" className={NavStyle.navSpace}>
-    Project
-  </a>,
-  <a href="/#contact" className={NavStyle.navSpace}>
-    Contact
-  </a>,
-];
-
-const NavigationItemMobile = () => {
-  return navigationText.map((navigationTexts, index) => (
-    <div
-      className="mt-12 p-4 text-white flex justify-start items-center"
-      key={index}
-    >
-      <p>{navigationTexts}</p>
-    </div>
-  ));
-};
-
-const NavigationItemDesktop = () => {
-  return navigationText.map((navigationTexts, index) => (
-    <div className="p-7 hover:cursor-pointer md:hidden " key={index}>
-      {navigationTexts}
-    </div>
-  ));
-};
-
-const NavigationItem = ({ isOpen }) => {
-  return (
-    <div
-      className={`fixed top-0 flex justify-center items-center z-20 h-20 w-[70%] bg-[#176B87] text-white rounded-b-[25px] md:w-full md:h-full md:rounded-none md:block md:transition-transform md:duration-500 md:ease-in-out ${
-        isOpen ? "md:translate-x-0 md:z-30" : "md:translate-x-full md:z-30"
-      }`}
-    >
-      <NavigationItemDesktop />
-      <div className="hidden md:block md:m-8">
-        <NavigationItemMobile />
-      </div>
-    </div>
-  );
-};
+import { NavigationItems } from "./NavigationItems";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +15,7 @@ export default function Navigation() {
         isOpen={isOpen}
         handleToggleMobileItem={handleToggleMobileItem}
       />
-      <NavigationItem isOpen={isOpen} />
+      <NavigationItems isOpen={isOpen} navigationText={navigationText} />
     </div>
   );
 }
