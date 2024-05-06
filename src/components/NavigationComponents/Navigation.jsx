@@ -10,7 +10,7 @@ export default function Navigation() {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-end">
       <BurgerIcon
         isOpen={isOpen}
         handleToggleMobileItem={handleToggleMobileItem}

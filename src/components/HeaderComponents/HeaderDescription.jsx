@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import bgColor from "./Header.module.scss";
 const DecorateHeaderRadius = React.lazy(() => import("./HeaderDecorateRadius"));
 const HeaderTileText = React.lazy(() => import("./HeaderTitle"));
 const HeaderBtn = React.lazy(() => import("./HeaderBtn"));
@@ -7,7 +6,7 @@ const HeaderBtn = React.lazy(() => import("./HeaderBtn"));
 export const HeaderDescription = () => {
   return (
     <div
-      className={`relative flex justify-center flex-col items-center h-[100vh] p-10 truncate ${bgColor.headerBgc}`}
+      className={`relative flex justify-center flex-col w-full items-start h-[100vh] truncate md:items-center`}
     >
       <Suspense fallback={<div>Loading..</div>}>
         <DecorateHeaderRadius />
