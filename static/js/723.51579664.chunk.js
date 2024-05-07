@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[723],{723:function(e,t,r){r.r(t),r.d(t,{HeaderBtn:function(){return o}});var n=r(184),o=function(){return(0,n.jsx)("button",{className:"animate-fade-right hover:cursor-pointer mx-8 hover:bg-[#176B87] border-none bg-[#019760] rounded-2xl h-[50px] w-[250px] font-bold uppercase transition duration-300",children:(0,n.jsx)("a",{href:"#aboutme",className:"text-white",children:"Contact me"})})};t.default=o}}]);
+//# sourceMappingURL=723.51579664.chunk.js.map
