@@ -4,9 +4,9 @@ const NavigationToggleMenuIcon = ({ isOpen }) => {
   return (
     <>
       {isOpen ? (
-        <VscClose className="text-white p-2 size-14 hover:cursor-pointer hover:text-white" />
+        <VscClose className="p-2 size-14 hover:cursor-pointer" />
       ) : (
-        <HiMenuAlt3 className="text-black p-2 size-14 hover:cursor-pointer hover:text-black" />
+        <HiMenuAlt3 className=" p-2 size-14 hover:cursor-pointer " />
       )}
     </>
   );
