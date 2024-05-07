@@ -15,7 +15,7 @@ export const projects = [
 export const ProjectContent = () => {
   return projects.map((project, index) => (
     <div
-      className="flex mx-auto my-8 w-4/5 bg-[#d9d9d9] p-8 rounded-2xl md:flex-col-reverse md:flex-wrap"
+      className="flex mx-auto my-8 w-4/5 bg-[#282828] p-8 rounded-2xl md:flex-col-reverse md:flex-wrap"
       key={index}
     >
       <div className="flex flex-col">

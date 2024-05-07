@@ -14,6 +14,9 @@ import {
   SiTailwindcss,
   FaPhone,
   FaLocationDot,
+  SiCloudflarepages,
+  SiPagespeedinsights,
+  MdCastForEducation,
 } from "../components/Icon";
 import NavStyle from "../components/NavigationComponents/NavigationStyle.module.scss";
 
@@ -33,6 +36,12 @@ export const navigationText = [
   <a href="/#contact" className={NavStyle.navSpace}>
     Contact
   </a>,
+];
+
+export const AboutMeIcon = [
+  <MdCastForEducation size={60} />,
+  <SiCloudflarepages size={60} />,
+  <SiPagespeedinsights size={60} />,
 ];
 
 export const AboutDescriptionsText = [
@@ -93,27 +102,27 @@ export const FooterTextContactMe = [
 export const FooterBottomMenuData = [
   <a
     href="home"
-    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#019760]"
   >
     Home
   </a>,
 
   <a
     href="/#aboutme"
-    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#019760]"
   >
     About Me
   </a>,
 
   <a
     href="/#skills"
-    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#019760]"
   >
     Skills
   </a>,
   <a
     href="/#project"
-    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#64ccc5]"
+    className="mt-3 transition-colors duration-700 hover:cursor-pointer hover:text-[#019760]"
   >
     Project
   </a>,

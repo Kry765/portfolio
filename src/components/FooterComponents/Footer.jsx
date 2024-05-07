@@ -5,8 +5,8 @@ import { RightReserved } from "./RightReserved";
 
 export default function Footer() {
   return (
-    <div className="bg-[#176b87] text-white" id="contact">
-      <div className="flex justify-around mx-24 pt-12 md:flex-col">
+    <>
+      <div id="contact" className="flex justify-around mx-24 pt-12 md:flex-col">
         <FooterSocialMediaContent />
         <FooterBottomMenu />
         <FooterContactMe />
@@ -14,6 +14,6 @@ export default function Footer() {
       <>
         <RightReserved />
       </>
-    </div>
+    </>
   );
 }

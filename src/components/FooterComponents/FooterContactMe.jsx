@@ -4,7 +4,7 @@ export const FooterContactMe = () => {
   return (
     <div>
       <div>
-        <h3 className="text-xl mx-4 font-bold md:mt-8 md:text-center">
+        <h3 className="text-xl text-[#019760] mx-4 font-bold md:mt-8 md:text-center">
           Contact Me
         </h3>
         {FooterTextContactMe.map((FooterTextContactMe, index) => (
