@@ -8,7 +8,7 @@ export const FooterContactMe = () => {
           Contact Me
         </h3>
         {FooterTextContactMe.map((FooterTextContactMe, index) => (
-          <div key={index} className="flex mt-4">
+          <div key={index} className="flex md:justify-center mt-4">
             <span className="my-1 mx-4">{FooterIconContactMe[index]}</span>
             <p>{FooterTextContactMe}</p>
           </div>
