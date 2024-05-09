@@ -21,19 +21,19 @@ import {
 import NavStyle from "../components/NavigationComponents/NavigationStyle.module.scss";
 
 export const navigationText = [
-  <a href="/#home" className={NavStyle.navSpace}>
+  <a href="#home" className={NavStyle.navSpace}>
     Home
   </a>,
-  <a href="/#aboutme" className={NavStyle.navSpace}>
+  <a href="#aboutme" className={NavStyle.navSpace}>
     About me
   </a>,
-  <a href="/#skills" className={`${NavStyle.navSpace}`}>
+  <a href="#skills" className={`${NavStyle.navSpace}`}>
     Skills
   </a>,
-  <a href="/#project" className={NavStyle.navSpace}>
+  <a href="#project" className={NavStyle.navSpace}>
     Project
   </a>,
-  <a href="/#contact" className={NavStyle.navSpace}>
+  <a href="#contact" className={NavStyle.navSpace}>
     Contact
   </a>,
 ];
