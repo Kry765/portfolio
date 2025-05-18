@@ -1,0 +1,24 @@
+{
+    "menu": [
+        {
+        "key": "Home",
+        "label": "Home"
+        },
+                {
+        "key": "AboutMe",
+        "label": "About Me"
+        },
+                {
+        "key": "Project",
+        "label": "Project"
+        },
+                {
+        "key": "Certificate",
+        "label": "Certificate"
+        },
+                {
+        "key": "Contact me",
+        "label": "Contact me"
+        }
+    ]
+}
