@@ -1,0 +1,19 @@
+{
+    "personaly":
+    [
+        {
+            "key": "fisrtName",
+            "label": "Krzysztof Klęka"
+        },
+        {
+            "key": "email",
+            "label": "krzysztofkleka91@gmail.com"
+        },
+        {
+            "key": "phone",
+            "label": "573-226-219"
+        }
+    ]
+
+    
+}

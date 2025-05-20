@@ -1,11 +1,12 @@
 import { menu } from "../data/menu.json";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { ListItem } from "../hook/ListItem";
 
-interface MenuItem {
-  key: string;
-  label: string;
-}
+// interface MenuItem {
+//   key: string;
+//   label: string;
+// }
 
 export default function TopNavbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -16,19 +17,18 @@ export default function TopNavbar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-40 w-full bg-black text-white px-4 py-6 flex justify-between items-center">
+      <nav className="fixed top-0 z-2 w-full bg-black text-white px-4 py-6 flex justify-between items-center">
         <div className="cursor-pointer hover:text-[#0F6D95] transition-color duration-350">
-          <span>Christopher</span>
+          <span className="py-2">Christopher</span>
         </div>
-        <ul className="hidden md:flex gap-x-14">
-          {(menu as MenuItem[]).map((item) => (
-            <li key={item.key}>
-              <a className="cursor-pointer hover:text-[#0F6D95] transition-color duration-350">
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <ListItem
+            items={menu}
+            isLink={true}
+            title=""
+            className="hidden md:flex gap-x-14"
+          />
+        </div>
         {mobileMenu ? (
           <X
             className="text-white md:hidden cursor-pointer hover:text-[#0F6D95] transition-color duration-350"
@@ -41,24 +41,35 @@ export default function TopNavbar() {
           />
         )}
       </nav>
-      <div>
-        <ul
-          className={
-            mobileMenu
-              ? "flex justify-center items-center min-h-screen bg-black text-white transition-transform translate-x-[0%] duration-800 ease-in-out px-4 py-6 flex-col gap-x-14"
-              : "flex items-center min-h-screen bg-black text-white transition-transform translate-x-[-100%] duration-800 ease-in-out justify-center flex-col gap-x-14"
-          }
-        >
-          {(menu as MenuItem[]).map((item) => (
-            <li
-              key={item.key}
-              className="cursor-pointer hover:text-[#0F6D95] py-3 px-4 duration-350"
-            >
-              <a>{item.label}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul
+        className={
+          mobileMenu
+            ? "fixed top-18 w-full h-full z-4 flex items-center justify-center bg-black text-white transition-transform translate-x-[0%] duration-800 ease-in-out flex-col gap-x-14"
+            : "fixed top-18 z-4 w-full h-full flex items-center justify-center bg-black text-white transition-transform translate-x-[-100%] duration-800 ease-in-out flex-col gap-x-14"
+        }
+      >
+        <ListItem
+          items={menu}
+          isLink={true}
+          title=""
+          className="hidden md:flex gap-x-14"
+        />
+        <ListItem
+          items={menu}
+          isLink={true}
+          liClassName="py-3 px-4 z-24"
+          linkClassName="duration-350"
+          className="hidden md:flex gap-x-14"
+        />
+        {/* {(menu as MenuItem[]).map((item) => (
+          <li
+            key={item.key}
+            className="cursor-pointer hover:text-[#0F6D95] py-3 px-4 duration-350 z-24 "
+          >
+            <a>{item.label}</a>
+          </li>
+        ))} */}
+      </ul>
     </>
   );
 }

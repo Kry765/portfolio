@@ -2,23 +2,28 @@
     "menu": [
         {
         "key": "Home",
-        "label": "Home"
+        "label": "Home",
+        "href": "Home"
         },
                 {
         "key": "AboutMe",
-        "label": "About Me"
+        "label": "About Me",
+        "href": "AboutMe"
         },
                 {
         "key": "Project",
-        "label": "Project"
+        "label": "Project",
+        "href": "Project"
         },
                 {
         "key": "Certificate",
-        "label": "Certificate"
+        "label": "Certificate",
+        "href": "Certificate"
         },
                 {
         "key": "Contact me",
-        "label": "Contact me"
+        "label": "Contact me",
+        "href": "Contact"
         }
     ]
 }
