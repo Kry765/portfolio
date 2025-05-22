@@ -3,11 +3,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ListItem } from "../hook/ListItem";
 
-// interface MenuItem {
-//   key: string;
-//   label: string;
-// }
-
 export default function TopNavbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -52,7 +47,7 @@ export default function TopNavbar() {
           items={menu}
           isLink={true}
           title=""
-          className="hidden md:flex gap-x-14"
+          className="md:flex gap-x-14"
         />
         <ListItem
           items={menu}
@@ -61,14 +56,6 @@ export default function TopNavbar() {
           linkClassName="duration-350"
           className="hidden md:flex gap-x-14"
         />
-        {/* {(menu as MenuItem[]).map((item) => (
-          <li
-            key={item.key}
-            className="cursor-pointer hover:text-[#0F6D95] py-3 px-4 duration-350 z-24 "
-          >
-            <a>{item.label}</a>
-          </li>
-        ))} */}
       </ul>
     </>
   );
