@@ -1,7 +1,7 @@
 import { Github, Linkedin, Facebook } from "lucide-react";
 import { menu } from "../data/menu.json";
 import { personaly } from "../data/personalyData.json";
-import { ListItem } from "../hook/ListItem";
+import { ListMenu } from "../hook/ListMenu";
 
 export default function Footer() {
   return (
@@ -14,13 +14,13 @@ export default function Footer() {
           wydajność, dostępność i estetykę kodu.
         </p>
       </div>
-      <ListItem
+      <ListMenu
         title="Menu"
         className="px-8 py-6 w-full md:w-[20%] text-center md:text-left"
         items={menu}
         isLink={true}
       />
-      <ListItem
+      <ListMenu
         title="Contact"
         items={personaly}
         isLink={false}

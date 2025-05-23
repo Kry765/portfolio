@@ -1,7 +1,7 @@
 import { menu } from "../data/menu.json";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { ListItem } from "../hook/ListItem";
+import { ListMenu } from "../hook/ListMenu";
 
 export default function TopNavbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -17,7 +17,7 @@ export default function TopNavbar() {
           <span className="py-2">Christopher</span>
         </div>
         <div>
-          <ListItem
+          <ListMenu
             items={menu}
             isLink={true}
             title=""
@@ -43,13 +43,13 @@ export default function TopNavbar() {
             : "fixed top-18 z-4 w-full h-full flex items-center justify-center bg-black text-white transition-transform translate-x-[-100%] duration-800 ease-in-out flex-col gap-x-14"
         }
       >
-        <ListItem
+        <ListMenu
           items={menu}
           isLink={true}
           title=""
           className="md:flex gap-x-14"
         />
-        <ListItem
+        <ListMenu
           items={menu}
           isLink={true}
           liClassName="py-3 px-4 z-24"

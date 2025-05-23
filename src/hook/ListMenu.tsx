@@ -13,7 +13,7 @@ interface ListSectionProps {
   linkClassName?: string;
 }
 
-export const ListItem = ({
+export const ListMenu = ({
   className = "",
   liClassName = "",
   linkClassName = "",

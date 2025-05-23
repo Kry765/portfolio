@@ -1,0 +1,37 @@
+{
+
+    "iconData": [
+        {
+            "key": "html",
+            "icon": "faHtml5" 
+        },
+        {
+            "key": "css",
+            "icon": "faCss3Alt" 
+        },
+        {
+            "key": "js",
+            "icon": "faJs" 
+        },
+        {
+            "key": "sass",
+            "icon": "faPhp" 
+        },
+        {
+            "key": "docker",
+            "icon": "faDocker" 
+        },
+        {
+            "key": "sass",
+            "icon": "faSass" 
+        },
+        {
+            "key": "nodejs",
+            "icon": "faNode" 
+        },
+        {
+            "key": "github",
+            "icon": "faGithub" 
+        }
+    ]
+}
