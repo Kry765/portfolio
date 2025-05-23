@@ -1,6 +1,6 @@
 export default function Headers() {
   return (
-    <header className="bg-black text-white my-18 w-full h-[90vh]">
+    <header className="bg-black text-white py-18 w-full h-[90vh]">
       <section className="flex justify-center items-center flex-col ">
         <p className="my-4">Hello I'm</p>
         <h1 className="my-4 font-bold">Krzysztof Klęka</h1>
