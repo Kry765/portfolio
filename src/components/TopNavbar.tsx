@@ -12,7 +12,7 @@ export default function TopNavbar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-2 w-full bg-black text-white px-4 py-6 flex justify-between items-center">
+      <nav className="fixed top-0 z-6 w-full bg-black text-white px-4 py-6 flex justify-between items-center">
         <div className="cursor-pointer hover:text-[#0F6D95] transition-color duration-350">
           <span className="py-2">Christopher</span>
         </div>
@@ -39,8 +39,8 @@ export default function TopNavbar() {
       <ul
         className={
           mobileMenu
-            ? "fixed top-18 w-full h-full z-4 flex items-center justify-center bg-black text-white transition-transform translate-x-[0%] duration-800 ease-in-out flex-col gap-x-14"
-            : "fixed top-18 z-4 w-full h-full flex items-center justify-center bg-black text-white transition-transform translate-x-[-100%] duration-800 ease-in-out flex-col gap-x-14"
+            ? "fixed top-18 w-full h-full z-8 flex items-center justify-center bg-black text-white transition-transform translate-x-[0%] duration-800 ease-in-out flex-col gap-x-14"
+            : "fixed top-18 z-8 w-full h-full flex items-center justify-center bg-black text-white transition-transform translate-x-[-100%] duration-800 ease-in-out flex-col gap-x-14"
         }
       >
         <ListMenu

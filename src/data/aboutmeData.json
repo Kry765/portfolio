@@ -1,0 +1,27 @@
+{
+  "title": "O mnie",
+  "description": [
+    "Jestem web developerem specjalizującym się w tworzeniu nowoczesnych i wydajnych aplikacji internetowych przy użyciu technologii React oraz TypeScript.",
+    "Tworzę strony internetowe dopasowane do indywidualnych potrzeb klientów – od prostych stron wizytówek, po bardziej złożone aplikacje webowe."
+  ],
+  "schoolData": [
+    {
+      "years": "2016 - 2019",
+      "label": "Zespół Szkół Technicznych i Leśnych w Żywcu"
+    },
+    {
+      "years": "2020 - 2024",
+      "label": "Wyższa Szkoła Informatyki i Zarządzania w Bielsku - Białej"
+    }
+  ],
+  "skills": [
+    "faHtml5",
+    "faCss3Alt",
+    "faJs",
+    "faPhp",
+    "faDocker",
+    "faSass",
+    "faNode",
+    "faGithub"
+  ]
+}
