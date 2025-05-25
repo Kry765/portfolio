@@ -1,5 +1,7 @@
 {
   "title": "O mnie",
+  "schoolSectionTitle": "Edukacja",
+  "skillsSectionTitle": "Umiejętności",
   "description": [
     "Jestem web developerem specjalizującym się w tworzeniu nowoczesnych i wydajnych aplikacji internetowych przy użyciu technologii React oraz TypeScript.",
     "Tworzę strony internetowe dopasowane do indywidualnych potrzeb klientów – od prostych stron wizytówek, po bardziej złożone aplikacje webowe."
@@ -15,6 +17,9 @@
     }
   ],
   "skills": [
+    {
+      "title": "Umiejętności"
+    },
     "faHtml5",
     "faCss3Alt",
     "faJs",

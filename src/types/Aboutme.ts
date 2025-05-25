@@ -21,6 +21,8 @@ export interface AboutMeData {
   title: string;
   description: string[];
   schoolData: SchoolEntry[];
+  schoolSectionTitle: string;
+  skillsSectionTitle: string;
   skills: string[];
 }
 
