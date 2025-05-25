@@ -1,29 +1,9 @@
 import aboutData from "../../data/aboutmeData.json";
 import type { AboutMeData } from "../../types/Aboutme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faPhp,
-  faDocker,
-  faSass,
-  faNode,
-  faGithub,
-  // faGraduationCap,
-} from "@fortawesome/free-brands-svg-icons";
-
-const iconMap = {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faPhp,
-  faDocker,
-  faSass,
-  faNode,
-  faGithub,
-  // faGraduationCap,
-};
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import AboutMeSkills from "./AboutMeSkills";
+import AboutMeDescription from "./AboutMeDescription";
 
 const typedData = aboutData as AboutMeData;
 
@@ -31,13 +11,10 @@ export default function AboutMe() {
   return (
     <section className="flex flex-col md:flex-row mx-24 my-12">
       <article className="text-center md:text-left md:w-[40%] flex flex-col justify-center">
-        <h2 className="py-2 px-6 font-bold text-2xl">{typedData.title}</h2>
-        {typedData.description.map((data, index) => (
-          <p key={index} className="py-2 md:px-6">
-            {data}
-          </p>
-        ))}
-
+        <AboutMeDescription
+          title={typedData.title}
+          description={typedData.description}
+        />
         <h2 className="py-2 px-6 font-bold text-2xl">
           {typedData.schoolSectionTitle}
         </h2>
@@ -55,20 +32,10 @@ export default function AboutMe() {
       </article>
 
       <article className="md:w-[60%] flex flex-col items-center">
-        <div className="max-w-[50%]">
-          <h2 className="py-6 md:px-6 font-bold text-2xl">
-            {typedData.skillsSectionTitle}
-          </h2>
-          {typedData.skills.map((iconKey, i) => (
-            <FontAwesomeIcon
-              key={i}
-              icon={iconMap[iconKey as keyof typeof iconMap]}
-              size="4x"
-              fixedWidth
-              className="p-4 hover:pointer"
-            />
-          ))}
-        </div>
+        <AboutMeSkills
+          title={typedData.skillsSectionTitle}
+          skills={typedData.skills}
+        />
       </article>
     </section>
   );
