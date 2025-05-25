@@ -1,7 +1,7 @@
 export default function Headers() {
   return (
     <header
-      className="bg-[url(../assets/wallpaper_lg.jpg)] bg-cover bg-center
+      className="bg-[url(../assets/wallpaper/wallpaper_lg.jpg)] bg-cover bg-center
  bg-no-repeat flex flex-row items-center justify-center
  text-white w-full h-[100vh]"
     >

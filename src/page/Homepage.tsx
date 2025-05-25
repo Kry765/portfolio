@@ -3,7 +3,7 @@ import Headers from "../components/Headers";
 import AllRightReserved from "../components/AllRightReserved";
 import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe/AboutMe";
-import Project from "../components/Project";
+import Project from "../components/MyProject/Project";
 
 export default function Homepage() {
   return (

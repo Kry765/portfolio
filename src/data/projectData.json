@@ -1,0 +1,33 @@
+{
+    "title": "Projekty",
+    "projectData": [
+        {
+            "titleProject": "MARBUD",
+            "descriptionProject": "lorem ipsum",
+            "imageProject": "image",
+            "stackTechnology": [
+                {
+                    "key": "technology",
+                    "stack": "React"
+                },
+                {
+                    "key": "technology",
+                    "stack": "SCSS"
+                },
+                {
+                    "key": "technology",
+                    "stack": "Strapi"
+                },
+                {
+                    "key": "technology",
+                    "stack": "Docker"
+                }
+            ],
+            "githubIcon": {
+                "key": "github-icon",
+                "icon": "faGithub",
+                "link": "https://www.github.com/Kry765"
+            }
+        }
+    ]
+}
