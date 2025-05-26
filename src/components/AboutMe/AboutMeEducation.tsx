@@ -15,15 +15,15 @@ export default function AboutMeEducation({
 }: Props) {
   return (
     <>
-      <h2 className="py-2 px-6 font-bold text-2xl">{schoolSectionTitle}</h2>
+      <h2 className="p-6 font-bold text-2xl gap-4">{schoolSectionTitle}</h2>
       {schoolData.map((data, index) => (
-        <div key={index}>
-          <div>
-            <FontAwesomeIcon icon={faGraduationCap} />
+        <div className="flex items-start gap-4 mb-6" key={index}>
+          <div className="shrink-0 mt-0.5">
+            <FontAwesomeIcon icon={faGraduationCap} className="text-lg" />
           </div>
           <div>
-            <p className="py-2 md:px-6">{data.years}</p>
-            <p className="py-2 md:px-6">{data.label}</p>
+            <p className="font-medium">{data.years}</p>
+            <p>{data.label}</p>
           </div>
         </div>
       ))}

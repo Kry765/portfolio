@@ -12,7 +12,7 @@ export default function TopNavbar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-6 w-full bg-black text-white px-4 py-6 flex justify-between items-center">
+      <nav className="fixed top-0 z-6 w-full bg-black text-white px-4 py-4 flex justify-between items-center">
         <div className="cursor-pointer hover:text-[#0F6D95] transition-color duration-350">
           <span className="py-2">Christopher</span>
         </div>

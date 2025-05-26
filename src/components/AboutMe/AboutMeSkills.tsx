@@ -28,13 +28,13 @@ type Props = {
 
 export default function AboutMeSkills({ title, skills }: Props) {
   return (
-    <div className="max-w-[50%]">
+    <div className="max-w-auto ">
       <h2 className="py-6 md:px-6 font-bold text-2xl">{title}</h2>
       {skills.map((data, index) => (
         <FontAwesomeIcon
           key={index}
           icon={iconMap[data as keyof typeof iconMap]}
-          size="4x"
+          size="5x"
           fixedWidth
           className="p-4 hover:pointer"
         />
