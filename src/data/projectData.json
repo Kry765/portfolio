@@ -4,7 +4,14 @@
         {
             "titleProject": "MARBUD",
             "descriptionProject": "lorem ipsum",
-            "imageProject": "image",
+            "imageProject": [
+            {
+                "id": 1,
+                "key": "marbud",
+                "title": "marbud",
+                "thumbnail": "myProject/marbud.png"
+            } 
+            ],
             "stackTechnology": [
                 {
                     "key": "technology",

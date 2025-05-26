@@ -6,7 +6,7 @@ export interface ProjectEntry {
 export interface Project {
   titleProject: string;
   descriptionProject: string;
-  imageProject: string;
+  imageProject: Images[];
   stackTechnology: Technology[];
   githubIcon: IconLink;
 }
@@ -20,4 +20,11 @@ export interface IconLink {
   key: string;
   icon: string;
   link: string;
+}
+
+export interface Images {
+  id: number;
+  key: string;
+  title: string;
+  thumbnail: string;
 }
