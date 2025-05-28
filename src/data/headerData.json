@@ -1,16 +1,33 @@
 {
-    "headerData":[
-        {
-            "title": "Hello, I'm Krzysztof Klęka"
-        },
-        {
-            "description": "Web Developer"
-        }
-        {
-            "button": "Contac Me"
-        },
-        {
-"button": "Download CV"
-        }
-    ]
+  "headerData": [
+    {
+      "key": "header1",
+      "title": "Hello, I'm Krzysztof Klęka",
+      "description": "Web Developer"
+    }
+  ],
+  "buttonData": [
+    {
+      "key": "button1",
+      "buttonContact": "Contact Me",
+      "buttonCV": "Download CV"
+    }
+  ],
+  "socialLink": [
+    {
+      "key": "social1",
+      "platform": "GitHub",
+      "link": "https://github.com/yourprofile"
+    },
+    {
+      "key": "social2",
+      "platform": "LinkedIn",
+      "link": "https://linkedin.com/in/yourprofile"
+    },
+    {
+      "key": "social3",
+      "platform": "Email",
+      "link": "mailto:you@example.com"
+    }
+  ]
 }
