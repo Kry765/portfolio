@@ -1,3 +1,9 @@
+import headerData from "../../data/headerData.json";
+import type { HeaderEntry } from "../../types/Header.ts";
+import HeaderButton from "./HeaderButton.tsx";
+
+const typeData = headerData as HeaderEntry;
+
 export default function Headers() {
   return (
     <header
@@ -11,9 +17,11 @@ export default function Headers() {
           Hello, I'm Krzysztof Klęka
         </h1>
         <p className="my-4 text-2xl z-4 font-bold uppercase">Web Developer</p>
-        <button className="rounded-md z-4 border hover bg-none radius-[12px] py-2 px-14 cursor-pointer">
+
+        <HeaderButton buttonData={typeData.buttonData} />
+        {/* <button className="rounded-md z-4 border hover bg-none radius-[12px] py-2 px-14 cursor-pointer">
           Contact
-        </button>
+        </button> */}
       </section>
     </header>
   );
