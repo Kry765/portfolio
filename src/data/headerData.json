@@ -1,0 +1,16 @@
+{
+    "headerData":[
+        {
+            "title": "Hello, I'm Krzysztof Klęka"
+        },
+        {
+            "description": "Web Developer"
+        }
+        {
+            "button": "Contac Me"
+        },
+        {
+"button": "Download CV"
+        }
+    ]
+}
