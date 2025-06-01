@@ -12,8 +12,7 @@ export interface HeaderData {
 
 export interface ButtonData {
   key: string;
-  buttonContact: string;
-  buttonCV: string;
+  buttonLabel: string;
 }
 
 export interface SocialLink {

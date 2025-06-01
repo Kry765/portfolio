@@ -18,10 +18,10 @@ export default function Headers() {
         </h1>
         <p className="my-4 text-2xl z-4 font-bold uppercase">Web Developer</p>
 
-        <HeaderButton buttonData={typeData.buttonData} />
-        {/* <button className="rounded-md z-4 border hover bg-none radius-[12px] py-2 px-14 cursor-pointer">
-          Contact
-        </button> */}
+        <HeaderButton
+          className="rounded-md z-4 border hover bg-none radius-[12px] py-2 px-14 cursor-pointer"
+          buttonData={typeData.buttonData}
+        />
       </section>
     </header>
   );

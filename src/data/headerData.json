@@ -8,9 +8,12 @@
   ],
   "buttonData": [
     {
-      "key": "button1",
-      "buttonContact": "Contact Me",
-      "buttonCV": "Download CV"
+      "key": "Button Link",
+      "buttonLabel": "Contact Me"
+    },
+    {
+      "key": "Button CV",
+      "buttonLabel": "Download CV"
     }
   ],
   "socialLink": [
