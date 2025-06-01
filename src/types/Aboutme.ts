@@ -24,10 +24,18 @@ export interface AboutMeData {
   schoolSectionTitle: string;
   skillsSectionTitle: string;
   skills: string[];
+  lang: LangEntry[];
 }
 
 export interface AboutData {
   title: TitleItem[];
   description: DescriptionItem[];
   schoolData: SchoolDataItem[];
+}
+
+export interface LangEntry {
+  key: string;
+  language: string;
+  level: string;
+  status: string;
 }
