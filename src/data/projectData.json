@@ -3,7 +3,7 @@
     "projectData": [
         {
             "titleProject": "MARBUD",
-            "descriptionProject": "lorem ipsum",
+            "descriptionProject": "Serwis internetowy Marbud Domy przedstawia ofertę firmy wyspecjalizowanej w realizacji domów drewnianych w technologii szkieletowej. Za pomocą panelu Strapi możliwa jest elastyczna personalizacja treści i dostosowanie oferty.",
             "imageProject": [
             {
                 "id": 1,
@@ -30,11 +30,20 @@
                     "stack": "Docker"
                 }
             ],
-            "githubIcon": {
-                "key": "github-icon",
-                "icon": "faGithub",
-                "link": "https://www.github.com/Kry765"
-            }
+            "iconMap": [
+                {
+                    "key": "github",
+                    "icon": "faGithub",
+                    "name": "GitHub",
+                    "link": "https://www.github.com/Kry765"
+                },
+                {
+                    "key": "web",
+                    "icon": "faGlobe",
+                    "name": "Webpage",   
+                    "link": "https://marbud-domy.pl"
+                }
+            ]
         }
     ]
 }

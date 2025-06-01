@@ -6,10 +6,8 @@ const typedData = projectData as ProjectEntry;
 
 export default function Project() {
   return (
-    <section>
-      <div>
-        <ProjectListComponent projectData={typedData.projectData} />
-      </div>
+    <section className="flex flex-wrap mx-auto">
+      <ProjectListComponent projectData={typedData.projectData} />
     </section>
   );
 }

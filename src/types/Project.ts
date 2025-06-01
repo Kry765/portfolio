@@ -8,7 +8,7 @@ export interface Project {
   descriptionProject: string;
   imageProject: Images[];
   stackTechnology: Technology[];
-  githubIcon: IconLink;
+  iconMap: IconLink[];
 }
 
 export interface Technology {
@@ -20,6 +20,7 @@ export interface IconLink {
   key: string;
   icon: string;
   link: string;
+  name: string;
 }
 
 export interface Images {
