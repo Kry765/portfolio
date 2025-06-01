@@ -32,6 +32,10 @@
         {
             "key": "github",
             "icon": "faGithub" 
+        },
+        {
+            "key": "npm",
+            "icon": "faNpm" 
         }
         
     ]

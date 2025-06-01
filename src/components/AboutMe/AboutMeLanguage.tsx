@@ -12,7 +12,15 @@ export default function AboutMeLanguage({ lang, title }: Props) {
           <p>
             {item.language} - {item.level}
           </p>
-          <p>{item.status}</p>
+          <div className="relative w-[100%] radius-1 h-[20px] bg-gray-300 rounded-md">
+            <div
+              className={`absolute radius-1 h-[20px] bg-blue-300 rounded-md`}
+              style={{ width: item.status }}
+            ></div>
+          </div>
+          <div className="flex justify-end">
+            <p>{item.status}</p>
+          </div>
         </div>
       ))}
     </>

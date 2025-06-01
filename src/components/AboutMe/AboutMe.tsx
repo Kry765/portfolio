@@ -19,15 +19,15 @@ export default function AboutMe() {
           schoolSectionTitle={typedData.schoolSectionTitle}
           schoolData={typedData.schoolData}
         />
+        <AboutMeLanguage
+          title={typedData.langSectionTitle}
+          lang={typedData.lang}
+        />
       </article>
       <article className="md:w-1/2 ">
         <AboutMeSkills
           title={typedData.skillsSectionTitle}
           skills={typedData.skills}
-        />
-        <AboutMeLanguage
-          title={typedData.langSectionTitle}
-          lang={typedData.lang}
         />
       </article>
     </section>
