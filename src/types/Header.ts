@@ -2,11 +2,19 @@ export interface HeaderEntry {
   headerData: HeaderData[];
   buttonData: ButtonData[];
   socialLink: SocialLink[];
+  socialIconLink: IconLink[];
+}
+
+export interface IconLink {
+  key: string;
+  icon: string;
+  link: string;
 }
 
 export interface HeaderData {
   key: string;
   title: string;
+  specialization: string;
   description: string;
 }
 
