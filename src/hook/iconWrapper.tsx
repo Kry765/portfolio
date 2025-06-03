@@ -9,7 +9,10 @@ import {
   faNode,
   faGithub,
   faNpm,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const iconMap = {
   html5: faHtml5,
@@ -21,6 +24,9 @@ export const iconMap = {
   node: faNode,
   github: faGithub,
   npm: faNpm,
+  linkedin: faLinkedin,
+  envelope: faEnvelope,
+  discord: faDiscord,
 };
 
 type IconWrapperProps = {

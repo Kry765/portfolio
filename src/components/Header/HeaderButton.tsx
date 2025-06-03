@@ -7,10 +7,10 @@ type Props = {
 
 export default function HeaderButton({ headerButtonData, className }: Props) {
   return (
-    <div className="flex my-2">
+    <div className="flex sm:flex-wrap md:flex-row sm:flex-col">
       {headerButtonData.map((data, index) => (
-        <div key={index} className={className}>
-          <button>{data.buttonLabel}</button>
+        <div key={index} className={`${className} my-4`}>
+          <button className="py-2 cursor-pointer">{data.buttonLabel}</button>
         </div>
       ))}
     </div>

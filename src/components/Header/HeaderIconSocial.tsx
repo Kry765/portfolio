@@ -1,34 +1,38 @@
-import type { IconLink } from "../../types/Header";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faDiscord,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import IconWrapper, { iconMap } from "../../hook/iconWrapper";
 
-const iconMap = {
-  faLinkedin,
-  faGithub,
-  faEnvelope,
-  faDiscord,
+type SocialIconLinkItem = {
+  key: string;
+  icon: string;
+  link: string;
 };
 
 type Props = {
   className: string;
-  socialIconLink: IconLink[];
+  hoverClassname: string;
+  socialIconLink: SocialIconLinkItem[];
 };
 
-export default function HeaderIconSocial({ className, socialIconLink }: Props) {
+export default function HeaderIconSocial({
+  className,
+  socialIconLink,
+  hoverClassname,
+}: Props) {
   return (
-    <div>
-      {socialIconLink.map((data, index) => (
-        <FontAwesomeIcon
-          key={index}
-          className={className}
-          icon={iconMap[data.icon as keyof typeof iconMap]}
-        />
-      ))}
+    <div className={className}>
+      {socialIconLink.map((data) => {
+        const iconName = data.icon as keyof typeof iconMap;
+
+        return (
+          <a
+            href={data.link}
+            className={hoverClassname}
+            key={data.key}
+            rel="noopener noreferrer"
+          >
+            <IconWrapper name={iconName} size="1x" />
+          </a>
+        );
+      })}
     </div>
   );
 }
