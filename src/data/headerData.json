@@ -1,23 +1,25 @@
 {
-  "headerData": [
+  "headerDescriptionData": [
     {
       "key": "header1",
       "title": "Hello, I'm Krzysztof Klęka",
       "specialization": "Web Developer",
-      "description": "Tworzę szybkie, responsywne i atrakcyjne strony internetowe"
+      "description": "Tworzę szybkie, responsywne i atrakcyjne strony internetowe."
     }
   ],
-  "buttonData": [
+  "headerButtonData": [
     {
       "key": "Button Link",
-      "buttonLabel": "Contact Me"
+      "buttonLabel": "Contact Me",
+      "link": "string"
     },
     {
       "key": "Button CV",
-      "buttonLabel": "Download CV"
+      "buttonLabel": "Download CV",
+      "link": "string"
     }
   ],
-  "socialIconLink":[
+  "headerIconSocialLink":[
     {
       "key": "linkedin",
       "icon": "faLinkedin",
@@ -37,23 +39,6 @@
       "key": "discord",
       "icon": "faDiscord",
       "link": ""
-    }
-  ],
-  "socialLink": [
-    {
-      "key": "social1",
-      "platform": "GitHub",
-      "link": "https://github.com/yourprofile"
-    },
-    {
-      "key": "social2",
-      "platform": "LinkedIn",
-      "link": "https://linkedin.com/in/yourprofile"
-    },
-    {
-      "key": "social3",
-      "platform": "Email",
-      "link": "mailto:you@example.com"
     }
   ]
 }

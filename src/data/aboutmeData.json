@@ -18,15 +18,15 @@
     }
   ],
   "skills": [
-    "faHtml5",
-    "faCss3Alt",
-    "faJs",
-    "faPhp",
-    "faDocker",
-    "faSass",
-    "faNode",
-    "faGithub"
-  ],
+    "html5",
+    "css3",
+    "js",
+    "php",
+    "docker",
+    "sass",
+    "node",
+    "github"
+],
   "lang": [
     {
       "key": "Język Polski",

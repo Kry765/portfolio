@@ -23,6 +23,7 @@ export interface AboutMeData {
   schoolData: SchoolEntry[];
   schoolSectionTitle: string;
   skillsSectionTitle: string;
+  langSectionTitle: string;
   skills: string[];
   lang: LangEntry[];
 }
