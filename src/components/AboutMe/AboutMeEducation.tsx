@@ -14,8 +14,8 @@ export default function AboutMeEducation({
   schoolData,
 }: Props) {
   return (
-    <div className="flex flex-col items-start gap-4 mb-6">
-      <h2 className="p-6 font-bold text-2xl gap-4 text-[#0F6D95]">
+    <div className="flex flex-col items-center md:items-start w-full max-w-md gap-4 mb-6">
+      <h2 className="p-6 font-bold text-2xl text-[#0F6D95]">
         {schoolSectionTitle}
       </h2>
       {schoolData.map((data, index) => (
@@ -23,7 +23,7 @@ export default function AboutMeEducation({
           key={index}
           className="md:pl-6 pl-[-80px] flex items-center text-[#1A1A40]"
         >
-          <div className="mt-1 pr-4">
+          <div className="md:block hidden mt-1 pr-4">
             <FontAwesomeIcon
               icon={faGraduationCap}
               className="text-lg text-[#1A1A40]"

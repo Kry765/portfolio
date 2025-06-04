@@ -15,7 +15,7 @@ export default function AboutMeLanguage({ language, title }: Props) {
             <p key={index} className="text-[#1A1A40]">
               {item.language} - {item.level}
             </p>
-            <div className="relative w-[100%] radius-1 h-[20px] bg-gray-300 rounded-md">
+            <div className="relative w-[100%] my-2 radius-1 h-[20px] bg-gray-300 rounded-md">
               <div
                 className={`absolute radius-1 h-[20px] bg-[#0F6D95] rounded-md`}
                 style={{ width: item.status }}
