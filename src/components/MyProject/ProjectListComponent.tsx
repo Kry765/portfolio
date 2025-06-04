@@ -14,28 +14,31 @@ const iconMap = {
 
 export default function ProjectListComponent({ projectData }: Props) {
   return projectData.map((data, index) => (
-    <div key={index} className="md:w-1/2 md:p-6">
-      <h3>{data.titleProject}</h3>
+    <div
+      key={index}
+      className="md:w-1/2 w-full w-full-md text-center md:text-left md:p-6"
+    >
+      <h3 className="font-bold text-[#0F6D95]">{data.titleProject}</h3>
       {data.imageProject.map((item, index) => (
         <img key={index} src={item.thumbnail} className="my-4" />
       ))}
-      <div className="flex flex-wrap">
+      <div className="flex justify-center md:justify-start flex-wrap">
         {data.stackTechnology.map((item, index) => (
           <span
             key={index}
-            className="rounded bg-gray-500 text-white px-4 py-2 my-2 mr-2 text-sm"
+            className="rounded bg-[#0F6D95] text-white px-4 py-2 my-2 mr-2 text-sm"
           >
             {item.stack}
           </span>
         ))}
       </div>
-      <p className="my-4">{data.descriptionProject}</p>
+      <p className="my-4 text-[#1A1A40]">{data.descriptionProject}</p>
       <div className="flex justify-between flex-row mt-2">
         <div className="flex flex-wrap"></div>
         <div className="flex flex-row">
           {data.iconMap.map((item, index) => (
             <button
-              className="rounded bg-gray-500 text-white px-4 mx-1 py-1 text-sm"
+              className="rounded bg-[#0F6D95] text-white px-4 mx-1 py-1 text-sm"
               key={index}
             >
               <FontAwesomeIcon

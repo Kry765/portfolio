@@ -12,7 +12,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 export const iconMap = {
   html5: faHtml5,
@@ -27,6 +27,7 @@ export const iconMap = {
   linkedin: faLinkedin,
   envelope: faEnvelope,
   discord: faDiscord,
+  graduationCap: faGraduationCap,
 };
 
 type IconWrapperProps = {
