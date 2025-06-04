@@ -14,19 +14,27 @@ export default function AboutMeEducation({
   schoolData,
 }: Props) {
   return (
-    <>
-      <h2 className="p-6 font-bold text-2xl gap-4">{schoolSectionTitle}</h2>
+    <div className="flex flex-col items-start gap-4 mb-6">
+      <h2 className="p-6 font-bold text-2xl gap-4 text-[#0F6D95]">
+        {schoolSectionTitle}
+      </h2>
       {schoolData.map((data, index) => (
-        <div className="flex items-start gap-4 mb-6" key={index}>
-          <div className="shrink-0 mt-0.5">
-            <FontAwesomeIcon icon={faGraduationCap} className="text-lg" />
+        <div
+          key={index}
+          className="md:pl-6 pl-[-80px] flex items-center text-[#1A1A40]"
+        >
+          <div className="mt-1 pr-4">
+            <FontAwesomeIcon
+              icon={faGraduationCap}
+              className="text-lg text-[#1A1A40]"
+            />
           </div>
           <div>
-            <p className="font-medium">{data.years}</p>
-            <p>{data.label}</p>
+            <p className="font-medium text-[#1A1A40]">{data.years}</p>
+            <p className="text-[#1A1A40]">{data.label}</p>
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }

@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
 html,body{
     box-sizing: border-box;
     margin: 0;
