@@ -11,11 +11,7 @@ const typedData = aboutData as AboutMeData;
 export default function AboutMe() {
   return (
     <section className="flex flex-col items-start justify-around md:flex-row my-12">
-      <article
-        className="text-center md:text-left w-auto md:w-auto flex flex-col justify-start"
-        // data-aos="fade-right"
-        // data-aos-easing="ease-in-sine"
-      >
+      <article className="text-center md:text-left w-auto md:w-auto flex flex-col justify-center items-center md:justify-start p-8">
         <AboutMeDescription
           title={typedData.title}
           description={typedData.description}
@@ -25,11 +21,7 @@ export default function AboutMe() {
           schoolData={typedData.schoolData}
         />
       </article>
-      <article
-        className="w-full md:w-auto"
-        // data-aos="fade-right"
-        // data-aos-easing="ease-in-sine"
-      >
+      <article className="w-full md:w-auto p-8">
         <AboutMeSkills
           title={typedData.skillsSectionTitle}
           skills={typedData.skills as IconName[]}
