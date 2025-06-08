@@ -8,7 +8,7 @@ import Project from "../components/MyProject/Project";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Diploma from "../components/Diploma/Diploma";
-import ContactForm from "../components/ContactForm/ContactForm";
+import Contact from "../components/ContactForm/Contact";
 
 export default function Homepage() {
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Homepage() {
           <Diploma />
         </section>
         <section>
-          <ContactForm />
+          <Contact />
         </section>
       </main>
       <footer data-aos="fade-right">

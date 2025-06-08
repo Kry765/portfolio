@@ -13,6 +13,13 @@
             "key": "phone",
             "label": "573-226-219"
         }
+    ],
+    "address": [
+        {
+            "city": "Trzebinia",
+            "postcode": "34-330",
+            "street": "ul. Wypoczynkowa 8"
+        }
     ]
 
     
