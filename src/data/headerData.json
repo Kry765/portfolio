@@ -2,7 +2,7 @@
   "headerDescriptionData": [
     {
       "key": "header1",
-      "title": "Hello, I'm Krzysztof Klęka",
+      "title": "Cześć, nazywam jest Krzysztof Klęka",
       "specialization": "Web Developer",
       "description": "Tworzę szybkie, responsywne i atrakcyjne strony internetowe."
     }
@@ -10,12 +10,12 @@
   "headerButtonData": [
     {
       "key": "Button Link",
-      "buttonLabel": "Contact Me",
+      "buttonLabel": "Kontakt",
       "link": "string"
     },
     {
       "key": "Button CV",
-      "buttonLabel": "Download CV",
+      "buttonLabel": "Zobacz CV",
       "link": "string"
     }
   ],
