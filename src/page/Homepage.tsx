@@ -7,6 +7,7 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Project from "../components/MyProject/Project";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Diploma from "../components/Diploma/Diploma";
 
 export default function Homepage() {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function Homepage() {
       duration: 900,
       easing: "ease-in-sine",
       offset: 0,
-      once: false,
+      once: true,
     });
   }, []);
 
@@ -32,6 +33,9 @@ export default function Homepage() {
         </section>
         <section data-aos="fade-right">
           <Project />
+        </section>
+        <section>
+          <Diploma />
         </section>
       </main>
       <footer data-aos="fade-right">

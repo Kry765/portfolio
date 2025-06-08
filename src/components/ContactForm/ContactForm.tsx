@@ -1,7 +1,7 @@
 export default function ContactForm() {
   return (
     <div>
-      <p></p>
+      <h3>Masz pytania? Skontatuk się z nami</h3>
     </div>
   );
 }

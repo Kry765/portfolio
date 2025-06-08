@@ -1,4 +1,20 @@
 {
-    "diplomaSectionTitle": "Certyfikaty"
-
+    "diplomaSectionTitle": "Certyfikaty",
+    "diplomaImage":[
+        {
+            "key": "html",
+            "source": "myDiploma/Udemy_MMC_cz.1.jpg",
+            "alternative": "tekst"
+        },
+        {
+            "key": "css",
+            "source": "myDiploma/Udemy_MMC_cz.2.jpg",
+            "alternative": "tekst"
+        },
+        {
+            "key": "js",
+            "source": "myDiploma/Udemy_MMC_cz.3.jpg",
+            "alternative": "tekst"
+        }
+    ]
 }
