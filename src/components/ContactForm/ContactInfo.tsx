@@ -1,7 +1,9 @@
+import { personaly } from "../../data/personalyData.json";
+
 export default function ContactInfo() {
   return (
-    <div>
-      <h3>Masz pytania? Napisz do mnie</h3>
+    <div className="px-24">
+      <h3>Kontakt</h3>
       <div>
         <p>Telefon: </p>
         <p>573-226-219</p>
