@@ -7,11 +7,11 @@ const typeData = personalyData as PersonalyData;
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-start justify-around md:flex-row my-12 px-24">
-      <div className="mt-8 w-full">
+    <div className="w-[80%] mx-auto bg-white flex flex-col items-start justify-around md:flex-row py-12 px-24">
+      <div className="w-full">
         <ContactInfo data={typeData} />
       </div>
-      <div className="mt-8 w-full">
+      <div className="w-full ">
         <ContactForm />
       </div>
     </div>

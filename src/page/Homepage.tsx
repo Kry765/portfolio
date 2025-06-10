@@ -38,7 +38,7 @@ export default function Homepage() {
         <section>
           <Diploma />
         </section>
-        <section>
+        <section className="bg-gray-300">
           <Contact />
         </section>
       </main>

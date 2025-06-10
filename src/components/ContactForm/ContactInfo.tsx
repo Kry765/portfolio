@@ -9,7 +9,7 @@ export default function ContactInfo({ data }: Props) {
   const { personaly, address, social } = data;
 
   return (
-    <div className="p-14 bg-[#0F6D95] text-white">
+    <div className="p-14">
       <h3 className="text-xl font-bold pb-8">Kontakt</h3>
       {personaly.map((item, index) => (
         <div key={index} className="mb-4 flex items-center">
@@ -25,13 +25,15 @@ export default function ContactInfo({ data }: Props) {
           </p>
         </div>
       ))}
-      <div className="flex justify-end">
-        {social.map((item, index) => (
-          <a href={item.link} key={index}>
-            <IconWrapper name={item.icon} size="1x" />
-          </a>
-        ))}
-      </div>
+
+      <h3 className="text-xl font-bold py-8">
+        Możesz również skontaktować się tutaj
+      </h3>
+      {social.map((item, index) => (
+        <a href={item.link} key={index}>
+          <IconWrapper name={item.icon} size="1x" />
+        </a>
+      ))}
     </div>
   );
 }
