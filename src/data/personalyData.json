@@ -19,12 +19,33 @@
     ],
     "address": [
         {
+            "key": "personally data",
             "city": "Trzebinia",
             "postcode": "34-330",
             "street": "ul. Wypoczynkowa 8",
             "icon": "location"
         }
-    ]
-
-    
+    ],
+    "social":[
+    {
+        "key": "linkedin",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/krzysztof-kl%C4%99ka/"
+    },
+    {
+        "key": "github",
+        "icon": "github",
+        "link": "https://github.com/Kry765"
+    },
+        {
+      "key": "mail",
+      "icon": "envelope",
+      "link": "mailto:krzysztofkleka91@gmail.com"
+    },
+    {
+      "key": "discord",
+      "icon": "discord",
+      "link": "https://discord.com/users/Kry765#5652"
+    }
+    ] 
 }

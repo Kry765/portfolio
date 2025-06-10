@@ -1,7 +1,7 @@
 import { menu } from "../data/menu.json";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { ListMenu } from "../hook/ListMenu";
+import { ListMenu } from "../shared/MenuWrapper";
 
 export default function TopNavbar() {
   const [mobileMenu, setMobileMenu] = useState(false);

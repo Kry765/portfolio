@@ -1,4 +1,4 @@
-import IconWrapper, { iconMap } from "../../hook/iconWrapper";
+import IconWrapper, { iconMap } from "../../shared/IconWrapper";
 
 type SocialIconLinkItem = {
   key: string;

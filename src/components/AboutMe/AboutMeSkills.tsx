@@ -1,5 +1,5 @@
-import IconWrapper from "../../hook/iconWrapper";
-import { iconMap } from "../../hook/iconWrapper";
+import IconWrapper from "../../shared/IconWrapper";
+import { iconMap } from "../../shared/IconWrapper";
 
 export type IconName = keyof typeof iconMap;
 

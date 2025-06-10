@@ -1,7 +1,7 @@
 import { Github, Linkedin, Facebook } from "lucide-react";
 import { menu } from "../data/menu.json";
 import { personaly } from "../data/personalyData.json";
-import { ListMenu } from "../hook/ListMenu";
+import { ListMenu } from "../shared/MenuWrapper";
 
 export default function Footer() {
   return (

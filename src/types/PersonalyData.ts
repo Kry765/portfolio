@@ -1,6 +1,12 @@
-import type { iconMap } from "../hook/iconWrapper";
+import type { iconMap } from "../shared/IconWrapper";
 
 export type IconName = keyof typeof iconMap;
+
+export type PersonalSocial = {
+  key: string;
+  icon: IconName;
+  link: string;
+};
 
 export type PersonalItem = {
   key: string;
@@ -18,4 +24,5 @@ export type AddressItem = {
 export type PersonalyData = {
   personaly: PersonalItem[];
   address: AddressItem[];
+  social: PersonalSocial[];
 };
