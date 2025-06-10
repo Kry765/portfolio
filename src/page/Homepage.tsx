@@ -32,13 +32,19 @@ export default function Homepage() {
         <section data-aos="fade-right">
           <AboutMe />
         </section>
-        <section data-aos="fade-right">
+        <section
+          data-aos="fade-right"
+          className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
+        >
           <Project />
         </section>
-        <section>
+        <section data-aos="fade-right">
           <Diploma />
         </section>
-        <section className="bg-gray-300">
+        <section
+          data-aos="fade-right"
+          className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
+        >
           <Contact />
         </section>
       </main>

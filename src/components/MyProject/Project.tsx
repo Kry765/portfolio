@@ -7,11 +7,11 @@ const typedData = projectData as ProjectEntry;
 export default function Project() {
   return (
     <>
-      <div className="w-full my-12 px-24">
+      <div className="w-full py-12 px-12">
         <h2 className="py-2 px-6 font-bold text-center md:text-left text-2xl text-[#0F6D95] gap-4">
           Projekty
         </h2>
-        <section className="flex flex-wrap">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ProjectListComponent projectData={typedData.projectData} />
         </section>
       </div>

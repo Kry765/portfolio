@@ -2,7 +2,7 @@ export default function ContactForm() {
   const styleInput =
     "block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6";
 
-  const styleLabel = "block text-sm/6 font-medium text-gray-900";
+  const styleLabel = "block text-sm/6 pt-4 font-medium text-gray-900";
 
   return (
     <div className="w-full p-12">
@@ -40,7 +40,7 @@ export default function ContactForm() {
                   className={styleInput}
                 ></textarea>
               </div>
-              <button className="py-2 my-2 md:mr-auto cursor-pointer rounded-md z-4 bg-[#0F6D95] text-white radius-[12px] px-14 transition-bg duration-300">
+              <button className="py-2 my-4 md:mr-auto cursor-pointer rounded-md z-4 bg-[#0F6D95] text-white radius-[12px] px-14 transition-bg duration-300">
                 Wyślij
               </button>
             </div>
