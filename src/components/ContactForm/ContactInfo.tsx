@@ -1,4 +1,5 @@
 import type { PersonalyData } from "../../types/PersonallyData";
+import IconWrapper from "../../hook/iconWrapper";
 
 type Props = {
   data: PersonalyData;
@@ -8,23 +9,20 @@ export default function ContactInfo({ data }: Props) {
   const { personaly, address } = data;
 
   return (
-    <div className="px-24">
-      <h3 className="text-xl font-bold mb-4">Kontakt</h3>
-
-      {personaly.map((item) => (
-        <div key={item.key} className="mb-2">
-          <p className="font-semibold capitalize">{item.key}:</p>
+    <div className="p-12 bg-[#0F6D95] text-white">
+      <h3 className="text-xl font-bold mb-4">Masz pytania? Napisz do nas</h3>{" "}
+      {personaly.map((item, index) => (
+        <div key={index} className="mb-2 flex items-center">
+          <IconWrapper name={item.icon} size={"2x"} />
           <p>{item.label}</p>
         </div>
       ))}
-
       {address.map((item, index) => (
-        <div key={index} className="mt-4">
-          <p className="font-semibold">Adres:</p>
+        <div key={index} className="mt-4 flex items-center">
+          <IconWrapper name={item.icon} size={"2x"} />
           <p>
-            {item.postcode} {item.city}
+            {item.street} {item.postcode} {item.city}
           </p>
-          <p>{item.street}</p>
         </div>
       ))}
     </div>

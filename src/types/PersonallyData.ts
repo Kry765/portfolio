@@ -1,17 +1,21 @@
-export interface PersonalyItem {
+import type { iconMap } from "../hook/iconWrapper";
+
+export type IconName = keyof typeof iconMap;
+
+export type PersonalItem = {
   key: string;
   label: string;
-  icon: string;
-}
+  icon: IconName;
+};
 
-export interface AddressItem {
+export type AddressItem = {
   city: string;
   postcode: string;
   street: string;
-  icon: string;
-}
+  icon: IconName;
+};
 
-export interface PersonalyData {
-  personaly: PersonalyItem[];
+export type PersonalyData = {
+  personaly: PersonalItem[];
   address: AddressItem[];
-}
+};
