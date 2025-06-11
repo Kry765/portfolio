@@ -10,18 +10,20 @@ export default function ContactInfo({ data }: Props) {
 
   return (
     <div className="p-14">
-      <h3 className="text-xl font-bold pb-8">Kontakt</h3>
+      <h3 className="text-xl font-bold pb-8 text-center md:text-left">
+        Kontakt
+      </h3>
       {personaly.map((item, index) => (
-        <div key={index} className="mb-4 flex items-center">
+        <div key={index} className="mb-4 flex items-center w-full">
           <IconWrapper
             name={item.icon}
             size={"1x"}
-            className="bg-[#0F6D95] text-white rounded-[50%] mr-4"
+            className="bg-[#0F6D95] text-white rounded-[50%]"
           />
           <p>{item.label}</p>
         </div>
       ))}
-      {address.map((item, index) => (
+      {/* {address.map((item, index) => (
         <div key={index} className="mt-4 flex items-center">
           <IconWrapper
             name={item.icon}
@@ -32,12 +34,12 @@ export default function ContactInfo({ data }: Props) {
             {item.street}, {item.postcode} {item.city}
           </p>
         </div>
-      ))}
+      ))} */}
 
-      <h3 className="text-xl font-bold py-8">
+      {/* <h3 className="text-xl font-bold py-8">
         Możesz również skontaktować się tutaj
-      </h3>
-      {social.map((item, index) => (
+      </h3> */}
+      {/* {social.map((item, index) => (
         <a href={item.link} key={index}>
           <IconWrapper
             name={item.icon}
@@ -45,7 +47,7 @@ export default function ContactInfo({ data }: Props) {
             className="bg-[#0F6D95] text-white rounded-[50%] mr-4"
           />
         </a>
-      ))}
+      ))} */}
     </div>
   );
 }

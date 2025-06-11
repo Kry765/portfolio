@@ -1,7 +1,10 @@
 {
-    "aboutmeDescription":{
-        "description": "Jestem web developerem z solidnym wykształceniem technicznym. Specjalizuję się w technologii React, dbając przede wszystkim o wydajność, dostępność i estetykę kodu."
+    "firstName": {
+        "name": "Krzysztof Klęka"
     },
+    "aboutmeDescription": {
+        "description": "Jestem web developerem z solidnym wykształceniem technicznym. Specjalizuję się w technologii React, dbając przede wszystkim o wydajność, dostępność i estetykę kodu."
+  },
     "personaly":
     [
         {
@@ -50,5 +53,8 @@
       "icon": "discord",
       "link": "https://discord.com/users/Kry765#5652"
     }
-    ] 
+    ],
+    "allRight":{
+        "footerAllRight": "Krzysztof Kleka 2025 | Wszelkie prawa zastrzeżone"
+    }
 }
