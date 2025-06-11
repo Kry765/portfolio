@@ -1,5 +1,5 @@
-import personalyData from "../data/personalyData.json";
-import type { PersonalyData } from "../types/PersonalyData";
+import personalyData from "../../data/personalyData.json";
+import type { PersonalyData } from "../../types/PersonalyData";
 
 const typeData = personalyData as PersonalyData;
 

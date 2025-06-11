@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import TopNavbar from "../components/TopNavbar";
 import Headers from "../components/Header/Headers";
-import AllRightReserved from "../components/AllRightReserved";
+import AllRightReserved from "../components/Footer/AllRightReserved";
 import Footer from "../components/Footer/Footer";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Project from "../components/MyProject/Project";
@@ -50,7 +50,6 @@ export default function Homepage() {
       </main>
       <footer data-aos="fade-right">
         <Footer />
-        <AllRightReserved />
       </footer>
     </>
   );
