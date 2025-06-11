@@ -25,4 +25,5 @@ export type PersonalyData = {
   personaly: PersonalItem[];
   address: AddressItem[];
   social: PersonalSocial[];
+  aboutmeDescription: string;
 };

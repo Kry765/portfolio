@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import TopNavbar from "../components/TopNavbar";
 import Headers from "../components/Header/Headers";
 import AllRightReserved from "../components/AllRightReserved";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Project from "../components/MyProject/Project";
 import AOS from "aos";
