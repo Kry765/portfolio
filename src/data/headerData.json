@@ -11,12 +11,12 @@
     {
       "key": "Button Link",
       "buttonLabel": "Kontakt",
-      "link": "string"
+      "link": "contact"
     },
     {
       "key": "Button CV",
       "buttonLabel": "Zobacz CV",
-      "link": "string"
+      "link": "/CV/Krzysztof_Kleka_CV.pdf"
     }
   ],
   "headerIconSocialLink":[

@@ -26,7 +26,6 @@ export default function Footer() {
           className="px-8 py-6 w-full md:w-[20%] text-center md:text-left"
         />
       </div>
-
       <div>
         <AllRightReserved />
       </div>

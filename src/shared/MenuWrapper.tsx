@@ -1,7 +1,9 @@
+import { Link as ScrollLink } from "react-scroll";
+
 interface listItems {
   key: string;
   label: string;
-  href?: string;
+  href: string;
 }
 
 interface ListSectionProps {
@@ -28,12 +30,15 @@ export const ListMenu = ({
         {items.map((item) => (
           <li key={item.key} className={`list-none py-2 ${liClassName}`}>
             {isLink ? (
-              <a
-                href={item.href}
+              <ScrollLink
+                to={item.href}
+                smooth={true}
+                duration={500}
+                offset={-70}
                 className={`${linkClassName}cursor-pointer hover:text-[#0F6D95] transition-color duration-350`}
               >
                 {item.label}
-              </a>
+              </ScrollLink>
             ) : (
               <p>{item.label}</p>
             )}

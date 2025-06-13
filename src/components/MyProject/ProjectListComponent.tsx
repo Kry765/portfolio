@@ -37,7 +37,10 @@ export default function ProjectListComponent({ projectData }: Props) {
         <div className="flex flex-wrap"></div>
         <div className="flex flex-row">
           {data.iconMap.map((item, index) => (
-            <button
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded bg-[#0F6D95] text-white px-4 mx-1 py-1 text-sm"
               key={index}
             >
@@ -45,7 +48,7 @@ export default function ProjectListComponent({ projectData }: Props) {
                 icon={iconMap[item.icon as keyof typeof iconMap]}
               />{" "}
               Visit {item.name}
-            </button>
+            </a>
           ))}
         </div>
       </div>

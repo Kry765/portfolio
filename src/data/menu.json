@@ -3,22 +3,22 @@
         {
         "key": "AboutMe",
         "label": "O mnie",
-        "href": "AboutMe"
+        "href": "aboutme"
         },
                 {
         "key": "Project",
         "label": "Projekty",
-        "href": "Project"
+        "href": "project"
         },
                 {
         "key": "Certificate",
         "label": "Certyfikaty",
-        "href": "Certificate"
+        "href": "diploma"
         },
                 {
         "key": "Contact me",
         "label": "Kontakt",
-        "href": "Contact"
+        "href": "contact"
         }
     ]
 }
