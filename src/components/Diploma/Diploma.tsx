@@ -9,14 +9,17 @@ export default function Diploma() {
       <h2 className="py-2 px-4 font-bold text-center md:text-left text-2xl text-[#0F6D95] gap-4">
         {typedData.diplomaSectionTitle}
       </h2>
-      <div className="flex md:flex-row flex-col w-full">
+      <div className="flex md:flex-row flex-col w-full overflow-x-hidden">
         {typedData.diplomaImage.map((data: DiplomaListImage, index: number) => (
-          <div className="md:w-1/3 relative m-4 hover:cursor-pointer">
-            <img key={index} src={data.source} alt={data.alternative} />
-            <div className="absolute flex items-center flex-col justify-center top-0 bg-[#000] opacity-[75%] w-[100%] h-[100%]">
-              <p className="text-white text-center">Powiększ obraz</p>
-              <p className="text-white text-center text-6xl">+</p>
-            </div>
+          <div
+            key={index}
+            className="md:w-1/3 relative m-4 hover:cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >
+            <img
+              src={data.source}
+              alt={data.alternative}
+              className="w-full h-auto object-cover rounded-lg shadow-md"
+            />
           </div>
         ))}
       </div>
