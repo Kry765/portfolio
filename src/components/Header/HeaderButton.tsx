@@ -7,7 +7,7 @@ type Props = {
 
 export default function HeaderButton({ headerButtonData }: Props) {
   return (
-    <div className="flex px-8 gap-4 flex-nowrap">
+    <div className="flex px-8 gap-4 flex-nowrap justify-center md:justify-start">
       {headerButtonData.map((data, index) => {
         const isPDF = data.link.endsWith(".pdf");
 

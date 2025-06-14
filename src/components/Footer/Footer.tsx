@@ -10,21 +10,26 @@ const typeData = personalyData as PersonalyData;
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex items-start md:justify-between flex-col md:flex-row bg-black text-white">
-        <FooterDescription data={typeData} />
-        <ListMenu
-          title="Menu"
-          className="px-8 py-6 w-full md:w-[20%] text-center md:text-left"
-          items={menu}
-          isLink={true}
-        />
-        <ListMenu
-          title="Contact"
-          items={personaly}
-          isLink={false}
-          className="px-8 py-6 w-full md:w-[20%] text-center md:text-left"
-        />
+    <footer className="flex flex-col justify-center">
+      <div className="bg-black text-white w-full">
+        <div className="flex flex-col md:flex-row  mx-auto w-full max-w-screen-xl">
+          <FooterDescription
+            data={typeData}
+            className="w-full md:w-1/3 px-8 py-6 text-center md:text-left"
+          />
+          <ListMenu
+            title="Menu"
+            className="w-full md:w-1/3 px-8 py-6 text-center md:text-left"
+            items={menu}
+            isLink={true}
+          />
+          <ListMenu
+            title="Contact"
+            items={personaly}
+            isLink={false}
+            className="w-full md:w-1/3 px-8 py-6 text-center md:text-left"
+          />
+        </div>
       </div>
       <div>
         <AllRightReserved />

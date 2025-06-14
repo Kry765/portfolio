@@ -8,11 +8,9 @@ const typeData = headerData as HeaderEntry;
 const description = typeData.headerDescriptionData[0];
 
 export default function Headers() {
-  const letterSpacer = "py-4 px-8 md:mr-4";
-
   return (
     <header className="relative w-full h-screen bg-[url(../assets/wallpaper/wallpaper_lg.jpg)] bg-cover bg-center bg-no-repeat text-white overflow-hidden before:absolute before:inset-0 before:bg-black before:opacity-50 before:z-10">
-      <section className="relative z-20 flex flex-col justify-center items-center w-full h-full px-4 md:px-24">
+      <section className="relative z-20 flex flex-col items-start w-full h-full px-4 md:px-24">
         <div
           className="relative text-center md:text-left max-w-screen-md w-full animate-fade-right p-4 md:p-12
                  flex flex-col justify-center h-full"

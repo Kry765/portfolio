@@ -28,8 +28,8 @@ export default function Homepage() {
       <header data-aos="fade-right">
         <Headers />
       </header>
-      {/* <main>
-        <Element name="aboutme" data-aos="fade-right">
+      <main>
+        {/*   <Element name="aboutme" data-aos="fade-right">
           <AboutMe />
         </Element>
         <Element
@@ -49,10 +49,10 @@ export default function Homepage() {
         >
           <Contact />
         </Element> */}
-      {/* </main> */}
-      {/* <footer data-aos="fade-right">
+      </main>
+      <footer data-aos="fade-right">
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 }
