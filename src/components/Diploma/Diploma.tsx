@@ -1,9 +1,18 @@
 import diplomaData from "../../data/diplomaData.json";
 import type { DiplomaEntry, DiplomaListImage } from "../../types/Diploma";
-
+import { useState } from "react";
+import { X } from "lucide-react";
 const typedData = diplomaData as DiplomaEntry;
 
 export default function Diploma() {
+  const [selectedImage, setSelectedImage] = useState<DiplomaListImage | null>(
+    null
+  );
+
+  const viewImage = (image: DiplomaListImage) => {
+    setSelectedImage(image);
+  };
+
   return (
     <div className="px-12 md:px-24">
       <h2 className="py-2 px-4 font-bold text-center md:text-left text-2xl text-[#0F6D95] gap-4">
@@ -18,10 +27,31 @@ export default function Diploma() {
             <img
               src={data.source}
               alt={data.alternative}
-              className="w-full h-auto object-cover rounded-lg shadow-md"
+              className={`w-full h-auto object-cover rounded-lg shadow-md`}
+              onClick={() => viewImage(data)}
             />
           </div>
         ))}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-[50%] flex items-center justify-center z-50"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-3xl w-full px-4">
+              <img
+                src={selectedImage.source}
+                alt={selectedImage.alternative}
+                className="w-full h-auto object-contain rounded-lg"
+              />
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="bottom-[100%] right-[0%] py-0 px-4 absolute md:top-[-25px] md:right-[-25px] text-white text-2xl font-bold"
+              >
+                <X className="cursor-pointer hover:text-[#0F6D95] transition-color duration-350" />
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

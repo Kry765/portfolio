@@ -2,6 +2,7 @@ import type { Project } from "../../types/Project";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 type Props = {
   projectData: Project[];
@@ -13,6 +14,8 @@ const iconMap = {
 };
 
 export default function ProjectListComponent({ projectData }: Props) {
+  const [selectedImage, setSelectedImage] = useState(false);
+
   return projectData.map((data, index) => (
     <div
       key={index}
@@ -41,7 +44,7 @@ export default function ProjectListComponent({ projectData }: Props) {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded bg-[#0F6D95] text-white px-4 mx-1 py-1 text-sm"
+              className="rounded bg-[#0F6D95] text-white px-4 mx-1 py-1 text-sm hover:cursor-pointer hover:bg-[#094862]"
               key={index}
             >
               <FontAwesomeIcon

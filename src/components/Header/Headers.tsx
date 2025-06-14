@@ -11,18 +11,19 @@ export default function Headers() {
   const letterSpacer = "py-4 px-8 md:mr-4";
 
   return (
-    <header className="bg-[url(../assets/wallpaper/wallpaper_lg.jpg)] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-center text-white w-full h-[100vh]">
-      <section className="relative flex justify-center items-start h-[100vh] w-full flex-col ">
-        <div className="absolute bg-black opacity-50 w-full h-[100vh]"></div>
-        <div className="text-center md:text-left z-4 p-3 md:p-24 animate-fade-right animate-once animate-duration-[800ms] animate-delay-0 animate-ease-linear animate-alternate animate-fill-both">
+    <header className="relative w-full h-screen bg-[url(../assets/wallpaper/wallpaper_lg.jpg)] bg-cover bg-center bg-no-repeat text-white overflow-hidden before:absolute before:inset-0 before:bg-black before:opacity-50 before:z-10">
+      <section className="relative z-20 flex flex-col justify-center items-center w-full h-full px-4 md:px-24">
+        <div
+          className="relative text-center md:text-left max-w-screen-md w-full animate-fade-right p-4 md:p-12
+                 flex flex-col justify-center h-full"
+        >
           <HeaderDescription
             headerDescriptionData={description}
-            className={letterSpacer}
+            className="py-4 px-4 md:px-8"
           />
-
           <HeaderButton headerButtonData={typeData.headerButtonData} />
           <HeaderIconSocial
-            className={`${letterSpacer} text-xl`}
+            className="py-4 px-4 text-xl"
             hoverClassname="hover:text-[#0F6D95] transition-colors duration-300"
             socialIconLink={typeData.headerIconSocialLink}
           />

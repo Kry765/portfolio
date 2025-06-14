@@ -28,7 +28,7 @@ export default function Homepage() {
       <header data-aos="fade-right">
         <Headers />
       </header>
-      <main>
+      {/* <main>
         <Element name="aboutme" data-aos="fade-right">
           <AboutMe />
         </Element>
@@ -48,11 +48,11 @@ export default function Homepage() {
           className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
         >
           <Contact />
-        </Element>
-      </main>
-      <footer data-aos="fade-right">
+        </Element> */}
+      {/* </main> */}
+      {/* <footer data-aos="fade-right">
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 }
