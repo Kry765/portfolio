@@ -9,16 +9,19 @@
     [
         {
             "key": "fisrtName",
+            "title": "Imię i nazwisko",
             "label": "Krzysztof Klęka",
             "icon": "user"
         },
         {
             "key": "email",
+            "title": "E-mail",
             "label": "krzysztofkleka91@gmail.com",
             "icon": "envelope"
         },
         {
             "key": "phone",
+            "title": "Telefon",
             "label": "573-226-219",
             "icon": "phone"
         }
@@ -27,6 +30,7 @@
         {
             "key": "personally data",
             "city": "Trzebinia",
+            "title": "Adres",
             "postcode": "34-330",
             "street": "ul. Wypoczynkowa 8",
             "icon": "location"

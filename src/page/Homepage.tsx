@@ -38,7 +38,7 @@ export default function Homepage() {
           className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
         >
           <Project />
-        </Element>
+        </Element>*/}
         <Element name="diploma" data-aos="fade-right">
           <Diploma />
         </Element>
@@ -48,7 +48,7 @@ export default function Homepage() {
           className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
         >
           <Contact />
-        </Element> */}
+        </Element>
       </main>
       <footer data-aos="fade-right">
         <Footer />

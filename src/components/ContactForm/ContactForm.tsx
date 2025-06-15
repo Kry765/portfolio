@@ -6,8 +6,8 @@ export default function ContactForm() {
     "block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6";
 
   return (
-    <div className="w-full py-8 md:p-12">
-      <h3 className="text-xl font-bold mb-8 md:text-left text-center">
+    <div className="w-full pt-8 pb-12">
+      <h3 className="text-xl text-[#0F6D95] font-bold mb-6 md:text-left text-center">
         Wyślij wiadomość
       </h3>
       <form action="" className="flex flex-col">
@@ -15,20 +15,21 @@ export default function ContactForm() {
           <div className="sm:col-span-6">
             <ContactLabel>Imię</ContactLabel>
             <div className="mt-2">
-              <ContactInput />
+              <ContactInput placeholder="Podaj imię" />
               <ContactLabel>Telefon</ContactLabel>
-              <ContactInput />
+              <ContactInput placeholder="Podaj adres E-mail" />
               <ContactLabel>E-mail</ContactLabel>
-              <ContactInput />
+              <ContactInput placeholder="Podaj numer telefonu" />
               <ContactLabel>Wiadomość</ContactLabel>
               <div className="mt-2">
                 <textarea
                   name="about"
                   id="about"
+                  placeholder="Napisz wiadomość"
                   className={styleInput}
                 ></textarea>
               </div>
-              <button className="py-2 my-4 md:mr-auto cursor-pointer w-full rounded-md z-4 bg-[#0F6D95] text-white radius-[12px] px-14 transition-bg duration-300">
+              <button className="py-2 mt-4 w-full rounded-md bg-[#0F6D95] text-white px-14 transition duration-300">
                 Wyślij
               </button>
             </div>

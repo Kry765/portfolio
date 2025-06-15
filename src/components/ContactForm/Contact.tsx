@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="w-full">
         <ContactInfo data={typeData} />
       </div>
-      <div className="w-full ">
+      <div className="w-full">
         <ContactForm />
       </div>
     </section>

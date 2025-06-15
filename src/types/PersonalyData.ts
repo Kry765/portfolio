@@ -11,12 +11,14 @@ export type PersonalSocial = {
 export type PersonalItem = {
   key: string;
   label: string;
+  name: string;
   icon: IconName;
 };
 
 export type AddressItem = {
   city: string;
   postcode: string;
+  title: string;
   street: string;
   icon: IconName;
 };
