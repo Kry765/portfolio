@@ -52,11 +52,11 @@ export default function ContactInfo({ data }: Props) {
       </h3>
       <div className="flex justify-center md:justify-start">
         {social.map((item, index) => (
-          <a href={item.link} key={index} className="hover:cursor-pointer ">
+          <a href={item.link} key={index}>
             <IconWrapper
               name={item.icon}
               size="xl"
-              className=" my-2 hover:text-[#0F6D95]"
+              className=" my-2 hover:text-[#0F6D95] hover:cursor-pointer transition-text duration-300"
             />
           </a>
         ))}

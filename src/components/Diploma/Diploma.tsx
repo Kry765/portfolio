@@ -14,11 +14,11 @@ export default function Diploma() {
   };
 
   return (
-    <div className="px-12 md:px-24">
+    <div className="w-auto md:w-[95%] mx-auto p-12 md:px-24 rounded-lg bg-white">
       <h2 className="py-2 px-4 font-bold text-center md:text-left text-2xl text-[#0F6D95] gap-4">
         {typedData.diplomaSectionTitle}
       </h2>
-      <div className="flex md:flex-row flex-col w-full overflow-x-hidden">
+      <div className="flex  md:flex-row flex-col bg-gray-100 rounded-lg overflow-x-hidden">
         {typedData.diplomaImage.map((data: DiplomaListImage, index: number) => (
           <div
             key={index}
@@ -34,15 +34,16 @@ export default function Diploma() {
         ))}
         {selectedImage && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-[50%] flex items-center justify-center z-50"
+            className="fixed inset-0 h-screen w-screen bg-black bg-opacity-[50%] flex items-center justify-center z-50 overflow-auto"
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative max-w-3xl w-full px-4">
               <img
                 src={selectedImage.source}
                 alt={selectedImage.alternative}
-                className="w-full h-auto object-contain rounded-lg"
+                className="max-w-full max-h-screen object-contain rounded-lg"
               />
+
               <button
                 onClick={() => setSelectedImage(null)}
                 className="bottom-[100%] right-[0%] py-0 px-4 absolute md:top-[-25px] md:right-[-25px] text-white text-2xl font-bold"

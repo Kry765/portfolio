@@ -2,7 +2,6 @@ import type { Project } from "../../types/Project";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 
 type Props = {
   projectData: Project[];
@@ -14,8 +13,6 @@ const iconMap = {
 };
 
 export default function ProjectListComponent({ projectData }: Props) {
-  const [selectedImage, setSelectedImage] = useState(false);
-
   return projectData.map((data, index) => (
     <div
       key={index}
