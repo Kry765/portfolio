@@ -14,11 +14,11 @@ export default function Diploma() {
   };
 
   return (
-    <div className="w-auto md:w-[95%] mx-auto p-12 md:px-24 rounded-lg bg-white">
-      <h2 className="py-2 px-4 font-bold text-center md:text-left text-2xl text-[#0F6D95] gap-4">
+    <div className="w-auto md:px-24 py-32">
+      <h2 className="py-2 px-4 font-bold text-center md:text-left text-2xl text-white gap-4">
         {typedData.diplomaSectionTitle}
       </h2>
-      <div className="flex  md:flex-row flex-col bg-gray-100 rounded-lg overflow-x-hidden">
+      <div className="flex md:flex-row flex-col overflow-x-hidden">
         {typedData.diplomaImage.map((data: DiplomaListImage, index: number) => (
           <div
             key={index}

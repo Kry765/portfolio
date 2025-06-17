@@ -10,8 +10,8 @@ const typedData = aboutData as AboutMeData;
 
 export default function AboutMe() {
   return (
-    <section className="flex flex-col items-start justify-around md:flex-row my-12">
-      <article className="text-center md:text-left w-auto md:w-auto flex flex-col justify-center items-center md:justify-start p-8">
+    <section className="flex flex-col md:flex-row items-center justify-center gap-8 my-12 w-full max-w-6xl mx-auto px-4 md:items-start rounded-lg">
+      <article className="text-center md:text-left flex flex-col justify-center items-center md:items-start p-4">
         <AboutMeDescription
           title={typedData.title}
           description={typedData.description}

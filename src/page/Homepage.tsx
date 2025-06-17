@@ -25,27 +25,38 @@ export default function Homepage() {
       <nav>
         <TopNavbar />
       </nav>
-      <header data-aos="fade-right">
+      <header
+        // data-aos="fade-right"
+        className="bg-gradient-to-tl from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100%"
+      >
         <Headers />
       </header>
       <main>
-        {/*   <Element name="aboutme" data-aos="fade-right">
+        <Element
+          name="aboutme"
+          // data-aos="fade-right"
+          className="min-h-screen bg-gradient-to-br from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% min-h-screen flex justify-center items-center"
+        >
           <AboutMe />
-        </Element>*/}
+        </Element>
         <Element
           name="project"
-          data-aos="fade-right"
-          className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
+          // data-aos="fade-right"
+          className="flex justify-center items-center bg-gradient-to-tr from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% min-h-screen min-h-screen py-8"
         >
           <Project />
         </Element>
-        <Element name="diploma" data-aos="fade-right">
+        <Element
+          name="diploma"
+          // data-aos="fade-right"
+          className="bg-gradient-to-bl from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100%  min-h-screen"
+        >
           <Diploma />
         </Element>
         <Element
           name="contact"
-          data-aos="fade-right"
-          className="flex justify-center items-center bg-gray-100 min-h-screen py-8"
+          // data-aos="fade-right"
+          className="bg-gradient-to-tl from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% flex justify-center items-center min-h-screen py-8"
         >
           <Contact />
         </Element>
@@ -55,4 +66,12 @@ export default function Homepage() {
       </footer>
     </>
   );
+}
+
+{
+  /* 
+
+  
+  
+*/
 }

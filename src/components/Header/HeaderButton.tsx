@@ -18,7 +18,7 @@ export default function HeaderButton({ headerButtonData }: Props) {
                 href={data.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 md:mr-0 cursor-pointer rounded-md z-4 border hover:bg-[#0F6D95] hover:border-[#0F6D95] bg-none radius-[12px] px-6 md:px-14 transition-border duration-300"
+                className="py-2 md:mr-0 cursor-pointer rounded-md z-4 hover:bg-purple-700 bg-purple-800 radius-[12px] px-6 md:px-14 transition-border duration-300"
               >
                 {data.buttonLabel}
               </a>
@@ -28,7 +28,7 @@ export default function HeaderButton({ headerButtonData }: Props) {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="py-2 md:mr-0 cursor-pointer rounded-md z-4 border hover:bg-[#0F6D95] hover:border-[#0F6D95] bg-none radius-[12px] px-6 md:px-14 transition-border duration-300"
+                className="py-2 md:mr-0 cursor-pointer rounded-md z-4 border hover:bg-purple-700 hover:border-purple-700 bg-none radius-[12px] px-6 md:px-14 transition-border duration-300"
               >
                 {data.buttonLabel}
               </ScrollLink>
