@@ -12,10 +12,10 @@ export default function HeaderDescription({
   return (
     <div className={className}>
       <h1 className="text-base">{headerDescriptionData.title}</h1>
-      <p className="text-4xl z-4 text-purple-700 font-bold uppercase mt-2">
+      <p className="text-4xl mt-2 text-purple-700 font-bold uppercase ">
         {headerDescriptionData.specialization}
       </p>
-      <p className="z-4 mt-4 text-base">{headerDescriptionData.description}</p>
+      <p className="text-base mt-2">{headerDescriptionData.description}</p>
     </div>
   );
 }

@@ -10,10 +10,15 @@ export default function TopNavbar() {
     setMobileMenu(!mobileMenu);
   };
 
+  const styleMobileMenu: string =
+    "fixed top-18 z-24 w-full h-full gap-x-14 flex items-center justify-center flex-col bg-black text-white transition-transform duration-800 ease-in-out";
+
+  const styleButtonMobileMenu: string =
+    "text-white md:hidden cursor-pointer hover:text-purple-800 transition-color duration-350";
   return (
     <>
-      <nav className="fixed top-0 z-24 w-full  text-white px-4 py-4 flex justify-between items-center">
-        <div className="cursor-pointer hover:text-[#0F6D95] transition-color duration-350">
+      <nav className="flex justify-between items-center fixed top-0 z-12 w-full text-white px-4 py-4 ">
+        <div className="cursor-pointer hover:text-purple-800 transition-text duration-350">
           <span className="py-2">Christopher</span>
         </div>
         <div>
@@ -25,36 +30,23 @@ export default function TopNavbar() {
           />
         </div>
         {mobileMenu ? (
-          <X
-            className="text-white md:hidden cursor-pointer hover:text-[#0F6D95] transition-color duration-350"
-            onClick={toggleMobileMenu}
-          />
+          <X className={styleButtonMobileMenu} onClick={toggleMobileMenu} />
         ) : (
-          <Menu
-            className="text-white md:hidden cursor-pointer hover:text-[#0F6D95] duration-350"
-            onClick={toggleMobileMenu}
-          />
+          <Menu className={styleButtonMobileMenu} onClick={toggleMobileMenu} />
         )}
       </nav>
       <ul
         className={
           mobileMenu
-            ? "fixed top-18 w-full h-full z-24 flex items-center justify-center bg-black text-white transition-transform translate-x-[0%] duration-800 ease-in-out flex-col gap-x-14"
-            : "fixed top-18 z-8 w-full h-full flex items-center justify-center bg-black text-white transition-transform translate-x-[-100%] duration-800 ease-in-out flex-col gap-x-14"
+            ? `${styleMobileMenu} translate-x-[0%]`
+            : `${styleMobileMenu} translate-x-[-100%]`
         }
       >
         <ListMenu
           items={menu}
           isLink={true}
           title=""
-          className="md:flex gap-x-14 z-24"
-        />
-        <ListMenu
-          items={menu}
-          isLink={true}
-          liClassName="py-3 px-4 z-24"
-          linkClassName="duration-350"
-          className="hidden md:flex gap-x-14"
+          className="md:flex gap-x-14"
         />
       </ul>
     </>

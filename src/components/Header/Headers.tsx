@@ -7,18 +7,18 @@ import HeaderDescription from "./HeaderDescription.tsx";
 const typeData = headerData as HeaderEntry;
 const description = typeData.headerDescriptionData[0];
 
-const padding = "py-4 px-4";
+const headerSpacer = "py-4 px-4";
 
 export default function Headers() {
   return (
-    <section className="h-screen flex flex-col text-center justify-center items-center w-full h-full">
+    <section className="h-screen flex flex-col items-center text-center justify-center">
       <HeaderDescription
         headerDescriptionData={description}
-        className="py-4 px-4 md:px-8"
+        className={`${headerSpacer} md:px-8`}
       />
       <HeaderButton headerButtonData={typeData.headerButtonData} />
       <HeaderIconSocial
-        className="py-4 px-4 text-xl"
+        className={`${headerSpacer} text-xl`}
         hoverClassname="hover:text-purple-700 transition-colors duration-300"
         socialIconLink={typeData.headerIconSocialLink}
       />
