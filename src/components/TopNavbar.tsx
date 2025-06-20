@@ -14,11 +14,11 @@ export default function TopNavbar() {
     "fixed top-18 z-24 w-full h-full gap-x-14 flex items-center justify-center flex-col bg-black text-white transition-transform duration-800 ease-in-out";
 
   const styleButtonMobileMenu: string =
-    "text-white md:hidden cursor-pointer hover:text-purple-800 transition-color duration-350";
+    "text-white md:hidden cursor-pointer hover:text-purple-500 transition-color duration-350";
   return (
     <>
       <nav className="flex justify-between items-center fixed top-0 z-12 w-full text-white px-4 py-4 ">
-        <div className="cursor-pointer hover:text-purple-800 transition-text duration-350">
+        <div className="cursor-pointer hover:text-purple-500 transition-text duration-350">
           <span className="py-2">Christopher</span>
         </div>
         <div>

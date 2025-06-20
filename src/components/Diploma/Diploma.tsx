@@ -14,7 +14,7 @@ export default function Diploma() {
   };
 
   return (
-    <div className="w-auto md:px-24 py-32">
+    <div className="w-auto md:px-24 py-32" data-aos="fade-right">
       <h2 className="py-2 px-4 font-bold text-center md:text-left text-2xl text-white gap-4">
         {typedData.diplomaSectionTitle}
       </h2>

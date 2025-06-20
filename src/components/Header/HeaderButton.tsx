@@ -6,7 +6,7 @@ type Props = {
 };
 
 const styleButton: string =
-  "hover:bg-purple-700 rounded-md py-2 px-14 duration-300 transition-bg";
+  "hover:bg-purple-500 rounded-md py-2 px-14 duration-300 transition-bg";
 
 export default function HeaderButton({ headerButtonData }: Props) {
   return (
@@ -31,7 +31,7 @@ export default function HeaderButton({ headerButtonData }: Props) {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className={`${styleButton} cursor-pointer border hover:border-purple-700`}
+                className={`${styleButton} cursor-pointer border hover:border-purple-500`}
               >
                 {data.buttonLabel}
               </ScrollLink>

@@ -7,7 +7,7 @@ const typeData = personalyData as PersonalyData;
 
 export default function Contact() {
   return (
-    <section className=" w-auto rounded-lg mx-auto bg-white flex flex-col items-start justify-around md:flex-row px-4 md:px-24 bg-gray-100">
+    <section className="bg-zinc-950 w-auto rounded-lg mx-auto flex flex-col items-start justify-around md:flex-row px-4 md:px-24 border shadow-[0_0_10px_2px_rgba(147,51,234,0.5)] border-purple-900/50">
       <div className="w-full">
         <ContactInfo data={typeData} />
       </div>

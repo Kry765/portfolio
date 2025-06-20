@@ -7,11 +7,15 @@ import AboutMeEducation from "./AboutMeEducation";
 import AboutMeLanguage from "./AboutMeLanguage";
 
 const typedData = aboutData as AboutMeData;
+const styleFlexContainer: string = "flex flex-col justify-center items-center";
 
 export default function AboutMe() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center gap-8 my-12 w-full max-w-6xl mx-auto px-4 md:items-start rounded-lg">
-      <article className="text-center md:text-left flex flex-col justify-center items-center md:items-start p-4">
+    <section
+      data-aos="fade-right"
+      className={`${styleFlexContainer} md;bg-zinc-950 rounded-lg m-4 p-2 md:border md:shadow-[0_0_10px_2px_rgba(147,51,234,0.5)] md:border-purple-900/50 md:items-start md:flex-row gap-24`}
+    >
+      <article className={`${styleFlexContainer} text-center md:text-left`}>
         <AboutMeDescription
           title={typedData.title}
           description={typedData.description}
@@ -21,7 +25,7 @@ export default function AboutMe() {
           schoolData={typedData.schoolData}
         />
       </article>
-      <article className="w-full md:w-auto p-8">
+      <article className="p-8">
         <AboutMeSkills
           title={typedData.skillsSectionTitle}
           skills={typedData.skills as IconName[]}

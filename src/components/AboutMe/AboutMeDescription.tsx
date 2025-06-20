@@ -5,10 +5,10 @@ type Props = {
 
 export default function AboutMeDescription({ title, description }: Props) {
   return (
-    <div className="flex flex-col items-center md:items-start w-full max-w-md gap-4 mb-6">
-      <h2 className="pt-8 px-6 font-bold text-2xl text-[#0F6D95]">{title}</h2>
+    <div className="flex flex-col items-center md:items-start pt-10 max-w-md gap-4 mb-6">
+      <h2 className="text-2xl font-bold  w-full px-6">{title}</h2>
       {description.map((data, index) => (
-        <p key={index} className="py-2 md:px-6 text-[#1A1A40]">
+        <p key={index} className="font-light py-2 md:px-6">
           {data}
         </p>
       ))}

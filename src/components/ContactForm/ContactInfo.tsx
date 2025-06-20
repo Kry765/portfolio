@@ -10,7 +10,7 @@ export default function ContactInfo({ data }: Props) {
 
   return (
     <div>
-      <h3 className="text-xl text-[#0F6D95] font-bold my-8 text-center md:text-left">
+      <h3 className="text-xl font-bold my-8 text-center md:text-left">
         Kontakt
       </h3>
       <p className="mb-6 text-center md:text-left">
@@ -23,7 +23,7 @@ export default function ContactInfo({ data }: Props) {
           <IconWrapper
             name={item.icon}
             size={"1x"}
-            className="bg-[#0F6D95] text-white rounded-full mr-4 w-6 h-6 flex items-center justify-center"
+            className="bg-purple-900 text-white rounded-full mr-4 w-6 h-6 flex items-center justify-center"
           />
           <div>
             <p className="text-sm font-bold break-words">{item.title}</p>
@@ -36,7 +36,7 @@ export default function ContactInfo({ data }: Props) {
           <IconWrapper
             name={item.icon}
             size={"1x"}
-            className="bg-[#0F6D95] text-white rounded-full mr-4 w-6 h-6 flex items-center justify-center"
+            className="bg-purple-900 text-white rounded-full mr-4 w-6 h-6 flex items-center justify-center"
           />
           <div>
             <p className="text-sm break-words font-bold">{item.title}</p>

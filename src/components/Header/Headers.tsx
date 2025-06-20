@@ -11,7 +11,10 @@ const headerSpacer = "py-4 px-4";
 
 export default function Headers() {
   return (
-    <section className="h-screen flex flex-col items-center text-center justify-center">
+    <section
+      className="h-screen flex flex-col items-center text-center justify-center"
+      data-aos="fade-right"
+    >
       <HeaderDescription
         headerDescriptionData={description}
         className={`${headerSpacer} md:px-8`}
@@ -19,7 +22,7 @@ export default function Headers() {
       <HeaderButton headerButtonData={typeData.headerButtonData} />
       <HeaderIconSocial
         className={`${headerSpacer} text-xl`}
-        hoverClassname="hover:text-purple-700 transition-colors duration-300"
+        hoverClassname="hover:text-purple-500 transition-colors duration-300"
         socialIconLink={typeData.headerIconSocialLink}
       />
     </section>

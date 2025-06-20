@@ -25,16 +25,12 @@ export default function Homepage() {
       <nav>
         <TopNavbar />
       </nav>
-      <header
-        // data-aos="fade-right"
-        className="bg-gradient-to-tl from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100%"
-      >
+      <header className="bg-gradient-to-tl from-[#020617] from-80% via-violet-900 via-120% to-[#4c1d95] to-100%">
         <Headers />
       </header>
       <main>
         <Element
           name="aboutme"
-          // data-aos="fade-right"
           className="min-h-screen bg-gradient-to-br from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% min-h-screen flex justify-center items-center"
         >
           <AboutMe />
