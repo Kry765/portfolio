@@ -13,7 +13,7 @@ export default function AboutMe() {
   return (
     <section
       data-aos="fade-right"
-      className={`${styleFlexContainer} md;bg-zinc-950 rounded-lg m-4 p-2 md:border md:shadow-[0_0_10px_2px_rgba(147,51,234,0.5)] md:border-purple-900/50 md:items-start md:flex-row gap-24`}
+      className={`${styleFlexContainer} md:bg-zinc-950 rounded-lg m-4 p-2 md:border md:shadow-[0_0_10px_2px_rgba(147,51,234,0.5)] md:border-purple-900/50 md:items-start md:flex-row gap-24`}
     >
       <article className={`${styleFlexContainer} text-center md:text-left`}>
         <AboutMeDescription

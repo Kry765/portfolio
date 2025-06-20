@@ -56,7 +56,7 @@ export default function ContactInfo({ data }: Props) {
             <IconWrapper
               name={item.icon}
               size="xl"
-              className=" my-2 hover:text-[#0F6D95] hover:cursor-pointer transition-text duration-300"
+              className=" my-2 hover:text-purple-500 hover:cursor-pointer transition-text duration-300"
             />
           </a>
         ))}

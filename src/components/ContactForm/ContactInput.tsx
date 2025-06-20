@@ -4,7 +4,7 @@ type Props = {
 
 export default function ContactInput({ placeholder }: Props) {
   const styleInput =
-    "block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6";
+    "block w-full rounded-md px-3 py-2 text-base outline-1 -outline-offset-1  placeholder:text-white focus:outline-2 focus:-outline-offset-2 focus:outline-purple-900 sm:text-sm/6";
 
   return (
     <input

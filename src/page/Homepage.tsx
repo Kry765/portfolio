@@ -57,7 +57,9 @@ export default function Homepage() {
           <Contact />
         </Element>
       </main>
-      <footer data-aos="fade-right">
+      <footer
+      // data-aos="fade-right"
+      >
         <Footer />
       </footer>
     </>
