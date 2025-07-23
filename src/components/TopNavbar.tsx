@@ -3,7 +3,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ListMenu } from "../shared/MenuWrapper";
 import { useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
 
 export default function TopNavbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
