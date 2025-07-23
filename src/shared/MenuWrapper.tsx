@@ -13,6 +13,7 @@ interface ListSectionProps {
   className?: string;
   liClassName?: string;
   linkClassName?: string;
+  onLinkClick?: () => void;
 }
 
 export const ListMenu = ({
@@ -21,6 +22,7 @@ export const ListMenu = ({
   linkClassName = "",
   title,
   isLink,
+  onLinkClick,
   items,
 }: ListSectionProps) => {
   return (
@@ -35,6 +37,7 @@ export const ListMenu = ({
                 smooth={true}
                 duration={500}
                 offset={-70}
+                onClick={onLinkClick}
                 className={`${linkClassName}cursor-pointer hover:text-purple-500 transition-color duration-350`}
               >
                 {item.label}

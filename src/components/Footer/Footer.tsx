@@ -24,7 +24,7 @@ export default function Footer() {
             isLink={true}
           />
           <ListMenu
-            title="Contact"
+            title="Kontakt"
             items={personaly}
             isLink={false}
             className="w-full md:w-1/3 px-8 py-6 text-center md:text-left"

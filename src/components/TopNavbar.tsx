@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ListMenu } from "../shared/MenuWrapper";
 import { useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function TopNavbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -35,7 +36,12 @@ export default function TopNavbar() {
         }`}
       >
         <div className="cursor-pointer hover:text-purple-500 transition-text duration-350">
-          <span className="py-2">Christopher</span>
+          <span
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="cursor-pointer hover:text-purple-500 transition-text duration-350 py-2"
+          >
+            Christopher
+          </span>
         </div>
         <div>
           <ListMenu
@@ -43,6 +49,7 @@ export default function TopNavbar() {
             isLink={true}
             title=""
             className="hidden md:flex gap-x-14"
+            onLinkClick={() => setMobileMenu(false)}
           />
         </div>
         {mobileMenu ? (
@@ -63,6 +70,7 @@ export default function TopNavbar() {
           isLink={true}
           title=""
           className="md:flex gap-x-14"
+          onLinkClick={() => setMobileMenu(false)}
         />
       </ul>
     </>
