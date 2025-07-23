@@ -9,9 +9,10 @@ export type PersonalSocial = {
 };
 
 export type PersonalItem = {
+  title: string;
   key: string;
   label: string;
-  name: string;
+  name?: string;
   icon: IconName;
 };
 

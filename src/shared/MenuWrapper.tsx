@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 interface listItems {
   key: string;
   label: string;
-  href: string;
+  href?: string;
 }
 
 interface ListSectionProps {
@@ -29,7 +29,7 @@ export const ListMenu = ({
         <h3 className="font-bold py-2">{title}</h3>
         {items.map((item) => (
           <li key={item.key} className={`list-none py-2 ${liClassName}`}>
-            {isLink ? (
+            {isLink && item.href ? (
               <ScrollLink
                 to={item.href}
                 smooth={true}

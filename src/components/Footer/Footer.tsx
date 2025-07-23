@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row  mx-auto w-full max-w-screen-xl">
           <FooterDescription
             data={typeData}
-            className="w-full md:w-1/3 px-8 py-6 text-center md:text-left"
+            styleFooterDescription="w-full md:w-full py-6 text-center md:text-left"
           />
           <ListMenu
             title="Menu"
