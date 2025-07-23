@@ -18,12 +18,15 @@ export default function Headers() {
       <HeaderDescription
         headerDescriptionData={description}
         className={`${headerSpacer} md:px-8`}
+        paragraphClass="text-4xl mt-2 text-purple-700 font-bold uppercase"
+        titleClass="text-base"
+        descriptionClass="text-base mt-2"
       />
       <HeaderButton headerButtonData={typeData.headerButtonData} />
       <HeaderIconSocial
         className={`${headerSpacer} text-xl`}
-        hoverClassname="hover:text-purple-500 transition-colors duration-300"
         socialIconLink={typeData.headerIconSocialLink}
+        hoverClassname="hover:text-purple-500 transition-colors duration-300"
       />
     </section>
   );

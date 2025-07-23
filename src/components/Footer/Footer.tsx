@@ -11,7 +11,7 @@ const typeData = personalyData as PersonalyData;
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-center">
-      <div className="bg-black text-white w-full">
+      <div className="w-full">
         <div className="flex flex-col md:flex-row  mx-auto w-full max-w-screen-xl">
           <FooterDescription
             data={typeData}

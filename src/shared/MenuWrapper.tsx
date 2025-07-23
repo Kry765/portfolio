@@ -35,7 +35,7 @@ export const ListMenu = ({
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className={`${linkClassName}cursor-pointer hover:text-[#0F6D95] transition-color duration-350`}
+                className={`${linkClassName}cursor-pointer hover:text-purple-500 transition-color duration-350`}
               >
                 {item.label}
               </ScrollLink>

@@ -20,56 +20,48 @@ export default function Homepage() {
     });
   }, []);
 
+  const styleGradient: string =
+    "from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% ";
+  const styleFlexCenter: string =
+    " min-h-screen flex justify-center items-center";
+
   return (
     <>
       <nav>
         <TopNavbar />
       </nav>
-      <header className="bg-gradient-to-tl from-[#020617] from-80% via-violet-900 via-120% to-[#4c1d95] to-100%">
+      <header className={`${styleGradient} bg-gradient-to-tl`}>
         <Headers />
       </header>
       <main>
         <Element
           name="aboutme"
-          className="min-h-screen bg-gradient-to-br from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% min-h-screen flex justify-center items-center"
+          className={`${styleGradient} ${styleFlexCenter} bg-gradient-to-br `}
         >
           <AboutMe />
         </Element>
         <Element
           name="project"
-          // data-aos="fade-right"
-          className="flex justify-center items-center bg-gradient-to-tr from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% min-h-screen min-h-screen py-8"
+          className={`${styleGradient} ${styleFlexCenter} bg-gradient-to-tr`}
         >
           <Project />
         </Element>
         <Element
           name="diploma"
-          // data-aos="fade-right"
-          className="bg-gradient-to-bl from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100%  min-h-screen"
+          className={`${styleGradient} bg-gradient-to-bl min-h-screen`}
         >
           <Diploma />
         </Element>
         <Element
           name="contact"
-          // data-aos="fade-right"
-          className="bg-gradient-to-tl from-[#020617] from-75% via-violet-900 via-100% to-[#4c1d95] to-100% flex justify-center items-center min-h-screen py-8"
+          className={`${styleGradient} ${styleFlexCenter} bg-gradient-to-tl py-8`}
         >
           <Contact />
         </Element>
       </main>
-      <footer
-      // data-aos="fade-right"
-      >
+      <footer className={`${styleGradient} bg-gradient-to-br `}>
         <Footer />
       </footer>
     </>
   );
-}
-
-{
-  /* 
-
-  
-  
-*/
 }

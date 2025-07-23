@@ -15,7 +15,7 @@ export default function FooterDescription({ data }: Props) {
         <a
           href={item.link}
           rel="noopener noreferrer"
-          className="hover:text-[#0F6D95] transition-colors duration-300"
+          className="hover:text-purple-900 transition-colors duration-300"
         >
           <IconWrapper key={index} name={item.icon} size={"1x"} />
         </a>

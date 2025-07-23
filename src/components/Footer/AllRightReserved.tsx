@@ -6,7 +6,7 @@ const typeData = personalyData as PersonalyData;
 export default function AllRightReserved() {
   return (
     <footer>
-      <p className="text-center bg-black text-white p-4">
+      <p className="text-center p-4">
         &copy; {typeData.allRight.footerAllRight}
       </p>
     </footer>
