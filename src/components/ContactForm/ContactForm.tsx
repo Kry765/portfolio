@@ -47,12 +47,12 @@ export default function ContactForm() {
               <ContactLabel>Telefon</ContactLabel>
               <ContactInput
                 inputName="phone"
-                placeholder="Podaj adres E-mail"
+                placeholder="Podaj numer telefonu"
               />
               <ContactLabel>E-mail</ContactLabel>
               <ContactInput
                 inputName="email"
-                placeholder="Podaj numer telefonu"
+                placeholder="Podaj adres E-mail"
               />
               <ContactLabel>Wiadomość</ContactLabel>
               <div className="mt-2">
