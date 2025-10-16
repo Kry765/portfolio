@@ -12,11 +12,6 @@
       "key": "Button Link",
       "buttonLabel": "Kontakt",
       "link": "contact"
-    },
-    {
-      "key": "Button CV",
-      "buttonLabel": "Zobacz CV",
-      "link": "/CV/Krzysztof_Kleka_CV.pdf"
     }
   ],
   "headerIconSocialLink":[
