@@ -1,16 +1,17 @@
 import Image from "next/image";
 import avatar from "@/app/assets/avatar.png";
-import phone from "@/app/assets/icon/phone.svg";
-import email from "@/app/assets/icon/email.svg";
-import linkedin from "@/app/assets/icon/linkedin.svg";
-import github from "@/app/assets/icon/github.svg";
+import { contactLinks } from "@/app/data/contactLinks";
 import ContactLinkIcon from "@/app/components/ui/ContactLinkIcon";
+import "../styles/globals.css";
 
 export default function Hero() {
   return (
-    <section id="hero" className="md:flex md:items-center md:justify-center">
-      <div className="flex justify-center ">
-        <div className="bg-red-500 flex justify-center items-center overflow-y-hidden rounded-[50%] min-w-[350px] min-h-[350px]">
+    <section
+      id="hero"
+      className="md:flex md:items-center md:justify-center bg-gradient-primary text-header-primary"
+    >
+      <div className="flex justify-center">
+        <div className="bg-red-500 flex justify-center items-center overflow-y-hidden rounded-[50%] m-12 min-w-[350px] min-h-[350px]">
           <Image
             className="translate-y-4"
             loading="eager"
@@ -25,15 +26,27 @@ export default function Hero() {
         <div>
           <p>Cześć, jestem</p>
           <h1>Krzysztof Klęka</h1>
-          <p>WEB-DEVELOPER</p>
-          <p>
+          <p className="uppercase">
+            web-<span className="text-header-secondly">developer</span>
+          </p>
+          <p className="text-text-primary">
             Jestem programistą frontendowym, który skupia się na tworzeniu
             przejrzystych, responsywnych i przyjaznych dla użytkownika rozwiązań
             internetowych.
           </p>
         </div>
         <ul className="flex justify-center items-center gap-2">
-          <li>
+          {ContactLinkIcon.map((...ContactLinkIcon) => (
+            <a
+              href={href}
+              {...(external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+            >
+              <Image src={src} alt={alt} width={width} height={height} />
+            </a>
+          ))}
+          {/* <li>
             <ContactLinkIcon
               href="https://www.linkedin.com/feed/"
               src={linkedin}
@@ -70,7 +83,7 @@ export default function Hero() {
               width={24}
               height={24}
             />
-          </li>
+          </li> */}
         </ul>
         <div className="flex justify-center gap-4">
           <a href="#contact">Kontakt</a>

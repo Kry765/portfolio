@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 
 type ContactLinkProps = {
   href: string;
-  src: string;
+  src: StaticImageData;
   alt: string;
   width: number;
   height: number;
