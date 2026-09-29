@@ -1,29 +1,26 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
-
-type ContactLinkProps = {
-  href: string;
-  src: StaticImageData;
-  alt: string;
-  width: number;
-  height: number;
-  external?: boolean;
-};
+import { Icon } from "@iconify/react";
+import { ContactLink } from "@/app/data/contactLinks";
 
 export default function ContactLinkIcon({
   href,
-  src,
+  icon,
   alt,
-  width,
-  height,
+  size,
   external,
-}: ContactLinkProps) {
+}: ContactLink) {
   return (
     <a
       href={href}
+      aria-label={alt}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
-      <Image src={src} alt={alt} width={width} height={height} />
+      <Icon
+        icon={icon}
+        width={size}
+        height={size}
+        className="text-white hover:text-btn-accent transition-colors duration-500"
+      />
     </a>
   );
 }

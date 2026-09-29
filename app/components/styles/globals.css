@@ -4,10 +4,19 @@
   /*background color*/
   --color-gradient-secondly: #b91e1e;
   --color-gradient-primary: #121212;
+
   /*text color*/
   --color-header-primary: #ffffff;
   --color-header-secondly: #dc312e;
   --color-text-primary: #a8a8a8;
+
   /*Typography*/
   --font-electrolize: "Electrolize", sans-serif;
+  --text-sm: 16px;
+  --text-lg: 20px;
+  --text-2xl: 32px;
+
+  /*Buttons*/
+  --color-btn-accent: #b91e1e;
+  --color-btn-secondly: #121212;
 }

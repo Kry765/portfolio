@@ -1,39 +1,30 @@
-import { StaticImageData } from "next/image";
-import linkedin from "@/app/assets/icon/linkedin.svg";
-import github from "@/app/assets/icon/github.svg";
-import email from "@/app/assets/icon/email.svg";
-
 export type ContactLink = {
   href: string;
-  src: StaticImageData;
+  icon: string;
   alt: string;
-  width: number;
-  height: number;
+  size: number;
   external?: boolean;
 };
 
 export const contactLinks: ContactLink[] = [
   {
     href: "https://www.linkedin.com/feed/",
-    src: linkedin,
+    icon: "mdi:linkedin",
     alt: "Linkedin icon - link",
-    width: 30,
-    height: 30,
+    size: 28,
     external: true,
   },
   {
     href: "https://github.com/Kry765",
-    src: github,
+    icon: "mdi:github",
     alt: "GitHub icon - link",
-    width: 22,
-    height: 22,
+    size: 28,
     external: true,
   },
   {
     href: "mailto:example@gmail.com",
-    src: email,
+    icon: "mdi:email-outline",
     alt: "Email icon - link",
-    width: 30,
-    height: 30,
+    size: 28,
   },
 ];
