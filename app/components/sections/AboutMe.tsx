@@ -1,12 +1,12 @@
-import PersonalData from "../ui/PersonalData";
-import { personalDataItems } from "@/app/data/personalDataItems";
-import EducationData from "../ui/EducationData";
-import { educationData } from "@/app/data/educationData";
+import PersonalEntry from "../ui/PersonalEntry";
+import { personalData } from "@/app/data/personalData";
 import { toolsData } from "@/app/data/toolsData";
+import EducationEntry from "../ui/EducationEntry";
+import { educationData } from "@/app/data/educationData";
 
 export default function AboutMe() {
   return (
-    <section id="about-me">
+    <section id="about-me" className="bg-left min-h-[100vh] text-white">
       <h2>O mnie</h2>
       <div>
         <p>
@@ -17,16 +17,16 @@ export default function AboutMe() {
       <section>
         <h3 className="uppercase">dane osobowe</h3>
         <dl>
-          {personalDataItems.map((link) => (
-            <PersonalData {...link} />
+          {personalData.map((item) => (
+            <PersonalEntry key={item.label} {...item} />
           ))}
         </dl>
       </section>
       <section>
         <h3>Edukacja</h3>
         <dl>
-          {educationData.map((items) => (
-            <EducationData {...items} />
+          {educationData.map((item) => (
+            <EducationEntry key={item.school} {...item} />
           ))}
         </dl>
       </section>
@@ -34,7 +34,7 @@ export default function AboutMe() {
         <h3>Narzędzia</h3>
         <ul>
           {toolsData.map((item) => (
-            <li>{item}</li>
+            <li key={item}>{item}</li>
           ))}
         </ul>
       </section>

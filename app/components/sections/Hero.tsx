@@ -8,9 +8,9 @@ export default function Hero() {
     <section
       id="hero"
       aria-labelledby="hero-section"
-      className="flex bg-hero items-center justify-center w-full flex-col md:flex-row min-h-screen text-header-primary lg:gap-12"
+      className="flex bg-right items-center justify-center w-full flex-col md:flex-row min-h-screen text-white lg:gap-12"
     >
-      <div className="bg-header-secondary flex justify-center items-center rounded-full m-6 md:m-12 size-64 md:min-w-[350px] md:min-h-[350px] overflow-hidden">
+      <div className="bg-custom-strong-red flex justify-center items-center rounded-full m-6 md:m-12 size-64 md:min-w-[350px] md:min-h-[350px] overflow-hidden">
         <Image
           className="h-auto w-[190px] translate-y-4 md:w-[260px]"
           priority

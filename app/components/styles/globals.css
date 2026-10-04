@@ -1,36 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  /*background color*/
-  --color-gradient-secondary: #b91e1e;
-  --color-gradient-primary: #121212;
-
-  /*text color*/
-  --color-header-primary: #ffffff;
-  --color-header-secondary: #dc312e;
-  --color-text-primary: #a8a8a8;
+  /*colors*/
+  --color-custom-black: #121212;
+  --color-custom-red: #b91e1e;
+  --color-white: #ffffff;
+  --color-custom-lightgray: #a8a8a8;
+  --color-custom-strong-red: #dc312e;
 
   /*Typography*/
   --font-electrolize: "Electrolize", sans-serif;
   --text-sm: 16px;
   --text-lg: 20px;
   --text-2xl: 32px;
-
-  /*Buttons*/
-  --color-btn-accent: #b91e1e;
-  --color-btn-secondary: #121212;
 }
 
-.bg-hero {
+.bg-right {
+  background:
+    radial-gradient(
+      ellipse at top right,
+      rgba(185, 30, 30, 0.3),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      rgba(185, 30, 30, 0.3),
+      transparent 45%
+    ),
+    #121212;
+}
+
+.bg-left {
   background:
     radial-gradient(
       ellipse at top left,
-      rgba(80, 25, 25, 0.22),
+      rgba(185, 30, 30, 0.3),
       transparent 45%
     ),
     radial-gradient(
       ellipse at bottom right,
-      rgba(80, 25, 25, 0.18),
+      rgba(185, 30, 30, 0.3),
       transparent 45%
     ),
     #121212;
