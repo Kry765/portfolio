@@ -1,6 +1,12 @@
+import PersonalData from "../ui/PersonalData";
+import { personalDataItems } from "@/app/data/personalDataItems";
+import EducationData from "../ui/EducationData";
+import { educationData } from "@/app/data/educationData";
+import { toolsData } from "@/app/data/toolsData";
+
 export default function AboutMe() {
   return (
-    <section id="about">
+    <section id="about-me">
       <h2>O mnie</h2>
       <div>
         <p>
@@ -9,34 +15,27 @@ export default function AboutMe() {
         </p>
       </div>
       <section>
-        <h3>dane osobowe</h3>
+        <h3 className="uppercase">dane osobowe</h3>
         <dl>
-          <dt>Wiek</dt>
-          <dd>26</dd>
-          <dt>email</dt>
-          <a href="mailto:example@gmail.com">example@gmail.com</a>
-          <dt>Telefon</dt>
-          <a href="tel:+48573226219">+48-573-226-219</a>
+          {personalDataItems.map((link) => (
+            <PersonalData {...link} />
+          ))}
         </dl>
       </section>
       <section>
         <h3>Edukacja</h3>
         <dl>
-          <dt>2015-2019</dt>
-          <dd>zstre</dd>
-
-          <dt>2020-2025</dt>
-          <dd>zskli</dd>
+          {educationData.map((items) => (
+            <EducationData {...items} />
+          ))}
         </dl>
       </section>
       <section>
         <h3>Narzędzia</h3>
         <ul>
-          <li>Github</li>
-          <li>Docker</li>
-          <li>Figma</li>
-          <li>Visual Studio Code</li>
-          <li>Copilot</li>
+          {toolsData.map((item) => (
+            <li>{item}</li>
+          ))}
         </ul>
       </section>
     </section>

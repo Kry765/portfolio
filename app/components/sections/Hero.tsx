@@ -45,8 +45,8 @@ export default function Hero() {
         <div className="flex justify-center md:justify-start w-full gap-4 mb-8">
           <a
             href="#contact"
-            className="rounded-md border-2 border-btn-accent px-8 py-2 transition duration-300
-    hover:bg-btn-accent
+            className="rounded-md border-2 border-btn-accent bg-btn-accent px-8 py-2 transition duration-300
+    hover:border-btn-secondary hover:bg-btn-secondary
     active:scale-95
     focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-header-secondary
     motion-reduce:transition-none"
@@ -55,8 +55,8 @@ export default function Hero() {
           </a>
           <a
             href="#cv"
-            className="rounded-md border-2 border-btn-accent bg-btn-accent px-8 py-2 transition duration-300
-    hover:border-btn-secondary hover:bg-btn-secondary
+            className="rounded-md border-2 border-btn-accent px-8 py-2 transition duration-300
+    hover:bg-btn-accent
     active:scale-95
     focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-header-secondary
     motion-reduce:transition-none"
